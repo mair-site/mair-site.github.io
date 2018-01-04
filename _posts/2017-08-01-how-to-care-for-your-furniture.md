@@ -2,7 +2,7 @@
 title: Как ухаживать за мебелью, чтобы она служила долго?
 categories:
   - tips
-author_staff_member: Роман
+author_staff_member: roman
 show_comments: true
 ---
 
