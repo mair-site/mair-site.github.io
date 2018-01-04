@@ -2,7 +2,7 @@
 title: Что важно помнить при сборке?
 categories:
   - tips
-author_staff_member: roman
+author_staff_member: Роман
 show_comments: true
 ---
 
