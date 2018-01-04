@@ -1,12 +1,12 @@
-title: Urban Template
-url: "https://teal-worm.cloudvent.net"
+title: МАИР – Профессиональная сборка мебели
+url: "#"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
-description: Jekyll template with example content for a web agency.
+description: МАИР – Профессиональная сборка мебели
 
 # Author details for the jekyll-seo-tag gem
 author:
@@ -16,9 +16,9 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Urban Template
+  name: МАИР – Профессиональная сборка мебели
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - https://github.com/klimov-rv/mair
 
 collections:
   staff_members:

@@ -1,75 +1,26 @@
 ---
-name: Malt Template
-subtitle: Event marketing template for Jekyll
-external_url: https://github.com/CloudCannon/malt-jekyll-template
-image_path: /images/clients/malt.jpg
+name: Сборка/разборка мебели
+subtitle: Наша компания готова предоставить весь спектр услуг, связанных с грузоперевозками! 
+image_path: https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=1950&q=80
 ---
 
-Event marketing template for Jekyll. Browse through a [live demo](https://whispering-boat.cloudvent.net/).
-Increase the web presence of your event with this configurable theme.
+## Сборка/разборка мебели
 
-CloudCannon was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
+https://youtu.be/sbas_q7ZNGY
 
-Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
+Всем известно, что некоторые требования к сборке, как правило, содержат огромное количество манипуляций. Наши специалисты соберут Вашу мебель прямо из коробки в вашем доме или дворе, и Вам не придется ломать голову над запутанными инструкциями. Руководство по сборке новой мебели может сбить с толку, а сборка сама по себе может быть запутанной и отнимающей много времени. Здесь Вам помогут сотрудники «Системтранслогистикс» - профессионалы в деле сборки разного рода мебели.
 
-## Features
+ 
 
-* Pre-built page
-* Pre-styled components
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* SEO tags
-* Google Analytics
-* [EventBrite](https://www.eventbrite.com/)
-* Contact Form
-* Featured
-* Image Gallery
+НАШИ УСЛУГИ ПО СБОРКЕ ВКЛЮЧАЮТ, НО НЕ ОГРАНИЧИВАЮТСЯ:
 
-## Setup
+ - Сборка мебели
+ - Сборка шкафов-купе
+ - Сборка ИКЕА™
+ - Сборка каркасных кроватей
+ - Сборка шкафов для хранения
+ - Сборка стеллажей
+ - Сборка кабинетов
+ - Сборка диванов и кресел
 
-1. Add your site details in `_config.yml`.
-2. Add your Google Analytics to `_config.yml`.
-3. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
-
-## Develop
-
-Malt was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
-~~~bash
-$ bundle install
-~~~
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Malt is already optimised for updating pages, company details and footer elements in CloudCannon.
-
-## SEO Tag
-
-This site uses the [jekyll-seo-tag](https://github.com/jekyll/jekyll-seo-tag) plugin. You should at least set a title in front matter on each page. Have a look at the [project page](https://github.com/jekyll/jekyll-seo-tag) for more options.
-
-## Google Analytics
-
-[Google Analytics](https://www.google.com/analytics/) is a third party website analytics tool. To install:
-
-1. Add your Google Analytics key to `_config.yml`.
-2. Run your site in production `JEKYLL_ENV=production` (the default for CloudCannon and GitHub Pages).
-
-## EventBrite
-
-[EventBrite](https://www.eventbrite.com/) is a third party embeddable event module for websites. To install:
-
-1. Create an event on EventBrite.
-2. Copy the Ticket Form embed code from the Widgets menu item.
-3. Paste it into `eventbrite_embed` in `_config.yml`.
-
-## Image gallery / Featured
-
-The image gallery is populated by a front matter array in `index.html`. To add items just copy the existing structure.
+ ![Квартирный переезд](http://stl.moscow/thumb/yQo6D1EvogOXJhk86FpAcw/940c300/1513316/2eba7586-f00d-437c-8cd8-59bd45729156.png)

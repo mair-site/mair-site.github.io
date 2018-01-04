@@ -1,70 +1,26 @@
 ---
-name: Edition Template
-subtitle: Product documentation template for Jekyll
-external_url: https://github.com/CloudCannon/edition-jekyll-template
-image_path: /images/clients/edition.png
+name: Сборка/разборка мебели
+subtitle: Наша компания готова предоставить весь спектр услуг, связанных с грузоперевозками! 
+image_path: https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=1950&q=80
 ---
 
-Product documentation template for Jekyll. Browse through a [live demo](https://long-pig.cloudvent.net/).
-Start documenting your product, application, service or website with this configurable theme.
+## Сборка/разборка мебели
 
-Edition was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
 
-Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
+Всем известно, что некоторые требования к сборке, как правило, содержат огромное количество манипуляций. Наши специалисты соберут Вашу мебель прямо из коробки в вашем доме или дворе, и Вам не придется ломать голову над запутанными инструкциями. Руководство по сборке новой мебели может сбить с толку, а сборка сама по себе может быть запутанной и отнимающей много времени. Здесь Вам помогут сотрудники «Системтранслогистикс» - профессионалы в деле сборки разного рода мебели.
 
-## Features
+ 
 
-* Two column layout
-* Full text search
-* Pre-styled components
-* Auto-generated navigation based on category
-* Optimised for editing in [CloudCannon](http://cloudcannon.com/)
-* Change log
-* RSS/Atom feed
-* SEO tags
-* Google Analytics
+НАШИ УСЛУГИ ПО СБОРКЕ ВКЛЮЧАЮТ, НО НЕ ОГРАНИЧИВАЮТСЯ:
 
-## Setup
+ - Сборка мебели
+ - Сборка шкафов-купе
+ - Сборка ИКЕА™
+ - Сборка каркасных кроватей
+ - Сборка шкафов для хранения
+ - Сборка стеллажей
+ - Сборка кабинетов
+ - Сборка диванов и кресел
 
-1. Add your site and author details in `_config.yml`.
-2. Get a workflow going to see your site's output (with [CloudCannon](https://app.cloudcannon.com/) or Jekyll locally).
+![Квартирный переезд](http://stl.moscow/thumb/yQo6D1EvogOXJhk86FpAcw/940c300/1513316/2eba7586-f00d-437c-8cd8-59bd45729156.png)
 
-## Develop
-
-Edition was built with [Jekyll](http://jekyllrb.com/) version 3.3.1, but should support newer versions as well.
-
-Install the dependencies with [Bundler](http://bundler.io/):
-
-~~~bash
-$ bundle install
-~~~
-
-Run `jekyll` commands through Bundler to ensure you're using the right versions:
-
-~~~bash
-$ bundle exec jekyll serve
-~~~
-
-## Editing
-
-Edition is already optimised for adding, updating and removing documentation pages in CloudCannon.
-
-### Documentation pages
-
-* Add, update or remove a documentation page in the *Documentation* collection.
-* Change the category of a documentation page to move it to another section in the navigation.
-* Documentation pages are organised in the navigation by category, with URLs based on the path inside the `_docs` folder.
-
-### Change log
-
-* Add, update or remove change log entries from your posts.
-* Tag entries as minor or major in the front matter.
-
-### Search
-
-* Add `excluded_in_search: true` to any documentation page's front matter to exclude that page in the search results.
-
-### Navigation
-
-* Change `site.show_full_navigation` to control all or only the current navigation group being open.

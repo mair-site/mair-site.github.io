@@ -1,11 +1,11 @@
 ---
 layout: page
-title: Blog
-heading: Blog
-subtitle: Keep up with the latest news.
+title: Блог
+heading: Полезные статьи
+subtitle: Полезные статьи и новости
 ---
 
-<section class="diagonal">
+<section class="">
 	<div class="text-container">
 	    <p class="editor-link"><a href="cloudcannon:collections/_posts" class="btn"><strong>&#9998;</strong> Add Post</a></p>
 		<ul class="blog-posts">
@@ -15,17 +15,17 @@ subtitle: Keep up with the latest news.
 </section>
 
 {% if paginator.total_pages > 1 %}
-	<section class="diagonal alternate">
+	<section class=" alternate">
 		<!-- Pagination links -->
 		<div class="pagination">
 			{% if paginator.previous_page %}
-				<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Newer posts</a>
+				<a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="previous btn">&larr; Новые посты</a>
 			{% endif %}
 
-			<span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+			<span class="page_number ">{{ paginator.page }} из {{ paginator.total_pages }}</span>
 
 			{% if paginator.next_page %}
-				<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Older posts &rarr;</a>
+				<a href="{{ site.baseurl }}{{ paginator.next_page_path }}" class="next btn">Ранее &rarr;</a>
 			{% endif %}
 		</div>
 	</section>

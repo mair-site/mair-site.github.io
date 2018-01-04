@@ -1,6 +1,6 @@
 ---
-name: James Lopez
-position: Designer
-image_path: "https://unsplash.it/600/503?image=1062&a=.png"
-twitter: CloudCannonApp
+name: Роман
+position: Администратор сайта
+image_path: "http://e1.365dm.com/16/12/16-9/20/skysports-brandon-stone-golf-alfred-dunhill-championsh_3845761.jpg?20161204113808"
+twitter: KlimovRV
 ---

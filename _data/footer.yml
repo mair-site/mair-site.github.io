@@ -1,16 +1,16 @@
-- title: Pages
+- title: Перейти
   links:
-    - name: Home
+    - name: Главная
       link: /
-    - name: Portfolio
+    - name: Портфолио
       link: /portfolio/
-    - name: Blog
+    - name: Блог
       link: /blog/
-    - name: About
+    - name: О нас
       link: /about/
-    - name: Contact
+    - name: Контакты
       link: /contact/
-- title: Social
+- title: Соцсети
   links:
     - name: Facebook
       link:

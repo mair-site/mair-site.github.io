@@ -1,15 +1,15 @@
 ---
-title: Contact
-heading: Get in touch today
-subtitle: We'd love to help your business.
+title: Напишите нам!
+heading: Напишите нам!
+subtitle: Обратитесь к нам и мы ответим!
 map:
-  latitude: -45.8787605
-  longitude: 170.5027976
-  address: "1 George Street, Dunedin, New Zealand"
-  zoom: 13
+  latitude: 55.785090
+  longitude: 37.735976
+  address: "Борисовская улица, 1, офис 205, г. Москва, Россия"
+  zoom: 16
 ---
 
-<section class="diagonal">
+<section class="">
 	<div class="container">
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 			<input type="hidden" name="_to" value="support@example.com" />
@@ -17,32 +17,27 @@ map:
 
 			<div class="halves">
 				<div>
-					<label for="name">First Name</label>
-					<input type="text" name="first-name" id="first-name" placeholder="John" />
-				</div>
-
-				<div>
-					<label for="name">Last Name</label>
-					<input type="text" name="last-name" id="last-name" placeholder="Doe" />
+					<label for="name">ФИО</label>
+					<input type="text" name="last-name" id="last-name" placeholder="Иван Иванович" />
 				</div>
 			</div>
 
-			<label for="email">Email Address</label>
-			<input type="email" name="email" id="email" placeholder="john@example.com" required />
+			<label for="email">Email адрес</label>
+			<input type="email" name="email" id="email" placeholder="email@example.com" required />
 
-			<label for="message">Message</label>
-			<textarea name="message" id="message" placeholder="Hi There..."></textarea>
+			<label for="message">Сообщение</label>
+			<textarea name="message" id="message" placeholder="Ваше сообщение..."></textarea>
 
-			<input type="submit" value="Send Message" />
+			<input type="submit" value="Оставить нам заявку" />
 		</form>
 	</div>
 </section>
 
-<section class="diagonal map">
+<section class=" map">
 	<div id="gmap_canvas"></div>
 </section>
 
-<section class="diagonal">
+<section class="">
 	<div class="container halves aligned-top">
 		<div>
 			<h3>Address</h3>
