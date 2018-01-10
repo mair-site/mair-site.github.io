@@ -1,7 +1,7 @@
-<nav>
+<nav class="top">
 	<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
-	<ul>
-		{% for link in site.data.navigation.links %}
+	<ul class="menu">
+		<!-- {% for link in site.data.navigation.links %}
 			{% assign class = "" %}
 			{% if link.highlight %}
 				{% assign class = class | append: " highlight" %}
@@ -11,6 +11,22 @@
 				{% assign class = class | append: " active" %}
 			{% endif %}
 			<li><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
-		{% endfor %}
+		{% endfor %} -->
+
+
+		<li><a href="/portfolio/" class="">Портфолио</a></li>
+
+		<li><a href="/blog/" class="">Блог</a></li>
+
+		<li class="menu__list"><a href="/about/" class="">О нас</a>
+			<ul class="menu__drop">
+				<li><a href="#">Цены</a></li>
+				<li><a href="#">Калькулятор</a></li>
+				<li><a href="#">Команда  </a></li>
+			</ul>
+		</li>
+	
+		<li><a href="/contact/" class="">Контакты</a></li>
+				
 	</ul>
 </nav>

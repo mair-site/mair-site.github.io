@@ -6,26 +6,48 @@ title: Главная
 	<div class="container">
 		<h2 class="editable">Сборка мебели в Москве и МО</h2>
 		<p class="subtext editable">Выезд мастера для <strong>сборки мебели</strong>, а так же изготовление, доставка и ремонт</p>
-		<p>
-		<a class="button alt zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Вызвать мастера</a>
-	</p>
-	</div>
-</section>
+		<div class="button alt" href="#" >
+			<div class="btn__drop">
+				<ul>
+					<li>
+						<a class="button make-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Позвонить с сайта</a>
+						Zingaya
+					</li>
+					<li>
+						<!-- Звонок с сайта - Яндекс.Телефония -->
+						<script type="text/javascript">
+							document.write(unescape("%3Cscript src='" + "//yandex.mightycall.ru/c2c/js/MightyCallC2C_5.4.js' type='text/javascript'%3E%3C/script%3E"));   
+							document.write(unescape("%3Cscript src='" + "//mightycallstorage.blob.core.windows.net/c2cjss/a78b86ba-19c6-435a-90f1-83b4b7c780b4.js' type='text/javascript'%3E%3C/script%3E"));
+						</script>
+						<script type="text/javascript">
+							InitClick2Call();
+						</script>
+						Яндекс Телефония
+					</li>
+					<!-- <li>
+						<a class="button make-call" href="#" >Вызов "муж на час"</a>
+					</li> -->
+				</ul>
+				<ul>
+					<li>
+						<a href="tel:+79258348588" class="tel">
+							<i class="fas fa-phone"></i>
+							<span>+7 925 834 8588</span>
+						</a>
+					</li>
+					<li>
+						<a href="tel:+74993907668" class="tel">
+							<i class="fas fa-phone"></i>
+							<span>+7 499 390 7668</span>
+						</a>
+					</li>
+				</ul>
+			</div>
 
-<section class="patterned">
-	<div class="container halves">
-		<div>
-			<h3 class="editable">Галерея</h3>
-			<p class="editable">Мы осуществляем сборку любой сложности. Оцените высокое качество выполняемых нами работ.</p>
-			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">Ещё примеры работ &rarr;</a></p>
+			Вызвать мастера →
+			
 		</div>
-		<div>
-			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
-				{% endfor %}
-			</ul>
-		</div>
+		
 	</div>
 </section>
 
@@ -43,3 +65,20 @@ title: Главная
 		</div>
 	</div>
 </section>
+
+<section class="patterned">
+		<div class="container halves">
+			<div>
+				<h3 class="editable">Галерея</h3>
+				<p class="editable">Мы осуществляем сборку любой сложности. Оцените высокое качество выполняемых нами работ.</p>
+				<p class="editable"><a href="{{ site.baseurl }}/portfolio/">Ещё примеры работ &rarr;</a></p>
+			</div>
+			<div>
+				<ul class="image-grid">
+					{% for client in site.clients limit: 4 %}
+						<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+					{% endfor %}
+				</ul>
+			</div>
+		</div>
+	</section>

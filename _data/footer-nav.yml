@@ -1,0 +1,12 @@
+- title: Перейти
+  links:
+    - name: Главная
+      link: /
+    - name: Портфолио
+      link: /portfolio/
+    - name: Блог
+      link: /blog/
+    - name: О нас
+      link: /about/
+    - name: Контакты
+      link: /contact/
