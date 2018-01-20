@@ -1,5 +1,5 @@
 title: МАИР – Профессиональная сборка мебели
-url: "http://klimovproject.ru/mair.github.io/"
+url: "http://mair.moscow"
 baseurl:
 google_analytics_key:
 google_maps_javascript_api_key:
@@ -18,7 +18,7 @@ author:
 social:
   name: МАИР – Профессиональная сборка мебели
   links:
-    - http://klimovproject.ru/mair.github.io/
+    - http://klimovproject.ru/
 
 collections:
   staff_members:
