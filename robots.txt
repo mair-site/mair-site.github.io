@@ -6,5 +6,5 @@
 # Allow crawling of all content
 User-agent: *
 Disallow:
-Sitemap: https://mair.moscow/sitemap.xml
+Sitemap: {{ site.url }}/sitemap.xml
 Host: https://mair.moscow
