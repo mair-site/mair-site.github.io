@@ -2,7 +2,7 @@ title: МАИР – Профессиональная сборка мебели
 url: "http://mair.moscow"
 baseurl:
 google_analytics_key:
-google_maps_javascript_api_key:
+google_maps_javascript_api_key: AIzaSyDA3Fwc32iuKNnSInbH_eKnJmvITbc9Nkg
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
