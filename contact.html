@@ -5,7 +5,7 @@ subtitle: Обратитесь к нам и мы ответим!
 map:
   latitude: 55.785090
   longitude: 37.735976
-  address: "Борисовская улица, 1, офис 205, г. Москва, Россия"
+  address: "Борисовская улица, дом 1, офис 205, г. Москва, Россия"
   zoom: 17
 ---
 <!-- https://yandex.ru/maps/213/moscow/?mode=search&ll=37.738237%2C55.785676&z=16&where=37.735791%2C55.785205&ol=biz&oid=1342821533 -->
@@ -41,7 +41,7 @@ map:
 	<div class="container halves aligned-top">
 		<div>
 			<h3>Адрес</h3>
-				<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+				<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", " <br>" }}</a></address>
 		</div>
 		<div>
 			<h3>Email</h3>

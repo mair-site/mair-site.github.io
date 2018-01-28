@@ -65,7 +65,7 @@ section {
 		color: #ffffff;
 		// background: $brand-color;
 		// background:  $brand-color url("https://i.imgur.com/GUsRWLg.jpg") no-repeat top center;
-		// background:  $brand-color url("../images/dream-home.jpg") no-repeat top center;
+		// background:  $brand-color url("../images/bg-application.jpg") no-repeat top center;
 		background:  $brand-color url("https://www.gk-montagetischler.at/upload/imgproc/1921127_head.jpg") no-repeat top center;
 		background-size: cover;
 		text-align: left;
@@ -77,11 +77,13 @@ section {
 		}
 
 		h2, p {
-			max-width: 90%;
+			letter-spacing: 2px;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 		}
 
 		h2 {
 			font-size: 3.5rem;
+			font-weight: bold;
 		}
 
 		p {
@@ -94,83 +96,164 @@ section {
 		background: #eee;
 	}
 
+	&.promo-action {
+
+		height: 230px;
+		padding: 50px 0;
+		// background:  $brand-color url("../images/bg-application.jpg") no-repeat top center;
+		background:  $brand-color none no-repeat top center;
+		background-size: cover;
+
+		h2, p {
+			color: white;
+		}
+
+		.tel {
+			padding: 55px 15px;
+		}
+	}
+
+}
+
+.sale-block {
+
+	display: relative;
+
+	li {
+		list-style : none;
+		list-style-image : none;
+		list-style-position : outside;
+	}
+	
+}
+
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 7px;
+}
+
+.outer {
+	padding: 20px;
+	margin: 0 30px;
 }
 
 .button {
-	float: left;
-	position: relative;
-	padding: 13px 38px;
-	border-radius: 3px;
-	color: #fff;
-	text-decoration: none;
-	cursor: pointer;
-	margin: 20px 0 0 0;
-	border: 1px solid #fff;
-	background: $brand-color;
-	text-decoration: none !important;
-	font-size: 26px;
-
-	.make-call {
-		padding: 11px 20px;
-		border: 0px solid;
-	}
+    height: 27px;
+    width: 230px;
+    background: #FFA715 none repeat scroll 0 0;
+    box-shadow: 0 6px 0 0 #D78600;
+    border: 0px solid;
+    padding: 18px 28px;
+    display: inline-block;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+	outline: medium none;
 
 	&:hover {
-		background: #181716;
+		background: rgb(255, 179, 57) none repeat scroll 0 0;
 		color: #fff;
-	}
-
-	.btn__drop {
-		position: absolute;
-		width: 700px;
-
-		padding: 5px;
-		left: -9999px;
-		opacity: 0;
-	
-		border-left: 10px solid transparent;
-		-webkit-transition: 0.5s opacity;
-		transition: 0.5s opacity;
-		z-index: 1;
-		background-color: white;
-		box-shadow: 0 0.4rem 2.8rem rgba(24,23,22,.5);
-		border-radius: 15px;
-		text-align: center;
-		margin: 0;
-		
-		ul {
-			float:left;
-		}
-
-		li {
-			display: block;
-		}
-	}
-	
-	&:hover .btn__drop {
-		left: -44px;
-		bottom: -30px;
-		opacity: 1;
 	}
 
 	&:active {
-		opacity: 1;
-		background: rgba(255, 255, 255, 0.1);
+		background: rgb(194, 87, 0);
+		box-shadow: 0 3px 0 0 #D78600;
 		color: #fff;
-		transform: translateY(1px);
+		transform: translateY(3px);
+		outline: medium none;
 	}
-
 }
 
+.emergency-call {
+
+	background: rgb(255, 87, 21) none repeat scroll 0 0;
+	box-shadow: 0 6px 0 0 rgb(161, 46, 0);
+
+	&:hover {
+		background: rgb(248, 93, 65) none repeat scroll 0 0;
+		color: #fff;
+	}
+}
+
+.make-call {
+	padding: 11px 20px;
+	border: 0px solid;
+}
+
+.calc-btn {
+
+	background:rgb(54, 54, 54) none repeat scroll 0 0;
+	box-shadow: 0 6px 0 0 #1b1b1b;
+
+	&:hover {
+		background: rgb(80, 80, 80) none repeat scroll 0 0;
+		color: #fff;
+	}
+}
+
+.left-part {
+    width: 60%;
+    padding: 0px;
+    margin: 0;
+    float: left;
+}
+
+.right-part {
+    padding: 10px;
+    margin: 0 auto;
+	-webkit-transition: 0.5s opacity;
+	transition: 0.5s opacity;
+	z-index: 1;
+	background-color: white;
+	box-shadow: 0 0.4rem 2.8rem rgba(24, 23, 22, 0.5);
+	border-radius: 15px;
+	overflow: hidden;
+	text-align: center;
+
+	ul {
+		margin: 15px 0;
+		padding: 0;
+	}
+}
+.bt-form:active {
+    margin: 23px 0 0;
+    outline: medium none;
+}
+.bt-form:focus {
+    outline: medium none;
+}
 .tel {
     color: #181716;
     display: inline-block;
-	width: 100%;
-    font-size: 30px;
-    font-size: 2rem;
+    width: 100%;
+    font-size: 1.7rem;
     margin: 0 0 1.4rem;
-	text-decoration: none;
-	padding: 40px 4px 0;
+    text-decoration: none;
+    padding: 4px 0px;
+}
+
+input[type="tel"]  {
+    width: 85%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: #505050;
+    text-indent: 20px;
+    margin: 30px auto 20px;
 }
 .halves {
 	display: flex;
@@ -191,6 +274,38 @@ section {
 			margin: 0;
 		}
 	}
+}
+
+.icon_text_block {
+    padding: 22px;
+    display: block;
+    float: left;
+    height: 170px;
+    width: 170px;
+    text-align: center;
+}
+.text_block {
+
+}
+.st_bl_items {
+	padding: 100px 0;
+}
+.st_bl_item  {
+    float: left;
+    width: 23%;
+    padding: 1%;
+    text-align: center;
+}
+.centered  {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.righted {
+	float: right;
+    margin: 0 auto;
+    width: 30%;
 }
 
 .aligned-top {

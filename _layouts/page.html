@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<section class="hero ">
+<section class="hero "  style="background-image: url({% include relative-src.html src=page.hero_img %})">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		{% if page.heading %}
 			<h2>{{ page.heading }}</h2>

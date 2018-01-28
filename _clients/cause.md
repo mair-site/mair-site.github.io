@@ -2,6 +2,7 @@
 name: Квартирный переезд
 subtitle: При сборке мебели, не стоит перетягивать крепления, болты, чтобы не пробить или не повредить поверхность.
 image_path: https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=1950&q=80
+hero_img: /images/hero-img/kvartirnii-pereezd.jpeg
 ---
 
 ## Компания «Системтранслогистикс» - квартирный переезд по доступной цене!

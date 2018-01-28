@@ -13,20 +13,31 @@
 			<li><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
 		{% endfor %} -->
 
+<!-- 		
+		<li><a href="/kak-sobrat-mebel/">Цены</a></li>
+		<li><a href="/calc-service/">Калькулятор</a></li>
+		<li><a href="/about/">Команда  </a></li>
+		<li><a href="/contact/">Контакты</a></li> -->
 
-		<li><a href="/portfolio/" class="">Портфолио</a></li>
-
-		<li><a href="/blog/" class="">Блог</a></li>
-
-		<li class="menu__list"><a href="/about/" class="">О нас</a>
+		<li class="menu__list"><a href="/#services">Услуги</a>
+			<ul class="menu__drop">
+				<li><a href="/kak-sobrat-mebel/">Сборка мебели</a></li>
+				<li><a href="/kvartirnyiy-pereezd/">Квартирный переезд</a></li>
+				<li><a href="/muzh-na-chas/">Муж на час</a></li>
+			</ul>
+		</li>
+		<li class="menu__list"><a href="" >О нас</a>
 			<ul class="menu__drop">
 				<li><a href="#">Цены</a></li>
 				<li><a href="#">Калькулятор</a></li>
 				<li><a href="#">Команда  </a></li>
+				<li><a href="/contact/">Контакты</a></li>
 			</ul>
 		</li>
-	
-		<li><a href="/contact/" class="">Контакты</a></li>
+
+		<li><a href="/portfolio/">Портфолио</a></li>
+
+		<li><a href="/blog/" >Блог</a></li>
 				
 	</ul>
 </nav>
