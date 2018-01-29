@@ -1,7 +1,7 @@
 ---
 name: Сборка/разборка мебели
 subtitle: Наша компания готова предоставить весь спектр услуг, связанных с грузоперевозками! 
-image_path: https://images.unsplash.com/photo-1505798577917-a65157d3320a?auto=format&fit=crop&w=1950&q=80
+image_path: https://scontent-arn2-1.cdninstagram.com/vp/f9f8d8bb96d47d1b8cc8c2722df20cd8/5B06E7B0/t51.2885-15/s640x640/sh0.08/e35/26305893_1581079991946809_1656098325155282944_n.jpg
 ---
 
 ## Сборка/разборка мебели

@@ -3,7 +3,7 @@ layout: default
 ---
 {% assign portfolio = site.pages | where: "path", "portfolio.html" | first %}
 
-<section class="hero ">
+<section class="hero " style="background-image: url({% include relative-src.html src=page.hero_img %})">
 	<div class="container">
 		{% if portfolio.heading %}
 		<h2><!-- <a href="{{ site.baseurl }}/portfolio/">-->{{ portfolio.heading }}<!-- </a>--> </h2> 
@@ -21,6 +21,26 @@ layout: default
 		<p><img src="{% include relative-src.html src=page.image_path %}" class="screenshot"></p>
 		<div>
 			{{ content }}
+		</div>
+	</div>
+</section>
+
+<section class="promo-action">
+	<div class="container">
+		<div class="left-part">
+			<h2 class="editable">Нужна оперативная мужская помощь?</h2>
+			<p class="subtext editable">Наш мастер приедет в течении 60 минут!  <br />
+				Срочный вызов по телефону:
+			</p>
+		</div>
+		<div class="outer righted">
+			<div class="button btn calc-btn">
+				<a href="/contact/">Вызвать мастера</a>
+			</div>
+			<a href="tel:+74993907668" class="tel">
+					<i class="fas fa-phone"></i>
+					<span>+7 499 390 7668</span>
+			</a>
 		</div>
 	</div>
 </section>

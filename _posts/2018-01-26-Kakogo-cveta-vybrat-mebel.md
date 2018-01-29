@@ -2,7 +2,7 @@
 title: Белый цвет мебели
 categories:
   - tips
-  - дизайн
+  - design
 author_staff_member: Роман
 show_comments: true
 ---
