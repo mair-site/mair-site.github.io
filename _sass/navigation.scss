@@ -92,7 +92,7 @@ nav {
 		position: absolute;
 		top: 0;
 		right: 0;
-		padding: 10px 20px;
+		padding: 4px 20px;
 
 		li {
 			display: inline-block;
@@ -105,12 +105,13 @@ nav {
 		color: rgba(255, 255, 255, 0.8);
 		transition: 0.2s ease-in-out;
 		display: none;
-		font-size: 1rem;
+		font-size: 16px;
+		letter-spacing: 1px;
 
 		@media #{$mid-point} {
 			//border-bottom: 2px solid rgba(255, 255, 255, 0);
 			display: block;
-			padding: 10px;
+			padding: 13px;
 		}
 
 		&.nav-toggle {
@@ -135,9 +136,7 @@ nav {
 		color: #fff;
 
 		@media #{$mid-point} {
-			//border-bottom: 2px solid rgba(255, 255, 255, 0.6);
 			display: block;
-			padding: 10px;
 		}
 	}
 

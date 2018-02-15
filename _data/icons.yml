@@ -1,0 +1,24 @@
+- title: services
+  svgs:
+    - name: Консультации
+      svg: consult
+    - name: Упакова, Погрузка, Доставка, Выгрузка
+      svg: delivery
+    - name: Замер, оценка, проектировка
+      svg: evaluation
+    - name: Разборка старой мебели, демонтаж
+      svg: disassembly
+    - name: Сборка новой мебели, установка, подключение
+      svg: assembly
+    - name: Строительство и ремонт
+      svg: construction
+- title: howto
+  svgs:
+    - name: Заявка или звонок
+      svg: 1step
+    - name: Вызов оценщика бесплатно!
+      svg: 2step
+    - name: Выезд упаковщиков-грузчиков
+      svg: 3step
+    - name: Монтаж и установка
+      svg: 4step

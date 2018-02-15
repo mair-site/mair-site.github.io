@@ -1,3 +1,15 @@
+@mixin ClearFix {
+	&:after {
+		clear: both;
+		display: block;
+		content: " ";
+	}
+	&:before {
+		clear: both;
+		display: block;
+		content: " ";
+	}
+}
 .container,
 .text-container {
 	margin: 0 auto;
@@ -10,17 +22,19 @@
 }
 
 .container {
-	max-width: 900px;
+	max-width: 1100px;
 }
 
 header {
 	color: #fff;
 	background: $brand-color;
 	padding: 20px 0;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
+	z-index: 300;
+	transition: 0.2s ease-in-out;
 
 	a {
 		color: #fff;
@@ -36,6 +50,23 @@ header {
 	.company-name {
 		font-size: 1.7em;
 		padding-top: 5px;
+
+		img {
+			width: 150px;
+		}
+	}
+
+	&.minimised {
+		height: 74px;
+		padding: 8px 0;
+	}
+
+	.tel {
+		text-align: center;
+		padding: 13px 0 0;
+		white-space: nowrap;
+		color: white;
+		font-size: 20px;
 	}
 }
 
@@ -43,17 +74,6 @@ header {
 	background: #fff;
 	padding: 1px 0 0 0;
 	position: relative;
-}
-
-.screenshot {
-	height: auto;
-	display: block;
-	margin: 0 auto;
-	box-shadow: 0 1px 0 #ccc,0 1px 1px #eee;
-	border-radius: 2px;
-	padding: 20px 0 0;
-	background: url($screenshot-buttons) 4px 4px no-repeat #DDD;
-	box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
 }
 
 section {
@@ -64,14 +84,25 @@ section {
 	&.hero {
 		color: #ffffff;
 		// background: $brand-color;
-		// background:  $brand-color url("https://i.imgur.com/GUsRWLg.jpg") no-repeat top center;
-		// background:  $brand-color url("../images/bg-application.jpg") no-repeat top center;
-		background:  $brand-color url("https://www.gk-montagetischler.at/upload/imgproc/1921127_head.jpg") no-repeat top center;
+		// background:  $brand-color url(https://i.imgur.com/GUsRWLg.jpg) no-repeat top center;
+		// background:  $brand-color url(../images/bg-application.jpg) no-repeat top center;
+		background:  $brand-color url(https://www.gk-montagetischler.at/upload/imgproc/1921127_head.jpg) no-repeat top center;
 		background-size: cover;
 		text-align: left;
-		margin-top: -100px;
 		padding-top: 250px;
+		position: relative;
 		
+		&:before {
+			@include ClearFix;
+			content: "";
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			left: 0; top: 0;
+			background-color: #4c4c4c;
+			opacity: .25;
+		}
+
 		.subtext {
 			padding-bottom: 60px;
 		}
@@ -93,14 +124,14 @@ section {
 	}
 
 	&.alternate {
-		background: #eee;
+		background: transparent url(../images/bg-qsection.jpg) repeat top center;
+		text-align: center;
 	}
 
 	&.promo-action {
 
-		height: 230px;
 		padding: 50px 0;
-		// background:  $brand-color url("../images/bg-application.jpg") no-repeat top center;
+		// background:  $brand-color url(../images/bg-application.jpg) no-repeat top center;
 		background:  $brand-color none no-repeat top center;
 		background-size: cover;
 
@@ -109,7 +140,25 @@ section {
 		}
 
 		.tel {
-			padding: 55px 15px;
+			text-align: center;
+			padding: 8% 10%;
+		}
+	}
+	&.comments {
+		background: $brand-color url(../images/bg/bg_comments.jpg) no-repeat top center;
+		background-size: cover;
+	}
+	&.questions {
+		background: transparent url(../images/bg-questions.jpeg) no-repeat top right;
+		background-size: 100%;
+
+
+		.q-form {
+			padding: 6%;
+			background-color: rgba(0, 0, 0, 0.2);
+			letter-spacing: 2px;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+
 		}
 	}
 
@@ -127,6 +176,19 @@ section {
 	
 }
 
+.order-stages {
+	.arrow {
+		position: absolute;
+		top: 50px;
+		right: -20px;
+	}
+}
+.input-form, .form__textarea {
+    width: 100%;
+    padding: 14px;
+	margin: 21px 0;
+	color: gray;
+}
 .btn {
     display: inline-block;
     font-weight: normal;
@@ -142,17 +204,21 @@ section {
     user-select: none;
     background-image: none;
     border: 1px solid transparent;
-    border-radius: 7px;
-}
+	border-radius: 7px;
 
-.outer {
-	padding: 20px;
-	margin: 0 30px;
+	&.calc-btn {
+
+		background:rgb(54, 54, 54) none repeat scroll 0 0;
+		box-shadow: 0 6px 0 0 #1b1b1b;
+	
+		&:hover {
+			background: rgb(80, 80, 80) none repeat scroll 0 0;
+			color: #fff;
+		}
+	}
 }
 
 .button {
-    height: 27px;
-    width: 230px;
     background: #FFA715 none repeat scroll 0 0;
     box-shadow: 0 6px 0 0 #D78600;
     border: 0px solid;
@@ -195,25 +261,15 @@ section {
 	border: 0px solid;
 }
 
-.calc-btn {
-
-	background:rgb(54, 54, 54) none repeat scroll 0 0;
-	box-shadow: 0 6px 0 0 #1b1b1b;
-
-	&:hover {
-		background: rgb(80, 80, 80) none repeat scroll 0 0;
-		color: #fff;
-	}
-}
-
 .left-part {
-    width: 60%;
+    width: 55%;
     padding: 0px;
     margin: 0;
     float: left;
 }
 
-.right-part {
+.main-form {
+    width: 325px;
     padding: 10px;
     margin: 0 auto;
 	-webkit-transition: 0.5s opacity;
@@ -229,6 +285,14 @@ section {
 		margin: 15px 0;
 		padding: 0;
 	}
+	.form-title {
+		color: #262626;
+		font-size: 24px;
+		font-weight: 400;
+		line-height: 30px;
+		margin: 0;
+		padding-bottom: 20px;
+	}
 }
 .bt-form:active {
     margin: 23px 0 0;
@@ -238,6 +302,7 @@ section {
     outline: medium none;
 }
 .tel {
+	white-space: nowrap;
     color: #181716;
     display: inline-block;
     width: 100%;
@@ -246,8 +311,7 @@ section {
     text-decoration: none;
     padding: 4px 0px;
 }
-
-input[type="tel"]  {
+input[type="tel"] {
     width: 85%;
     height: 40px;
     font-size: 1.3rem;
@@ -255,6 +319,17 @@ input[type="tel"]  {
     text-indent: 20px;
     margin: 30px auto 20px;
 }
+.caret {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 2px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
 .halves {
 	display: flex;
 	flex-flow: wrap;
@@ -275,37 +350,35 @@ input[type="tel"]  {
 		}
 	}
 }
-
-.icon_text_block {
-    padding: 22px;
-    display: block;
-    float: left;
-    height: 170px;
-    width: 170px;
-    text-align: center;
+.wwd_block {
+	padding: 30px;
 }
-.text_block {
-
+.wwd_text_block {
+	width: 60%;
+	margin: 8% auto 0;
+}
+.wwd_icon_block {
+	width: 40%;
+	margin: 0 auto;
+}
+.wwd_icon_block, .wwd_text_block {
+    display: block;
+	text-align: center;
 }
 .st_bl_items {
-	padding: 100px 0;
+	padding: 0;
 }
 .st_bl_item  {
     float: left;
+	position: relative;
     width: 23%;
     padding: 1%;
     text-align: center;
 }
-.centered  {
+.centered {
     text-align: center;
-    margin: 0 auto;
+    margin: -75px auto 65px;
     width: 100%;
-}
-
-.righted {
-	float: right;
-    margin: 0 auto;
-    width: 30%;
 }
 
 .aligned-top {
@@ -386,7 +459,11 @@ input[type="tel"]  {
 		border: 0;
 	}
 }
-
+li {
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+}
 .image-list,
 .image-list li {
 	list-style: none;
@@ -402,4 +479,21 @@ input[type="tel"]  {
 	p {
 		color: #fefefe;
 	}
+}
+
+.comment_block {
+	font-size: 18px;
+    font-style: italic;
+    position: relative;
+	background-color: #fefefe;
+	box-shadow: 1px 1px 5px 0 rgba(100,100,100,.2);
+	padding: 20px;
+	border-radius: 2px;
+}
+.sign {
+	font-size: 16px;
+    display: flex;
+    align-items: center;
+    color: #75828a;
+    margin: 25px 20px 0 20px;
 }

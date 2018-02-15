@@ -1,0 +1,50 @@
+<div class="container">
+	<a class="company-name col-xs-6 col-sm-3           col-md-2 col-lg-2" href="{{ site.baseurl }}/">
+		<img src="{{ site.baseurl }}/images/logo.svg" alt="{{ site.description }}">
+	</a> 
+	
+	<nav class="top col-xs-6 col-sm-3 push-sm-6 col-md-7 col-lg-7">
+		<a class="nav-toggle" id="open-nav" href="#">&#9776;</a>
+		<ul class="menu hidden-sm hidden-xs">
+			<!-- {% for link in site.data.navigation.links %}
+				{% assign class = "" %}
+				{% if link.highlight %}
+					{% assign class = class | append: " highlight" %}
+				{% endif %}
+
+				{% if link.link == page.url %}
+					{% assign class = class | append: " active" %}
+				{% endif %}
+				<li><a href="{{ site.baseurl }}{{ link.link }}" class="{{ class }}" {% if link.new_window %}target="_blank"{% endif %}>{{ link.name }}</a></li>
+			{% endfor %} -->
+
+
+			<li class="menu__list"><a href="/#services">Услуги <span class="caret"></span></a>
+				<ul class="menu__drop">
+					<li><a href="/kak-sobrat-mebel/">Сборка мебели</a></li>
+					<li><a href="/kvartirnyiy-pereezd/">Квартирный переезд</a></li>
+					<li><a href="/muzh-na-chas/">Муж на час</a></li>
+				</ul>
+			</li>
+			<li class="menu__list"><a href="" >О нас <span class="caret"></span></a>
+				<ul class="menu__drop">
+					<li><a href="#">Цены</a></li>
+					<li><a href="#">Калькулятор</a></li>
+					<li><a href="#">Команда  </a></li>
+					<li><a href="/contact/">Контакты</a></li>
+				</ul>
+			</li>
+
+			<li><a href="/portfolio/">Портфолио</a></li>
+
+			<li><a href="/blog/" >Блог</a></li>
+					
+		</ul>
+	</nav>
+	
+	<a class="tel hidden-xs col-sm-6 pull-sm-3 col-md-3 col-lg-3" href="tel:+74993907668"><i class="fas fa-phone"></i>
+		<span>+7 499 390 7668</span>
+	</a>
+
+</div>
+
