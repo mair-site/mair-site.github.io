@@ -102,8 +102,8 @@ nav {
 		text-align: center;
 		margin: 0;
 
-		@media #{$mid-point) {
-			
+		@media #{$mid-point} {
+			display: block;
 		}
 	}
 
