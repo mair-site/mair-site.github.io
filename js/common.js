@@ -2,42 +2,41 @@ $(document).ready(function() {
     var $header = $('header');
     var $logo = $('.company-name');
 
-    $(window).scroll ( function() {
-        if ($(this).scrollTop() > 200 ) {
-            $header.addClass("minimised");
+    $(window).scroll( function() {
+        if ($(this).scrollTop() > 100 ) {
+            $header.addClass('minimised');
         } else {
-            $header.removeClass("minimised");
+            $header.removeClass('minimised');
         }
     });
 
-    document.getElementById("open-nav").onclick = function () {
-        document.body.classList.toggle("nav-open");
-        return false;
-    };
+    $('#open-nav').click( function() {
+        $('body').toggleClass('nav-open');
+    });
 
 });
 
 $(document).ready(function(){
     // Activate Carousel
-    $("#myCarousel").carousel({interval: 4000});
+    $('#myCarousel').carousel({interval: 4000});
 
     // Enable Carousel Indicators
-    $(".item1").click(function(){
-        $("#myCarousel").carousel(0);
+    $('.item1').click(function(){
+        $('#myCarousel').carousel(0);
     });
-    $(".item2").click(function(){
-        $("#myCarousel").carousel(1);
+    $('.item2').click(function(){
+        $('#myCarousel').carousel(1);
     });
-    $(".item3").click(function(){
-        $("#myCarousel").carousel(2);
+    $('.item3').click(function(){
+        $('#myCarousel').carousel(2);
     });
 
     // Enable Carousel Controls
-    $(".left").click(function(){
-        $("#myCarousel").carousel("prev");
+    $('.left').click(function(){
+        $('#myCarousel').carousel('prev');
     });
-    $(".right").click(function(){
-        $("#myCarousel").carousel("next");
+    $('.right').click(function(){
+        $('#myCarousel').carousel('next');
     });
 });
 
