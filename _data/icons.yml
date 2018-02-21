@@ -1,16 +1,22 @@
 - title: services
   svgs:
+    - name: Сборка и установка мебели
+      link: /kak-sobrat-mebel/
+      svg: assembly
     - name: Консультации
+      link: /
       svg: consult
-    - name: Упакова, Погрузка, Доставка, Выгрузка
-      svg: delivery
     - name: Замер, оценка, проектировка
+      link: /
       svg: evaluation
     - name: Разборка старой мебели, демонтаж
+      link: /muzh-na-chas/
       svg: disassembly
-    - name: Сборка новой мебели, установка, подключение
-      svg: assembly
+    - name: Доставка, организация переезда
+      link: /kvartirnyiy-pereezd/
+      svg: delivery
     - name: Строительство и ремонт
+      link: /
       svg: construction
 - title: howto
   svgs:

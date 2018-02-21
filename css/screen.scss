@@ -8,6 +8,34 @@ $html-background-color: #222;
 $secondary-brand-color: #FFC461;
 $middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
 
+
+
+
+$main-font: 'Titillium Web', sans-serif;
+$sub-font: 'Montserrat', sans-serif;
+$fancy-font: 'Kaushan Script', cursive;
+$cool-font: 'Lobster',cursive;
+
+$aqur-color:#C7F8F9;
+$aqur-bg:#6AB1C9;
+$grass-color:#D0F9C7;
+$grass-bg:#78C98D;
+$sand-color:#F6F7C5;
+$sand-bg:#E5D272;
+$fire-color:#EDA39A;
+$fire-bg:#ED6A5A;
+$fire-active:#ED412A;
+$witch-bg:#EA1E63;
+$black: #50514f;
+$white: #FFF;
+$grey: #585c65;
+$lightgrey: #eeeeee;
+$yellow: #FFE066;
+
+$padding: 10px;
+$margin: 10px;
+
+
 // Breakpoints
 $tablet: "(min-width: 768px)";
 $mid-point: "(min-width: 970px)"; 

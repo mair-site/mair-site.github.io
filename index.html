@@ -51,12 +51,15 @@ hero_img: /images/hero-img/main_head.jpg
 				{% if column.title == 'services' %}
 					{% for svgs in column.svgs %}
 					<li class="col-lg-4 col-md-6 col-sm-12 wwd_block">
-						<div class="wwd_icon_block">
-							{% include icon-services.html icon=svgs.svg %}
-						</div>
-						<div class="wwd_text_block">
-						{{ svgs.name }}
-						</div>
+						<a class="" href="{{ svgs.link }}">
+							<div class="wwd_icon_block">
+								{% include icon-services.html icon=svgs.svg %}
+							</div>
+							<div class="wwd_text_block">
+							{{ svgs.name }}
+							</div>
+							<div class="add-info" data-title="Подробнее"></div>
+						</a>
 					</li>
 					{% endfor %}
 				{% endif %}
@@ -65,7 +68,7 @@ hero_img: /images/hero-img/main_head.jpg
 	</div>
 </section>
 
-<section class="promo-action">
+<!-- <section class="promo-action">
 	<div class="container">
 		<div class="left-part col-lg-8 col-md-6 col-sm-12">
 			<h2 class="editable">Хотите рассчитать стоимость заранее?</h2>
@@ -81,7 +84,7 @@ hero_img: /images/hero-img/main_head.jpg
 			</a>
 		</div>
 	</div>
-</section>
+</section> -->
 	
 <section class="patterned">
 	<div class="container halves">
@@ -114,12 +117,6 @@ hero_img: /images/hero-img/main_head.jpg
 			<div class="item">
 				<div class="col-md-12"><div class="comment_block">Хочу поблагодарить Александра за его работу! Собрал для нас кухню, детские шкафы стува и Пакс. Все очень чётко, быстро и качественно. Сам Саша приятный в общении, культурный молодой человек. Где надо посоветовал, где ни надо отсоветовал. Все мои пожелания учёл. Большое спасибо, мы остались очень довольны!</div> <div class="sign">Полина Никонорова<br> Пенсионерка</div></div> 
 			</div>
-			<div class="item">
-				<div class="col-md-12"><div class="comment_block">Обратился в МАИР по рекомендации знакомых. Компания не подвела, работы выполнены квалифицированно, точно в срок. Изготавливали шкаф-купе и мебель в прихожую. Спасибо.</div>  <div class="sign">Петров Андрей, <br>консультант</div></div> 
-			</div>					
-			<div class="item">
-				<div class="col-md-12"><div class="comment_block">Я сделала заказ, мастера приехали на замер, позже прислали эскиз. Привезли, смонтировали за два дня (шкаф большой). Не жалею, что обратилась к ним.</div> <div class="sign">Афонасьева Ольга <br> Менеджер</div></div> 
-			</div>
 		</div>
 	</div>
 </section>
@@ -148,7 +145,7 @@ hero_img: /images/hero-img/main_head.jpg
 	<div class="container">
 		<div class="st_bl_wrap">
 			<div class="st_bl_in">
-				<h3 class="editable centered">Как сделать заказ?</h3>				
+				<h3 class="editable centered">Мы в социальных сетях</h3>				
 				<ul class="st_bl_items">
 					{% for column in site.data.icons %}
 						{% if column.title == 'howto' %}
@@ -160,7 +157,7 @@ hero_img: /images/hero-img/main_head.jpg
 									{{ svgs.name }}
 								</div>
 								{% unless svgs.svg == '4step' %}
-									<img class="arrow hidden-sm" src="/images/arrow-r.png">
+									<img class="arrow hidden-sm hidden-xs" src="/images/arrow-r.png">
 								{% endunless %}
 							</li>
 							{% endfor %}
@@ -171,6 +168,7 @@ hero_img: /images/hero-img/main_head.jpg
 		</div>
 	</div>
 </section>
+
 
 <section class="questions patterned">
 	<div class="container">
