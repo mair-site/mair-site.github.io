@@ -1,5 +1,9 @@
 - title: Соцсети
   links:
+    - name: Vkontakte
+      link: https://vk.com/sborkamebelimair
+      social_icon: vk
+      new_window: true
     - name: Facebook
       link:
       social_icon: Facebook

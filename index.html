@@ -125,7 +125,7 @@ hero_img: /images/hero-img/main_head.jpg
 	<div class="container">
 		<div class="left-part col-lg-8 col-md-6 col-sm-12">
 			<h2 class="editable">Нужна оперативная мужская помощь?</h2>
-			<p class="subtext editable">Наш мастер приедет в течении 60 минут!  <br />
+			<p class="subtext editable">Выезд мастера в течении часа!  <br />
 				Срочный вызов по телефону:
 			</p>
 		</div>
@@ -148,7 +148,7 @@ hero_img: /images/hero-img/main_head.jpg
 				<h3 class="editable centered">Мы в социальных сетях</h3>				
 				<ul class="st_bl_items">
 					{% for column in site.data.icons %}
-						{% if column.title == 'howto' %}
+						{% if column.title == 'howto-delivery' %}
 							{% for svgs in column.svgs %}
 							<li class="st_bl_item col-lg-3 col-md-6 col-sm-12 col-xs-12">
 								<div class="st_bl_pic">
@@ -172,11 +172,13 @@ hero_img: /images/hero-img/main_head.jpg
 
 <section class="questions patterned">
 	<div class="container">
-		<div class="q-form col-lg-6 col-md-6">
+	
+		<form class="q-form col-lg-6 col-md-6" method="POST" action="https://formspree.io/info@mair.moscow">
 			<h2 class="editable">Остались вопросы?  </h2>
-			<input class="input-form" type="text" size="10" placeholder="Ваш телефон">
+			<input class="input-form" type="phone" name="phone" placeholder="Ваш телефон">
 			<textarea class="form__textarea" name="message" placeholder="Ваш вопрос"></textarea>
 			<input type="submit" value="Задать">
-		</div>
+		</form>
+
 	</div>
 </section> 

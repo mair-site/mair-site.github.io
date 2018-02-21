@@ -6,7 +6,7 @@
     - name: Консультации
       link: /
       svg: consult
-    - name: Замер, оценка, проектировка
+    - name: Замер, оценка
       link: /
       svg: evaluation
     - name: Разборка старой мебели, демонтаж
@@ -18,7 +18,7 @@
     - name: Строительство и ремонт
       link: /
       svg: construction
-- title: howto
+- title: howto-delivery
   svgs:
     - name: Заявка или звонок
       svg: 1step
