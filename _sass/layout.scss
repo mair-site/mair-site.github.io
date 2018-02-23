@@ -71,7 +71,11 @@ header {
 		white-space: nowrap;
 		color: white;
 		font-size: 16px;
-				
+		
+		span {
+			text-decoration: underline;
+		}
+		
 		i {
 			float: left;
 			line-height: 250%;
@@ -459,6 +463,12 @@ input[type="tel"] {
 		height: 85%;
 		transition: all .5s ease;
 	}
+
+	@media screen and(max-width: 768px) {
+		top: 10px;
+		transition: all .5s ease;
+		right: -7px;
+	}
 }
 
 // integrated 
@@ -600,6 +610,9 @@ input[type="tel"] {
 
 .st_bl_items {
 	padding: 0;
+	li {
+		list-style-type: none;
+	}
 }
 .st_bl_item  {
     float: left;
