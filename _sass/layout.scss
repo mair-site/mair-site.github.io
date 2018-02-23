@@ -72,10 +72,6 @@ header {
 		color: white;
 		font-size: 16px;
 		
-		span {
-			text-decoration: underline;
-		}
-		
 		i {
 			float: left;
 			line-height: 250%;
@@ -336,6 +332,8 @@ section {
 		margin: 0;
 		padding-bottom: 20px;
 	}
+	&.service-page {
+	}
 }
 .bt-form:active {
     margin: 23px 0 0;
@@ -353,6 +351,11 @@ section {
     margin: 0 0 1.4rem;
     text-decoration: none;
 	padding: 4px 0px;
+	
+	span {
+		text-decoration: underline;
+	}
+
 }
 input[type="tel"] {
     width: 85%;
@@ -610,9 +613,7 @@ input[type="tel"] {
 
 .st_bl_items {
 	padding: 0;
-	li {
-		list-style-type: none;
-	}
+	list-style-type: none;
 }
 .st_bl_item  {
     float: left;

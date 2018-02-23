@@ -1,0 +1,31 @@
+{% case page.title %}
+	{% when 'Сборка мебели' %}
+
+		<ul>
+			<li><strong>Новая мебель</strong></li>
+			<li>Корпусная <b>5-7%</b> от стоимости</li>
+			<li>Кухня <b>10-15%</b> от стоимости</li>
+			<li>
+				<a class="list-group-item pdf" href="https://docviewer.yandex.ru/view/1130000026831383/?*=pvs%2BqvqSv2cvaReYd%2B13YQMzU3F7InVybCI6InlhLWRpc2stcHVibGljOi8vU0lYeCtKWXVWTCttRmtyRFNvRURnT2JLSVRaQlRNMjdtd1dCM1UxVVV0Zz0iLCJ0aXRsZSI6Ik1BSVItYWRkLXNlcnZpY2VzLTIwMTgueGxzeCIsInVpZCI6IjExMzAwMDAwMjY4MzEzODMiLCJ5dSI6IjIyMjcwOTM3ODE0Mzg2NzY5OTQiLCJub2lmcmFtZSI6ZmFsc2UsInRzIjoxNTE5NDIxOTkyMDU4fQ%3D%3D" target="_blank" rel="noopener"><strong>Прайс</strong>  на доп-услуги<i class="fa fa-file-excel-o"></i>
+			</a></li>
+		</ul>	
+		
+	{% when 'Квартирный переезд' %}
+
+		<ul>
+			<li><strong>По России</strong></li>
+			<li><a class="list-group-item pdf" href="http://stl.moscow/moscow_region" target="_blank" rel="noopener"><i class="fa fa-file"></i> Скопировать </a></li>
+			<li><strong>По МО</strong></li>
+			<li><a class="list-group-item pdf" href="http://stl.moscow/price_russia" target="_blank" rel="noopener"><i class="fa fa-file"></i> Скопировать </a></li>
+			<li><strong>Услуги грузчика</strong></li>
+			<li><b>400 руб</b>/час</li>
+		</ul>	
+
+	{% when 'Муж на час' %}
+
+		<ul>
+			<li><strong>Почасовая оплата</strong></li>
+			<li><b>450 руб</b>/час</li>
+		</ul>	
+
+{% endcase %}
