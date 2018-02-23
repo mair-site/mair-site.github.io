@@ -71,6 +71,7 @@
 	text-align: right;
 	padding: 0.5em;
 	border: 0;
+	cursor: pointer;
 
 	@media #{$mid-point} {
 		display: none;
@@ -196,3 +197,14 @@ nav {
 	}
 }
 
+.footer-links {
+	.tel {
+		white-space: nowrap;
+		color: white;
+		font-size: 1em;
+		margin: 0;
+	}
+	i {
+		margin: 0px 15px 0px 2px;
+	}
+} 

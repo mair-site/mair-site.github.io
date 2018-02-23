@@ -1,8 +1,12 @@
 - title: Соцсети
   links:
     - name: Vkontakte
-      link: https://vk.com/sborkamebelimair
+      link: https://vk.com/mairmoscow
       social_icon: vk
+      new_window: true
+    - name: Instagram
+      link: https://www.instagram.com/mair_dom/
+      social_icon: Instagram
       new_window: true
     - name: Facebook
       link:
@@ -15,8 +19,4 @@
     - name: Google+
       link:
       social_icon: Google Plus
-      new_window: true
-    - name: LinkedIn
-      link:
-      social_icon: LinkedIn
       new_window: true

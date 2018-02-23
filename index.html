@@ -58,7 +58,9 @@ hero_img: /images/hero-img/main_head.jpg
 							<div class="wwd_text_block">
 							{{ svgs.name }}
 							</div>
-							<div class="add-info" data-title="Подробнее"></div>
+							{% if svgs.svg == 'consult' or svgs.svg == 'evaluation' %}
+								<div class="add-info" data-title="Бесплатно!"></div>
+							{% endif %}
 						</a>
 					</li>
 							
@@ -102,7 +104,7 @@ hero_img: /images/hero-img/main_head.jpg
 		<h3 class="editable centered">Выполненные работы</h3>	
 		<div>
 			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
+				{% for client in site.clients limit: 2 %}
 					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
 				{% endfor %}
 			</ul>
@@ -154,43 +156,41 @@ hero_img: /images/hero-img/main_head.jpg
 
 <section class="order-stages alternate">
 	<div class="container">
-		<div class="st_bl_wrap">
-			<div class="st_bl_in">
-				<h3 class="editable centered">Мы в социальных сетях</h3>				
-				<ul class="st_bl_items">
-					{% for column in site.data.icons %}
-						{% if column.title == 'howto-delivery' %}
-							{% for svgs in column.svgs %}
-							<li class="st_bl_item col-lg-3 col-md-6 col-sm-12 col-xs-12">
-								<div class="st_bl_pic">
-									{% include icon-howto.html icon=svgs.svg %}
-									<br />
-									{{ svgs.name }}
-								</div>
-								{% unless svgs.svg == '4step' %}
-									<img class="arrow hidden-sm hidden-xs" src="/images/arrow-r.png">
-								{% endunless %}
-							</li>
-							{% endfor %}
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
+		<h3 class="editable centered">Мы в социальных сетях</h3>	
+		<p>Выбирайте где нас читать:</p>			
+		<ul class="st_bl_items">
+			{% for column in site.data.footer-soc %}
+				{% for link in column.links %}
+					<li>
+						<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
+							{% if link.social_icon %}
+								{% include icon-social.html icon=link.social_icon %}
+							{% endif %}
+
+							{{ link.name }}
+						</a>
+					</li>
+				{% endfor %}
+			{% endfor %}
+		</ul>
 	</div>
 </section>
 
 
-<section class="questions patterned">
+<section class="end-form">
 	<div class="container">
 	
 		<form class="q-form col-lg-6 col-md-6" method="POST" action="https://formspree.io/info@mair.moscow" >
 			<h2 class="editable">Остались вопросы?  </h2>
+
+			<input type="hidden" name="_language" value="ru" />
+			<input type="hidden" name="_format" value="plain" />
+			<input type="hidden" name="_next" value="/success">
+			<input type="hidden" name="_subject" value="Вопрос с главной страницы сайта mair.moscow">
+			
 			<input class="input-form" type="phone" name="phone" placeholder="Ваш телефон">
 			<textarea class="form__textarea" name="message" placeholder="Ваш вопрос"></textarea>
 			<input type="submit" value="Задать">
-			<input type="hidden" name="_next" value="/success">
-			<input type="hidden" name="_subject" value="Вопрос с главной страницы сайта mair.moscow">
 		</form>
 
 	</div>

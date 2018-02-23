@@ -1,7 +1,7 @@
 - title: services
   svgs:
     - name: Сборка и установка мебели
-      link: /kak-sobrat-mebel/
+      link: /sborka-mebeli/
       svg: assembly
     - name: Консультации
       link: /
