@@ -18,7 +18,30 @@ permalink: /kvartirnyiy-pereezd/
             <li>согласовать погрузочно - разгрузочные и транспортные работы,</li>
             <li>самостоятельно упаковать личные вещи.</li>
         </ul>
+	</div>
+</section>
 
+<section class="promo-action">
+    <div class="container">
+        <div class="left-part col-lg-8 col-md-6 col-sm-12">
+            <h2 class="editable">Предоставьте остальное нам!</h2>
+            <p class="subtext editable">Оставьте свой телефон или позвоните по номеру:
+            </p>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="button btn calc-btn col-sm-12">
+                <a href="#test-popup" class="open-popup-link">Заказать переезд</a>
+            </div>
+            <a href="tel:+74993907668" class="tel col-sm-12">
+                    <i class="fas fa-phone"></i>
+                    <span>+7 499 390 7668</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="casual">
+        <div class="container">
         <h3>Перевозка габаритного имущества</h2>
             <p>Компания подберет вид грузового транспорта. Сборка и разборка мебели требует навыков. Перемещение мебели вверх-вниз лестницы выполняется с такелажными ремнями. Грузчики фирмы разберут, вынесут мебель, поднимут, сделают сборку. Учтено стоимостью услуг. Упаковка мебели нужна, исключает сколы, царапины. Упаковывание делает организация. Упаковка бытовой техники, мебели производится оборачиванием пленочно-пузырчатой пленкой. Скотчем скрепляются открывающиеся створки.</p>
         <h2> Упаковка вещей</h2>
@@ -75,26 +98,20 @@ permalink: /kvartirnyiy-pereezd/
 	</div>
 </section>
 
-<section class="service-order">
+<section class="end-form service-order">
     <div class="container">
-        <h3 class="editable centered row" id="services">Заявка на переезд</h3>
-        <div class="left-part">
-            <form id="form" class="q-form" name="form" action="#" method="post">
-                <div class="m-inputs">
-                    <div class="input-item">
-                        <input type="text" placeholder="Ваше имя" onfocus="" required="" name="name" id="name" class="" autocomplete="off">
-                    </div>
-                    <div class="input-item">
-                        <input type="text" placeholder="Ваш телефон" onfocus="" onblur="" required="" name="email" id="email" class="" autocomplete="off">
-                    </div>
-                    <div class="input-item">
-                        <textarea  placeholder="Ваше сообщение" name="user_message" cols="40" rows="3" class="" aria-invalid="false"></textarea>
-                    </div>
-                    <div class="button btn calc-btn">
-                        <a href="/contact/">Отправить</a>
-                    </div>
-                </div>
-            </form>
-        </div>
+        <form class="q-form col-lg-6 col-md-6" method="POST" action="https://formspree.io/info@mair.moscow" >
+            <h2 class="editable">Заказать переезд</h2>
+
+            <input type="hidden" name="_next" value="/success">
+            <input type="hidden" name="_language" value="ru" />
+            <input type="hidden" name="_format" value="plain" />
+            <input type="hidden" name="_subject" value="Вопрос со страницы КВАРТИРНЫЙ ПЕРЕЕЗД">
+            
+            <input class="input-form" type="name" name="name" placeholder="Ваше имя" required>
+			<input class="input-form" type="phone" name="phone" placeholder="Ваш телефон" required>
+            <textarea class="form__textarea" name="message" placeholder="Ваше сообщение" required></textarea>
+            <input type="submit" value="Отправить">
+        </form>
     </div>
 </section>

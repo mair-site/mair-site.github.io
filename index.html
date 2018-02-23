@@ -10,29 +10,37 @@ hero_img: /images/hero-img/main_head.jpg
 			<p class="subtext editable">Выезд мастера для <strong>сборки мебели</strong>, а так же изготовление, доставка и ремонт</p>
 		</div>
 
-		<div class="main-form col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-3">
-			<ul>
-				<li>
-					<div class="form-title">Вызов мастера: <br>
-					</div>
-					<!-- <a href="tel:+74993907668" class="tel">
-						<i class="fas fa-phone"></i>
-						<span>+7 499 390 7668</span>
-					</a> -->
-				</li>
-				<li>
-					<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
-				</li>
-			</ul>
-			<ul>
-				<li>
-					<input type="tel" maxlength="20" placeholder="+7(___)___-__-__" name="phone" required="">
-				</li>
-				<li>
-					<a class="btn button make-call" href="/contact/">Перезвоните мне</a>
-				</li> 
-			</ul>
-		</div> 
+		<div class="main-form col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-3 ">
+				<ul>
+					<li>
+						<div class="form-title">Вызов мастера <br>
+						</div>
+						<!-- <a href="tel:+74993907668" class="tel">
+							<i class="fas fa-phone"></i>
+							<span>+7 499 390 7668</span>
+						</a> -->
+					</li>
+					<li>
+						<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
+				
+							<input type="hidden" name="_language" value="ru" />
+							<input type="hidden" name="_format" value="plain" />
+							<input type="hidden" name="_next" value="/success">
+							<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
+							
+							<input class="input-form" type="phone" name="phone" maxlength="20" placeholder="+7(___)___-__-__" required>
+							<input type="submit" value="Перезвоните мне" class="btn button make-call">
+						</form>
+					</li> 
+				</ul>
+			</div> 
+
+		
 
 	</div>
 </section>
@@ -51,7 +59,11 @@ hero_img: /images/hero-img/main_head.jpg
 				{% if column.title == 'services' %}
 					{% for svgs in column.svgs %}
 					<li class="col-lg-4 col-md-6 col-sm-12 wwd_block">
+					{% if svgs.svg == 'consult' or svgs.svg == 'evaluation' %}
+						<a href="#test-popup" class="open-popup-link">
+					{% else %}
 						<a class="" href="{{ svgs.link }}">
+					{% endif %}
 							<div class="wwd_icon_block">
 								{% include icon-services.html icon=svgs.svg %}
 							</div>
@@ -122,13 +134,13 @@ hero_img: /images/hero-img/main_head.jpg
 		<h3 class="editable centered">Отзывы о нас</h3>
 		<div class="owl-carousel owl-theme">					
 			<div class="item">
-				<div class="col-md-12"><div class="comment_block">Я сделала заказ, мастера приехали на замер, позже прислали эскиз. Привезли, смонтировали за два дня (шкаф большой). Не жалею, что обратилась к ним.</div> <div class="sign">Афонасьева Ольга <br> Менеджер</div></div> 
+				<div class="col-md-12"><div class="comment_block">“Я сделала заказ, мастера приехали на замер, позже прислали эскиз. Привезли, смонтировали за два дня (шкаф большой). Не жалею, что обратилась к ним.”</div> <div class="sign">Афонасьева Ольга <br> Менеджер</div></div> 
 			</div>
 			<div class="item">
-				<div class="col-md-12"><div class="comment_block">Обратился в МАИР по рекомендации знакомых. Компания не подвела, работы выполнены квалифицированно, точно в срок. Собрали шкаф-купе и мебель в прихожую. Спасибо.</div>  <div class="sign">Петров Андрей, <br>Водитель</div></div> 
+				<div class="col-md-12"><div class="comment_block">“Обратился в МАИР по рекомендации знакомых. Компания не подвела, работы выполнены квалифицированно, точно в срок. Собрали шкаф-купе и мебель в прихожую. Спасибо.”</div>  <div class="sign">Петров Андрей, <br>Водитель</div></div> 
 			</div>					
 			<div class="item">
-				<div class="col-md-12"><div class="comment_block">Хочу поблагодарить Александра за его работу! Собрал для нас кухню, детские шкафы стува и Пакс. Все очень чётко, быстро и качественно. Сам Саша приятный в общении, культурный молодой человек. Где надо посоветовал, где ни надо отсоветовал. Все мои пожелания учёл. Большое спасибо, мы остались очень довольны!</div> <div class="sign">Полина Никонорова<br> Пенсионерка</div></div> 
+				<div class="col-md-12"><div class="comment_block">“Хочу поблагодарить Александра за его работу! Собрал для нас кухню, детские шкафы стува и Пакс. Все очень чётко, быстро и качественно. Сам Саша приятный в общении, культурный молодой человек. Где надо посоветовал, где ни надо отсоветовал. Все мои пожелания учёл. Большое спасибо, мы остались очень довольны!”</div> <div class="sign">Полина Никонорова<br> Пенсионерка</div></div> 
 			</div>
 		</div>
 	</div>
@@ -144,7 +156,7 @@ hero_img: /images/hero-img/main_head.jpg
 		</div>
 		<div class="col-lg-4 col-md-6 col-sm-12">
 			<div class="button btn calc-btn col-sm-12">
-				<a href="/contact/">Вызвать мастера</a>
+				<a href="#test-popup" class="open-popup-link">Вызвать мастера</a>
 			</div>
 			<a href="tel:+74993907668" class="tel col-sm-12">
 					<i class="fas fa-phone"></i>

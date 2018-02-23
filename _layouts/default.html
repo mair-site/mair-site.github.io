@@ -6,13 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="generator" content="Jekyll v{{ jekyll.version }}">
 		
+		<!-- Styles  + bootstrap + fontawesome -->
 		<link href="{{ site.baseurl }}/css/screen.css" rel="stylesheet">
-		<link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
 		<link href="{{ site.baseurl }}/css/bootstrap.css" rel="stylesheet">
+		<link href="https://use.fontawesome.com/releases/v5.0.3/css/all.css" rel="stylesheet">
 		
+		<!-- Owl Carousel core CSS files -->
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/owl.carousel.css" />
 		<link rel="stylesheet" href="{{ site.baseurl }}/css/owl.theme.default.css" />
+		<!-- Magnific Popup core CSS file -->
+		<link rel="stylesheet" href="{{ site.baseurl }}/css/magnific-popup.css">
 
+		<!-- favicons -->
 		<link rel="apple-touch-icon" href="{{ site.baseurl }}/apple-touch-icon.png">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/touch-icon.png" sizes="192x192">
 		<link rel="icon" type="image/png" href="{{ site.baseurl }}/images/favicon.png">
@@ -20,7 +25,6 @@
 		{% seo %}
 		{% feed_meta %}
 		
-		<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
 		
 	</head>
 
@@ -103,7 +107,16 @@
 			</div>
 		</footer>
 
+		<!-- jQuery core file -->
+		<script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+
+		<!-- Owl Carousel JS files -->
 		<script src="{{ site.baseurl }}/js/owl.carousel.js"></script>
+		
+		<!-- Magnific Popup core JS file -->
+		<script src="{{ site.baseurl }}/js/jquery.magnific-popup.js"></script>
+
+		<!-- Klimov JS -->
 		<script src="{{ site.baseurl }}/js/common.js"></script>
 		
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
@@ -118,6 +131,32 @@
 		</script>
 		{% endif %}
 
-		
+		<!-- Невидимая форма -->
+		<div id="test-popup" class="main-form col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 white-popup  mfp-hide">
+				<ul>
+					<li>
+						<div class="form-title">Вызов мастера <br>
+						</div>
+					</li>
+					<li>
+						<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
+				
+							<input type="hidden" name="_language" value="ru" />
+							<input type="hidden" name="_format" value="plain" />
+							<input type="hidden" name="_next" value="/success">
+							<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
+							
+							<input class="input-form" type="phone" name="phone" maxlength="20" placeholder="+7(___)___-__-__" required>
+							<input type="submit" value="Перезвоните мне" class="btn button make-call">
+						</form>
+					</li> 
+				</ul>
+			</div> 
+
 	</body>
 </html>

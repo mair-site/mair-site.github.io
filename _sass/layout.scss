@@ -96,7 +96,7 @@ section {
 		// background: $brand-color;
 		// background:  $brand-color url(https://i.imgur.com/GUsRWLg.jpg) no-repeat top center;
 		// background:  $brand-color url(../images/bg-application.jpg) no-repeat top center;
-		background:  $brand-color url(https://www.gk-montagetischler.at/upload/imgproc/1921127_head.jpg) no-repeat top center;
+		background:  $white url(../images/hero-img/main_head.jpg) no-repeat top center;
 		background-size: cover;
 		text-align: left;
 		padding-top: 250px;
@@ -135,6 +135,10 @@ section {
 	&.casual {
 		background: transparent url(../images/bg-qsection.jpg) repeat top center;
 		text-align: left;
+
+		li {
+			list-style-type: square;
+		}
 	}
 	&.alternate {
 		background: transparent url(../images/bg-qsection.jpg) repeat top center;
@@ -145,11 +149,6 @@ section {
 		ul {
 			margin: 0;
 			padding: 0;
-		}
-		li {
-			list-style: none;
-			list-style-type: none;
-
 		}
 	}
 	&.promo-action {
@@ -221,9 +220,6 @@ section {
 		position: absolute;
 		top: 50px;
 		right: -20px;
-	}
-	.li {
-		list-style-type: none;
 	}
 }
 .input-form, .form__textarea {
@@ -702,6 +698,7 @@ input[type="tel"] {
 li {
 	margin-bottom: 0;
 	padding-left: 0;
+	list-style-type: none;
 	
 	.instrument {
 		background: transparent url(../images/li-instrument.png) no-repeat center;
@@ -769,4 +766,12 @@ li {
 			margin: 0 0 10px;
 		}
 	}
+}
+.white-popup {
+	position: relative;
+	background: #FFF;
+	padding: 20px;
+	width: auto;
+	max-width: 500px;
+	margin: 20px auto;
 }

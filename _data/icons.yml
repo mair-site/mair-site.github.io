@@ -28,3 +28,7 @@
       svg: 3step
     - name: Монтаж и установка
       svg: 4step
+- title: additional
+  svgs:
+    - name: Успешно!
+      svg: success
