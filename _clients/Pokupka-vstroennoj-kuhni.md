@@ -2,7 +2,7 @@
 name: Покупка встроенной кухни
 title: Покупка встроенной кухни
 subtitle: Рационально расположенная и удобная кухня – мечта хозяйки. Планируете такую и для себя?
-image_path: https://scontent-arn2-1.cdninstagram.com/vp/46c7d35b2d6231d870ed03463afaf5e5/5B22DD15/t51.2885-15/s640x640/sh0.08/e35/26392060_733104480227436_2722134943466520576_n.jpg
+image_path: /images/clients/vstroennaya-kyxnya.jpg
 hero_img: /images/hero-img/example1-kitchen-assembly.jpeg
 ---
 
