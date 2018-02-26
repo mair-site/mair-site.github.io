@@ -81,3 +81,8 @@ table {
 table.striped tr:nth-of-type(even), table table tr.stripe, table table tr.striped {
     background-color: lightyellow;
 }
+#prices {
+	@media screen and(max-width: 1000px){
+		display: none;
+	}
+}
