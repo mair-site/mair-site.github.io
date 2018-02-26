@@ -1,0 +1,58 @@
+.pg-demo .example {
+	margin-bottom: 2em;
+}
+
+.pg-demo .js-toggle-panel {
+	/*border: 1px dotted #ccc;*/
+	background: #eee;
+	/*padding: 1em;*/
+}
+
+.pg-demo [data-toggle-panel-id="1"] {
+	background: #ffc;
+}
+
+.pg-demo .js-toggle:after {
+	display: inline-block;
+	margin: 0 0.5em;
+	padding: 0 0.3em;
+	width: 0.5em;
+	font-weight: bold;
+	background: gray;
+	color: white;
+}
+.pg-demo .js-toggle--is-collapsed:after {
+	content: '+';
+}
+
+.pg-demo .js-toggle--is-expanded:after {
+	content: '-';
+}
+
+.pg-demo code {
+	font-family: 'lucida console', monospace;
+	color: darkgray;
+}
+
+.pg-demo .u-f-list {
+	list-style: none;
+}
+
+
+.js-toggle {
+	cursor: pointer;
+}
+
+.js-toggle-panel {
+	box-sizing: border-box;
+	overflow: hidden;
+	transition: max-height 0.3s;
+}
+
+.js-toggle-panel--is-collapsed {
+	max-height: 0;
+}
+
+.js-toggle-panel--is-expanded {
+	max-height: 10em;
+}
