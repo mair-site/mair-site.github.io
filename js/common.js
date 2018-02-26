@@ -62,3 +62,5 @@ $('.owl-carousel').owlCarousel({
         }
     }
 })
+
+$( "#tabs" ).tabs();
