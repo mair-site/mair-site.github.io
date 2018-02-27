@@ -8,11 +8,12 @@ hero_img: /images/hero-img/main_head.jpg
 		<div class="left-part col-xs-12 col-sm-12 col-md-5">
 			<h2 class="editable">Сборка мебели по Москве и МО</h2>
 			<p class="subtext editable">
-				<br> Грузоперевозки, <strong>офисные и квартирные переезды</strong>,
-				<br> услуга <strong>муж на час</strong>
+				Грузоперевозки, офисные и квартирные переезды,
+				<br> услуга муж на час
+				<br>
+				<br><a href="/price/">Цены &rarr;</a>
 			</p>
 		</div>
-
 		<div class="main-form col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-3 ">
 			<ul>
 				<li>
@@ -63,7 +64,7 @@ hero_img: /images/hero-img/main_head.jpg
 					{% for svgs in column.svgs %}
 					<li class="col-lg-4 col-md-6 col-sm-12 wwd_block">
 					{% if svgs.svg == 'consult' or svgs.svg == 'evaluation' %}
-						<a href="#test-popup" class="open-popup-link">
+						<a href="#mainform-popup" class="open-popup-link">
 					{% else %}
 						<a class="" href="{{ svgs.link }}">
 					{% endif %}
@@ -161,7 +162,7 @@ hero_img: /images/hero-img/main_head.jpg
 			</p>
 		</div>
 		<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
-			<a href="#test-popup" class="open-popup-link">
+			<a href="#mainform-popup" class="open-popup-link">
 				<div class="button btn calc-btn col-sm-12 col-xs-12">Вызвать мастера</div>
 			</a>
 			<a href="tel:+74993907668" class="tel col-sm-12 col-xs-12">
@@ -175,7 +176,6 @@ hero_img: /images/hero-img/main_head.jpg
 <section class="order-stages alternate">
 	<div class="container">
 		<h3 class="editable centered">Мы в социальных сетях</h3>	
-		<p>Выбирайте где нас читать:</p>			
 		<ul class="st_bl_items">
 			{% for column in site.data.footer-soc %}
 				{% for link in column.links %}

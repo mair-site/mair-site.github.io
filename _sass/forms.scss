@@ -4,7 +4,6 @@ input[type=submit] {
 	padding: 20px 30px;
 	border-radius: 7px;
 	transition: 0.2s ease-in-out;
-	border: 1px solid $brand-color;
 	background: $brand-color;
 	cursor: pointer;
 }
@@ -74,4 +73,64 @@ input[type=password]:focus,
 textarea:focus {
 	box-shadow: 0 0 5px rgba(81, 203, 238, 1);
 	border: 1px solid rgba(81, 203, 238, 1);
+}
+
+.input-form, .form__textarea {
+    width: 100%;
+    padding: 14px;
+	margin: 21px 0;
+	color: gray;
+}
+.input-form {
+	color: gray;
+	position: relative;
+	display: block;
+	
+	&:before {
+		position: absolute;
+		display: inline-block;
+		content: " ";
+		width: 23px;
+		height: 16px;
+		right: 10px;
+		top: 13px;
+		background: url(../images/telephone.svg) left top no-repeat;
+	}
+}
+.btn {
+    display: inline-block;
+    font-weight: normal;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+	border-radius: 7px;
+
+	&.calc-btn {
+
+		background:rgb(54, 54, 54) none repeat scroll 0 0;
+		box-shadow: 0 6px 0 0 #1b1b1b;
+	
+		&:hover {
+			background: rgb(80, 80, 80) none repeat scroll 0 0;
+			color: #fff;
+		}
+	}
+}
+
+input[type="tel"] {
+    width: 85%;
+    height: 40px;
+    font-size: 1.3rem;
+    color: #505050;
+    text-indent: 20px;
+    margin: 30px auto 20px;
 }

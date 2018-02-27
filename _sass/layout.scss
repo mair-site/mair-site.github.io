@@ -66,9 +66,9 @@ header {
 	}
 
 	.tel {
-		float: left;
+		float: rigth;
 		text-align: center;
-		padding: 5px 0 0;
+		padding: 5px 0 0 15px;
 		white-space: nowrap;
 		color: white;
 		font-size: 16px;
@@ -112,6 +112,13 @@ section {
 
 		.subtext {
 			padding-bottom: 60px;
+			
+			a {
+				font-weight: 600;
+				border-bottom: 1px dashed;
+				font-size: 20px;
+				color: white;
+			}
 		}
 
 		h2, p {
@@ -224,56 +231,7 @@ section {
 		right: -20px;
 	}
 }
-.input-form, .form__textarea {
-    width: 100%;
-    padding: 14px;
-	margin: 21px 0;
-	color: gray;
-}
-.input-form {
-	color: gray;
-	position: relative;
-	display: block;
-	
-	&:before {
-		position: absolute;
-		display: inline-block;
-		content: " ";
-		width: 23px;
-		height: 16px;
-		right: 10px;
-		top: 13px;
-		background: url(../images/telephone.svg) left top no-repeat;
-	}
-}
-.btn {
-    display: inline-block;
-    font-weight: normal;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-image: none;
-    border: 1px solid transparent;
-	border-radius: 7px;
 
-	&.calc-btn {
-
-		background:rgb(54, 54, 54) none repeat scroll 0 0;
-		box-shadow: 0 6px 0 0 #1b1b1b;
-	
-		&:hover {
-			background: rgb(80, 80, 80) none repeat scroll 0 0;
-			color: #fff;
-		}
-	}
-}
 
 .button {
     background: #FFA715 none repeat scroll 0 0;
@@ -408,14 +366,6 @@ section {
 	}
 
 }
-input[type="tel"] {
-    width: 85%;
-    height: 40px;
-    font-size: 1.3rem;
-    color: #505050;
-    text-indent: 20px;
-    margin: 30px auto 20px;
-}
 .caret {
     display: inline-block;
     width: 0;
@@ -481,6 +431,7 @@ input[type="tel"] {
     float: left;
     margin: 0 auto;
     line-height: 60px;
+    font-size: 24px;
 }
 .wwd_text_block {
 	width: 60%;

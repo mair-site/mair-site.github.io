@@ -1,0 +1,69 @@
+<div class="container">
+		<div class="footer-columns">
+			<ul class="footer-links">
+				
+			{% for column in site.data.footer-nav %}
+				<li>
+					<h2>{{ column.title }}</h2>
+				</li>
+				{% for link in column.links %}
+					<li>
+						<a {% if link.new_window %}target="_blank"{% endif %} href="{% include relative-src.html src=link.link %}" {% if link.social_icon %}class="{{ link.social_icon | slugify }}-icon"{% endif %}>
+							{{ link.name }}
+						</a>
+					</li>
+				{% endfor %}
+			{% endfor %}
+
+			</ul>
+			<ul class="footer-links">
+
+				<li>
+					<h2>Контакты {{ site.data.company.title }}</h2>
+				</li>
+				<li>
+					<a class="tel" href="tel:+74993907668">
+						<i class="fa fa-phone"></i><span>+7 499 390 7668</span>
+					</a>
+				</li>
+				<li>
+					<a class="tel" href="tel:+79258348588">
+						<i class="fa fa-phone"></i><span>+7 925 834 8588</span>
+					</a>
+				</li>
+				<li>
+					<i class="fa fa-envelope"></i><a href="mailto:info@mair.moscow">info@mair.moscow</a>
+				</li>
+				<li><a href="{{ site.baseurl }}/feed.xml">{% include icon-social.html icon="RSS" %} Подписка на RSS</a></li>
+
+			</ul>
+			<ul class="footer-links">
+				<li>
+					<h2>График работы</h2>
+				</li>
+				<li>
+					Пн-Пт. С 9-00 до 21-00
+				</li>
+				<li>
+					Сб-Вс. С 10-00 до 20-00 
+				</li>
+				<li>
+					Заявки принимаем круглосуточно.
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="legal-line">
+		<p class="container">
+			&copy; {{ site.time | date: '%Y' }} {{ site.data.company.title }}
+			&bull;
+			Сайт спроектирован <a href="http://klimovproject.ru/" target="_blank">KlimovProject</a>
+
+			<div class="metrika mini-element">
+				<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=47361769&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/47361769/3_0_FFA020FF_FF8000FF_1_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47361769 = new Ya.Metrika2({ id:47361769, clickmap:true, trackLinks:true, accurateTrackBounce:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47361769" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+			</div>
+		</p>
+		
+
+	</div>
