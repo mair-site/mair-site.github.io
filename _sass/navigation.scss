@@ -38,6 +38,10 @@
 
 		.menu__list {
 			height: auto;
+
+			@media #{$mid-point} {
+				display: none;
+			}
 		}
 		
 		.menu__list:hover .menu__drop {

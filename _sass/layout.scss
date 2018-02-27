@@ -283,39 +283,20 @@ section {
     float: left;
 }
 
-.price-form {
-    margin: -70px auto 0;
-	text-align: right;
+.price-table {
+	letter-spacing: 1px;
 
-	letter-spacing: 2px;
-
-	.form-text {
-		padding: 30px;
-		background-color: transparent;
-
-		ul {
-			color: rgb(79, 57, 47);
-			padding: 0;
-			margin: 0;
-			li {
-				span {
-					word-wrap: break-word;
-					text-shadow: 0 1px 0 rgba(1, 1, 1, 0.35);
-					line-height: 1.7em;
-					background-color: #e18421;
-					font-size: 1.3em;
-				}
-			}
-		}
-		strong {
-			font-size: 2.3em;
-			text-shadow: 0 1px 0 rgba(1, 1, 1, 0.35);
-			font-weight: lighter;
-			color: white;
-		}
-		b {
-			color: black;
-		}
+	span {
+		word-wrap: break-word;
+		text-shadow: 0 1px 0 rgba(1, 1, 1, 0.35);
+		line-height: 1.5em;
+		font-size: 1.5em;
+	}
+	strong {
+		font-size: 1.7em;
+		text-shadow: 0 1px 0 rgba(1, 1, 1, 0.35);
+		font-weight: lighter;
+		background-color: #ffa715;
 	}
 }
 .main-form {
@@ -757,23 +738,39 @@ li {
 }
 .mini-element {
 	margin: 5px;
+	float: right;
+	width: fit-content;
+	text-align: center;
+	font-size: 16px;
+	height: 36px;
+	line-height: 34px;
+	padding: 0 20px;
+
 	.metrika {
 		float: right;
 	}
 	&.price-btn {
-		float: right;
-		width: fit-content;
-		text-align: center;
 		background: #f2f2f2;    
-		color: #555555;
 		border: 1px solid #f2f2f2;
-		font-size: 16px;
-		height: 36px;
-		line-height: 34px;
-		padding: 0 20px;
+
+		a {	
+			color: #555555;
+		}
 		
 		&:hover {
 			background-color: white;
+		}
+	}
+	&.form-btn {
+		background: #f6b83f;
+		border: 1px solid #f6b83f;
+
+		a {	
+			color: #644405;	
+		}
+
+		&:hover {
+			background-color: #f8ca70;
 		}
 	}
 }
