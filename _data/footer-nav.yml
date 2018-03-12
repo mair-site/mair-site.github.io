@@ -4,9 +4,7 @@
       link: /
     - name: Портфолио
       link: /portfolio/
-    - name: Блог
+    - name: Цены
+      link: /price/
+    - name: Наш блог
       link: /blog/
-    - name: О нас
-      link: /about/
-    - name: Контакты
-      link: /contact/
