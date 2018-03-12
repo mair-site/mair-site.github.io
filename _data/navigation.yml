@@ -15,10 +15,6 @@ links:
   submenu: 
     - text: Работы
       url: /portfolio/
-    - text: Команда
-      url: /mastera/
     - text: Наш блог
       url: /blog/
-    - text: Партнёрство
-      url: /partnership/
 

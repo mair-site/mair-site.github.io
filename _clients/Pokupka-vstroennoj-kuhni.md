@@ -1,9 +1,9 @@
 ---
-name: Покупка встроенной кухни
-title: Покупка встроенной кухни
-subtitle: Рационально расположенная и удобная кухня – мечта хозяйки. Планируете такую и для себя?
+name: Встроенная кухня
+title: Сборка встроенной кухни
+subtitle: Рационально расположенная и удобная кухня – <br> мечта хозяйки. Планируете такую и для себя?
 image_path: /images/clients/vstroennaya-kyxnya-square.jpg
-hero_img: /images/hero-img/example1-kitchen-assembly.jpeg
+hero_img: /images/hero-img/clients_hero2.jpg
 ---
 
 ## Как мечта хозяйки претворялась в жизнь

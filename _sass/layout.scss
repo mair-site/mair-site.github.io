@@ -68,7 +68,7 @@ header {
 	.tel {
 		float: rigth;
 		text-align: center;
-		padding: 0 0 0 17px;
+		padding: 0 0 0 25px;
 		white-space: nowrap;
 		color: white;
 		font-size: 20px;
@@ -159,7 +159,7 @@ section {
 
 		ul {
 			margin: 0;
-			padding: 0;
+			padding: 0 0 0 25px;
 		}
 		li {
 			list-style-type: square;
@@ -267,13 +267,13 @@ section {
 		color: #fff;
 	}
 
-	&:active {
-		background: rgb(194, 87, 0);
-		box-shadow: 0 3px 0 0 #D78600;
-		color: #fff;
-		transform: translateY(3px);
-		outline: medium none;
-	}
+	// &:active {
+	// 	background: rgb(194, 87, 0);
+	// 	box-shadow: 0 3px 0 0 #D78600;
+	// 	color: #fff;
+	// 	transform: translateY(3px);
+	// 	outline: medium none;
+	// }
 }
 
 .emergency-call {
@@ -312,7 +312,7 @@ section {
 		font-size: 1.7em;
 		text-shadow: 0 1px 0 rgba(1, 1, 1, 0.35);
 		font-weight: lighter;
-		background-color: #ffa715;
+		// background-color: #ffa715;
 	}
 }
 .main-form {
@@ -735,6 +735,15 @@ li {
 	p {
 		color: #fefefe;
 	}
+	.description {
+		width: 60%;
+		text-align: center;
+		margin: 0 auto;
+	}
+}
+
+.price-s {
+	padding: 150px 0 0;
 }
 
 .comment_block {
@@ -849,4 +858,13 @@ li {
 	text-align: left;
 	min-height: 23px;
 	padding-top: 2px;
+}
+
+blockquote {
+    background-color: aliceblue;
+	display: block;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	padding-left: 40px;
+	padding-right: 40px;
 }
