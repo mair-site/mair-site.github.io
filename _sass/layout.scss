@@ -68,10 +68,10 @@ header {
 	.tel {
 		float: rigth;
 		text-align: center;
-		padding: 5px 0 0 15px;
+		padding: 0 0 0 17px;
 		white-space: nowrap;
 		color: white;
-		font-size: 16px;
+		font-size: 20px;
 		width: 80%;
 
 	}
@@ -89,11 +89,8 @@ section {
 	margin-top: -2px;
 
 	&.hero {
+		box-shadow: inset 0px -6px 3px -3px rgba(50, 50, 50, 0.15);
 		color: #ffffff;
-		// background: $brand-color;
-		// background:  $brand-color url(https://i.imgur.com/GUsRWLg.jpg) no-repeat top center;
-		// background:  $brand-color url(../images/bg-application.jpg) no-repeat top center;
-		background:  $white url(../images/hero-img/main_head.jpg) no-repeat top center;
 		background-size: cover;
 		text-align: left;
 		padding-top: 170px;
@@ -136,30 +133,59 @@ section {
 			color: #fff;
 		}
 	}
+	&.page {
+		margin-bottom: 0;
+		padding-bottom: 80px;
+		text-align: center;
+		background: url(../images/bg/bg-coins-1.jpg) no-repeat center center;
+		background-size: cover;
+
+		h2 {
+			font-weight: 300;
+			font-size: 2.2em;
+			margin: 0 0 30px 0;
+		}
+		.subtext {
+			font-size: 1.38em;
+			color: #666;
+			margin-bottom: 20px;
+			font-weight: 300;
+			line-height: 1.4em;
+		}
+	}
 	&.casual {
 		background: transparent url(../images/bg-qsection.jpg) repeat top center;
 		text-align: left;
 
-		li {
-			list-style-type: square;
-		}
-		table {
-			background-color: white;
-		}
-	}
-	&.infographic {
-		background-color: white;
-	}
-	&.alternate {
-		background: transparent url(../images/bg-qsection.jpg) repeat top center;
-		text-align: center;
-	}
-
-	&.what-we-do {
 		ul {
 			margin: 0;
 			padding: 0;
 		}
+		li {
+			list-style-type: square;
+		}
+		.social_links {
+			li {
+				list-style-type: none;
+				float:left;
+				width: 33%;
+				a {
+					display:block;
+					height:100px;
+					text-align:center;
+					background-position: 0 0;
+				}
+			}
+		}
+		table {
+			background-color: white;
+		}
+		&.what-we-do {
+			text-align: center;
+		}
+	}
+	&.infographic {
+		background-color: white;
 	}
 	&.promo-action {
 
@@ -197,19 +223,9 @@ section {
 			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 		}
 	}
-	&.service-order {
-		background: transparent url(../images/bg-questions.jpeg) no-repeat top right;
-		background-size: 100%;
-
-		.q-form {
-			padding: 6%;
-			background-color: rgba(0, 0, 0, 0.2);
-			letter-spacing: 2px;
-			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-
-		}
+	&.prices {
+		background-color: #d3d3d3;
 	}
-
 }
 
 .sale-block {
@@ -247,7 +263,7 @@ section {
 	outline: medium none;
 
 	&:hover {
-		background: rgb(255, 179, 57) none repeat scroll 0 0;
+		background: $brand-color none repeat scroll 0 0;
 		color: #fff;
 	}
 
@@ -305,7 +321,7 @@ section {
     margin: 0 auto;
 	z-index: 1;
 	background-color: white;
-	box-shadow: 0 0.4rem 2.8rem rgba(24, 23, 22, 0.5);
+	box-shadow: 0 0.4rem 2.8rem rgba(40, 40, 40, 0.4);
 	border-radius: 15px;
 	overflow: hidden;
 	text-align: center;
@@ -372,7 +388,7 @@ section {
 		}
 
 		> div + div {
-			padding-left: 20px;
+			padding-left: 60px;
 			margin: 0;
 		}
 	}
@@ -416,6 +432,7 @@ section {
 }
 .wwd_text_block {
 	width: 60%;
+	height: 70px;
 	margin: 8% auto 0;
 }
 .wwd_icon_block {
@@ -721,20 +738,30 @@ li {
 }
 
 .comment_block {
-	font-size: 18px;
+    background: white;
+    line-height: 1.5em;
+    font-weight: 500;
+    font-size: .7em;
     font-style: italic;
     position: relative;
-    background-color: lightgray;
-	box-shadow: 1px 1px 5px 0 rgba(100,100,100,.2);
-	padding: 20px;
-	border-radius: 2px;
+    box-shadow: 0px 10px 23px 0 rgba(100, 100, 100, 0.2);
+    padding: 40px;
+    border-radius: 5px;
+    margin: 0 0 20px;
 }
 .sign {
 	font-size: 16px;
     display: flex;
     align-items: center;
     color: #75828a;
-    margin: 25px 20px 0 20px;
+	margin: 25px 0 0;
+	
+}
+#sign-avatar {
+    margin: 0;
+    margin-right: 7%;
+    height: 100px;
+    width: auto;
 }
 .mini-element {
 	margin: 5px;
@@ -776,7 +803,7 @@ li {
 }
 .owl-carousel {
 	.item {
-		padding: 0 8%;
+		padding: 15px 30px;
 		box-sizing: border-box;
 		width: 100%;
 		position: relative;
@@ -790,6 +817,10 @@ li {
 			text-align: left;
 			border: 1px solid #FFA715;
 			margin: 0 0 10px;
+
+			&.no-border {
+				border: 0px solid;
+			}
 		}
 	}
 }

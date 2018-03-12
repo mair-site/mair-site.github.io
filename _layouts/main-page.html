@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<section class="hero" style="background-image: url({% include relative-src.html src=page.hero_img %})">
+		<div class="container sale-page" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<div class="left-part col-xs-12 col-sm-12 col-md-5">
+			<h2 class="editable">Сборка мебели по Москве и МО</h2>
+			<p class="subtext editable">
+				Грузоперевозки, офисные и квартирные переезды,
+				<br> услуга муж на час
+				<br><a href="/price/">Цены &rarr;</a>
+			</p>
+		</div>
+		<div class="main-form col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-3 ">
+			<ul>
+				<li>
+					<div class="form-title">Вызов мастера <br>
+					</div>
+					<!-- <a href="tel:+74993907668" class="tel">
+						<i class="fas fa-phone"></i>
+						<span>+7 499 390 7668</span>
+					</a> -->
+				</li>
+				<li>
+					<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
+			
+						<input type="hidden" name="_language" value="ru" />
+						<input type="hidden" name="_format" value="plain" />
+						<input type="hidden" name="_next" value="/success">
+						<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
+						
+						<input class="input-form" type="phone" name="phone" maxlength="20" placeholder="+7(___)___-__-__" required>
+						<input type="submit" value="Перезвоните мне" class="btn button make-call">
+					</form>
+				</li> 
+			</ul>
+			<div class="form-text-after-button noteFormBottom">
+				<div>Мы свяжемся с Вами в течении 10 мин</div>
+			</div>
+		</div> 
+	</div>
+</section>
+{{ content }}

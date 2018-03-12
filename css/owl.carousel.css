@@ -42,12 +42,15 @@
     position: relative;
     min-height: 1px;
     float: left;
-    -webkit-backface-visibility: hidden;
+    -webkit-backface-visibility: visible;
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
     display: block;
-    width: 100%; }
+    width: 60%;
+    text-align: center;
+    margin: 0 auto;
+}
   .owl-carousel .owl-nav.disabled,
   .owl-carousel .owl-dots.disabled {
     display: none; }

@@ -1,0 +1,17 @@
+- service: assambly
+  table_data:
+    - name: Жилая мебель (включая детскую)
+      price: 8-12 %
+    - name: Офисная мебель (любой сложности)
+      price: 8-10 %
+    - name: Заказные шкафы-купе
+      price: 10-15 %
+    - name: Мягкая мебель
+      price: 3-5 %
+    - name: Кухни (любой сложности)
+      price: 10-15 %
+      link: https://docviewer.yandex.ru/view/247652000/?*=%2FM%2BHLsqOSRTqoKf9Kjz0glDTE0V7InVybCI6InlhLWRpc2stcHVibGljOi8vU0lYeCtKWXVWTCttRmtyRFNvRURnT2JLSVRaQlRNMjdtd1dCM1UxVVV0Zz0iLCJ0aXRsZSI6ItCm0LXQvdGLINC90LAg0LTQvtC%2F0L7Qu9C90LjRgtC10LvRjNC90YvQtSDRg9GB0LvRg9Cz0Lgg0YHQsdC%2B0YDQutC4IDIwMTgueGxzeCIsInVpZCI6IjI0NzY1MjAwMCIsInl1IjoiMjIyNzA5Mzc4MTQzODY3Njk5NCIsIm5vaWZyYW1lIjpmYWxzZSwidHMiOjE1MTk4MTM0ODkxNzd9
+    - name: Торговое оборудование
+      price: от 8 %
+    - name: Кресла, стулья
+      price: 8-12 %

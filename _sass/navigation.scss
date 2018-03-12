@@ -19,35 +19,33 @@
 		text-align: center;
 		display: block;
 
-		a {
-			display: block;
-		}
-
 		@media #{$mid-point} {
 			border: 0;
 			padding: 0px 20px;
-
-			a {
-				display: inline;
-			}
 		}
 		
+		a {
+			line-height: 55px;
+		}
+
+		li {
+			display: inline-table;
+			width: 100%;
+		}
+
 		.menu {
 			display: block;
 		}
 
 		.menu__list {
-			height: auto;
 
 			@media #{$mid-point} {
-				display: none;
 			}
 		}
 		
 		.menu__list:hover .menu__drop {
 
 			position: relative;
-			display: block;
 			opacity: 1;
 			background-color: #383838;
 			text-align: center;
@@ -57,12 +55,12 @@
 			width: 100%;
 			padding: 0;
 			margin: 0;
+			display: block;
 		
 		}
 
 		.menu__drop {
 			position: relative;
-			display: block;
 			opacity: 1;
 			top: 0;
 			display: none;
@@ -108,19 +106,23 @@ nav {
 	}
 
 	li {
-		display: block;
-	}
-
-	.menu__list {
+		width: auto;
+		display: none;
+		height: 2.7em;
 		position: relative;
-		height: 2.5em;
+		text-align: center;
+		
+		@media #{$mid-point} {
+			display: inline-block;
+		}
+
 	}
 
 	.menu__list:hover .menu__drop {
 		border-left: 0px solid black;
 		position: absolute;
 		left: -50%;
-		top: 50px;
+		top: 52px;
 		width: 190%;
 		padding: 5px;
 		opacity: 1;
@@ -153,34 +155,30 @@ nav {
 		right: -9999px;
 		padding: 4px 20px;
 
-		li {
-			display: inline-block;
-		}
 	}
 
 	a {
+		display: block;
 		margin: 0 3px;
 		padding: 20px 10px;
 		color: rgba(255, 255, 255, 0.8);
 		transition: 0.2s ease-in-out;
-		display: none;
 		font-size: 16px;
 		letter-spacing: 1px;
+		cursor: pointer;
 
 		@media #{$mid-point} {
-			//border-bottom: 2px solid rgba(255, 255, 255, 0);
-			display: block;
 			padding: 13px;
+		}
+		
+		&.active {
+			border-bottom: 5px solid $brand-color;
 		}
 
 	}
 
 	a:hover {
 		color: #fff;
-
-		@media #{$mid-point} {
-			display: block;
-		}
 	}
 
 	@media #{$mid-point} {
@@ -199,3 +197,23 @@ nav {
 		color: #fff;
 	}
 }
+#updown {
+	left: -50%;
+	bottom: 7%;
+	height: 50px;
+	width: 50px;
+	background: $brand-color url(../images/arrow-dark.png) no-repeat center center;
+	border-radius: 50px;
+	position: fixed;
+	transition: all .2s ease-in-out;
+	-webkit-transition: all .2s ease-in-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	cursor: pointer;
+}
+
+#updown.up {
+	left: 5%;
+}
+  

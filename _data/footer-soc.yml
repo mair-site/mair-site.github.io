@@ -1,22 +1,14 @@
 - title: Соцсети
   links:
-    - name: Vkontakte
+    - name: Vk
       link: https://vk.com/mairmoscow
-      social_icon: vk
+      social_icon: Vk
       new_window: true
     - name: Instagram
       link: https://www.instagram.com/mair_dom/
       social_icon: Instagram
       new_window: true
     - name: Facebook
-      link:
+      link: 
       social_icon: Facebook
-      new_window: true
-    - name: Twitter
-      link:
-      social_icon: Twitter
-      new_window: true
-    - name: Google+
-      link:
-      social_icon: Google Plus
       new_window: true

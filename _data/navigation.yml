@@ -1,9 +1,24 @@
 links:
-- name: Портфолио
-  link: /portfolio/
-- name: Блог
-  link: /blog/
-- name: О нас
-  link: /about/
-- name: Контакты
-  link: /contact/
+- text: Услуги
+  url: null
+  submenu: 
+    - text: Сборка мебели
+      url: /sborka-mebeli/
+    - text: Квартирный переезд
+      url: /kvartirnyiy-pereezd/
+    - text: Муж на час
+      url: /muzh-na-chas/
+- text: Цены
+  url: /price/
+- text: О нас
+  url: null
+  submenu: 
+    - text: Работы
+      url: /portfolio/
+    - text: Команда
+      url: /mastera/
+    - text: Наш блог
+      url: /blog/
+    - text: Партнёрство
+      url: /partnership/
+
