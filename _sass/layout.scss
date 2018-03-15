@@ -1,15 +1,3 @@
-@mixin ClearFix {
-	&:after {
-		clear: both;
-		display: block;
-		content: " ";
-	}
-	&:before {
-		clear: both;
-		display: block;
-		content: " ";
-	}
-}
 .container,
 .text-container {
 	margin: 0 auto;
@@ -100,7 +88,6 @@ section {
 		position: relative;
 		
 		&:before {
-			@include ClearFix;
 			content: "";
 			width: 100%;
 			height: 100%;
@@ -187,7 +174,8 @@ section {
 			text-align: center;
 		}
 	}
-	&.infographic {
+	&.success {
+		padding: 0 0 150px;
 		background-color: white;
 	}
 	&.promo-action {
@@ -209,6 +197,9 @@ section {
 	&.comments {
 		background: $brand-color url(../images/bg/bg_comments.jpg) no-repeat top center;
 		background-size: cover;
+		ul {
+			padding: 0;
+		}
 	}
 	&.end-form {
 		background: transparent url(../images/bg-questions.jpeg) no-repeat top right;
@@ -280,10 +271,10 @@ section {
 }
 
 .emergency-call {
-
-	background: rgb(255, 87, 21) none repeat scroll 0 0;
-	box-shadow: 0 6px 0 0 rgb(161, 46, 0);
-
+    background: #ff5715 none repeat scroll 0 0;
+    box-shadow: 0 6px 0 0 #a12e00;
+	width: 100%;
+	
 	&:hover {
 		background: rgb(248, 93, 65) none repeat scroll 0 0;
 		color: #fff;
@@ -308,7 +299,7 @@ section {
 	span {
 		word-wrap: break-word;
 		text-shadow: 0 1px 0 rgba(1, 1, 1, 0.35);
-		line-height: 1.5em;
+		line-height: 2.0em;
 		font-size: 1.5em;
 	}
 	strong {
@@ -431,7 +422,7 @@ section {
 
 	@media #{$mid-point} {
 		> div {
-			flex: 1;
+			flex: 1 0;
 		}
 
 		> div + div {
@@ -807,18 +798,12 @@ background:$white;
     width: auto;
 }
 .mini-element {
-	margin: 5px;
-	float: right;
-	width: fit-content;
-	text-align: center;
-	font-size: 16px;
-	height: 36px;
-	line-height: 34px;
-	padding: 0 20px;
+    width: fit-content;
+    text-align: center;
+    font-size: 16px;
+    line-height: 37px;
+    padding: 5px 22px;
 
-	.metrika {
-		float: right;
-	}
 	&.price-btn {
 		background: #f2f2f2;    
 		border: 1px solid #f2f2f2;
@@ -833,16 +818,21 @@ background:$white;
 	}
 	&.form-btn {
 		background: #f6b83f;
-		border: 1px solid #f6b83f;
 
 		a {	
-			color: #644405;	
+			color: white;	
 		}
 
 		&:hover {
-			background-color: #f8ca70;
+			background-color: $brand-color;
 		}
 	}
+}
+.metrika {
+	float: right;
+}
+.clearfix {
+	clear: both;
 }
 .owl-carousel {
 	.item {
@@ -901,4 +891,35 @@ blockquote {
 	padding-bottom: 1em;
 	padding-left: 40px;
 	padding-right: 40px;
+}
+.contact-info {
+	margin-top: 20px;
+	p {
+		display: inline-block;
+		margin-right: 20px;
+	}
+	i {
+		height: 30px;
+		width: 30px;
+		display: inline-block;
+		background: $brand-color;
+		text-align: center;
+		line-height: 30px;
+		margin-right: 10px;
+		color: #fff;
+		font-size: 21px;
+	}
+	a:hover {
+		text-decoration: underline;
+	}
+}
+.stuff {
+    padding: 30px 20px;
+    box-sizing: border-box;
+    flex: 0 1 300px;
+    background: #fff;
+    margin: -70px 0 0;
+    border-radius: 3px;
+	box-shadow: 0 10px 100px 0 rgba(0,0,0,.1);
+	text-align: center;
 }
