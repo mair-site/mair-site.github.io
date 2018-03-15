@@ -169,6 +169,7 @@ section {
 		}
 		table {
 			background-color: white;
+
 		}
 		&.what-we-do {
 			text-align: center;
@@ -295,6 +296,7 @@ section {
 
 .price-table {
 	letter-spacing: 1px;
+	border-collapse: collapse;
 
 	span {
 		word-wrap: break-word;
@@ -308,6 +310,14 @@ section {
 		font-weight: lighter;
 		// background-color: #ffa715;
 	}
+	
+	tr:first-child {
+		border-top: 5px solid $brand-color;
+	  }
+	th+th,
+	td+td {
+		padding-left: 1em;  /* отступы между столбцами без вертикальных рамок */
+	  }
 }
 .main-form {
     width: 325px;

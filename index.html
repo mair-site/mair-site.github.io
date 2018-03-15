@@ -152,18 +152,12 @@ hero_img: /images/hero-img/main_head.jpg
 				</ul>
 			</div>  
 			<div id="content-tab2">
-				<div class="owl-carousel owl-theme">			
-					<div class="item">
-						<img class="no-border" src="/images/partners/lovelyhouse.jpg">
-					</div>
-					<div class="item">
-						<img class="no-border" src="/images/partners/shatura.png">
-					</div> 
-					<div class="item">
-						<img class="no-border" src="/images/partners/vardek.jpg">
-					</div>
-					<div class="item">
-						<img class="no-border" src="/images/partners/mks.png">
+				<div class="owl-carousel owl-theme">
+					{% for image in site.data.partners %}			
+						<div class="item">
+							<img class="no-border" src="/images/partners/{{ image.name }}.jpg">
+						</div>
+					{% endfor %}
 					</div> 
 				</div>
 			</div>   

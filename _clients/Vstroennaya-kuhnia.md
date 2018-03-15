@@ -1,7 +1,7 @@
 ---
 name: Встроенная кухня
 title: Сборка встроенной кухни
-subtitle: Рационально расположенная и удобная кухня – <br> мечта хозяйки. Планируете такую и для себя?
+subtitle: Рационально расположенная и удобная кухня – <br> мечта хозяйки
 image_path: /images/clients/vstroennaya-kyxnya-square.jpg
 hero_img: /images/hero-img/clients_hero2.jpg
 ---
