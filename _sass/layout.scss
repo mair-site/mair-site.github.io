@@ -47,7 +47,8 @@ header {
 		padding-top: 5px;
 
 		img {
-			width: 150px;
+			max-width: 150px;
+			max-height: 50px;
 		}
 	}
 
@@ -108,19 +109,14 @@ section {
 			}
 		}
 
-		h2, p {
-			letter-spacing: 2px;
-			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
-		}
-
-		h2 {
-			font-size: 3.3rem;
-			font-weight: bold;
-		}
-
 		p {
 			font-size: 1.8rem;
 			color: #fff;
+			letter-spacing: 2px;
+			text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+		}
+		h1 {
+			font-size: 3.3rem;
 		}
 	}
 	&.page {
@@ -143,8 +139,20 @@ section {
 			line-height: 1.4em;
 		}
 	}
+	&.patterned {
+		background: #222 url($pattern);
+	
+		p, strong, h3, span {
+			color: #fefefe;
+		}
+		.description {
+			width: 60%;
+			text-align: center;
+			margin: 0 auto;
+		}
+	}
 	&.casual {
-		background: transparent url(../images/bg-qsection.jpg) repeat top center;
+		background: transparent url(../images/bg-casual.jpg) repeat top center;
 		text-align: left;
 
 		ul {
@@ -182,7 +190,7 @@ section {
 	&.promo-action {
 
 		padding: 50px 0;
-		// background:  $brand-color url(../images/bg-application.jpg) no-repeat top center;
+		// 	background:  $brand-color url("http://xn----7sbabacivx0aciiugib3aru0u.xn--p1ai/tpl/img/orange_bg_400.jpg") no-repeat top center;
 		background:  $brand-color none no-repeat top center;
 		background-size: cover;
 
@@ -200,6 +208,16 @@ section {
 		background-size: cover;
 		ul {
 			padding: 0;
+		}
+	}
+	&.order-stages {
+		li {
+			text-align: center;
+		}
+		.arrow {
+			position: absolute;
+			top: 50px;
+			right: -20px;
 		}
 	}
 	&.end-form {
@@ -222,27 +240,6 @@ section {
 		background-color: #d3d3d3;
 	}
 }
-
-.sale-block {
-
-	display: relative;
-
-	li {
-		list-style : none;
-		list-style-image : none;
-		list-style-position : outside;
-	}
-	
-}
-
-.order-stages {
-	.arrow {
-		position: absolute;
-		top: 50px;
-		right: -20px;
-	}
-}
-
 
 .button {
     background: #FFA715 none repeat scroll 0 0;
@@ -424,10 +421,10 @@ section {
 .halves {
 	display: flex;
 	flex-flow: wrap;
-	align-items: center;
+	// align-items: center;
 
 	> div {
-		flex: 1 0 100%;
+		flex: 1 0 auto;
 	}
 
 	@media #{$mid-point} {
@@ -561,7 +558,7 @@ section {
 		height:auto;
 		width:50%;
 		padding:$padding;
-	h1,p {
+	h1, p {
 		font-weight:200;
 		color:$black;
 	}
@@ -763,19 +760,6 @@ background:$white;
 	text-align: center;
 }
 
-.patterned {
-	background: #222 url($pattern);
-
-	&,
-	p {
-		color: #fefefe;
-	}
-	.description {
-		width: 60%;
-		text-align: center;
-		margin: 0 auto;
-	}
-}
 
 .price-s {
 	padding: 150px 0 0;
@@ -926,10 +910,6 @@ blockquote {
 .stuff {
     padding: 30px 20px;
     box-sizing: border-box;
-    flex: 0 1 300px;
-    background: #fff;
-    margin: -70px 0 0;
-    border-radius: 3px;
-	box-shadow: 0 10px 100px 0 rgba(0,0,0,.1);
+    margin: 0 0 0;
 	text-align: center;
 }
