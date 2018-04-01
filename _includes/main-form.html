@@ -1,0 +1,47 @@
+
+{% if include.template == 'invisible' %}
+	<div id="mainform-popup" class="main-form col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 white-popup  mfp-hide"> 
+{% endif %}
+{% if include.template == 'visible' %}
+	<div class="main-form col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-3 "> 
+{% endif %} 
+	<ul>
+		{% if include.template == 'visible' %}
+		<li>
+			<div class="form-title">Вызов мастера <br>
+			</div>
+		</li>
+		{% endif %} 
+		{% if include.template == 'invisible' %}
+		<li>
+			<div class="form-title">Обратный звонок<br>
+			</div>
+		</li>
+		{% endif %} 
+	{% if include.template == 'visible' %}
+		<li>
+			<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
+		</li>
+	{% endif %} 
+	{% if include.template == 'invisible' %}
+		<li>
+			<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
+	
+				<input type="hidden" name="_language" value="ru" />
+				<input type="hidden" name="_format" value="plain" />
+				<input type="hidden" name="_next" value="/success">
+				<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
+				
+				<input class="input-form" id="input-phone-add" type="phone" name="phone" maxlength="20" placeholder="+7 (___) ___-____" required>
+
+				<input id="licenses_popup" name="licenses_popup" checked="checked" required="" value="Y" aria-required="true" type="checkbox">
+				<label for="licenses_popup">
+						Я согласен на <a href="/licenses_detail" target="_blank">обработку персональных данных</a>						
+				</label>	
+							
+				<input type="submit" value="Перезвоните мне" class="btn button make-call">
+			</form>
+		</li> 
+	{% endif %}
+	</ul>
+</div> 

@@ -57,6 +57,15 @@
 
 		<!-- Klimov JS -->
 		<script src="{{ site.baseurl }}/js/common.js"></script>
+		<!-- maskedinput -->
+		<script src="{{ site.baseurl }}/js/jquery.maskedinput.js"></script>
+
+		<script type="text/javascript">
+			jQuery(function($){
+			$("#input-phone").mask("+7 (999) 999-9999");
+			$("#input-phone-add").mask("+7 (999) 999-9999");
+			});
+		 </script>
 		
 		{% if jekyll.environment == 'production' and site.google_analytics_key != '' %}
 		<script>
@@ -71,31 +80,8 @@
 		{% endif %}
 
 		<!-- Невидимая форма -->
-		<div id="mainform-popup" class="main-form col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4 white-popup  mfp-hide">
-				<ul>
-					<li>
-						<div class="form-title">Вызов мастера <br>
-						</div>
-					</li>
-					<li>
-						<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
-					</li>
-				</ul>
-				<ul>
-					<li>
-						<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
-				
-							<input type="hidden" name="_language" value="ru" />
-							<input type="hidden" name="_format" value="plain" />
-							<input type="hidden" name="_next" value="/success">
-							<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
-							
-							<input class="input-form" type="phone" name="phone" maxlength="20" placeholder="+7(___)___-__-__" required>
-							<input type="submit" value="Перезвоните мне" class="btn button make-call">
-						</form>
-					</li> 
-				</ul>
-			</div> 
+
+		{% include main-form.html template='invisible' %}
 
 	</body>
 </html>

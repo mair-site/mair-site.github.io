@@ -2,7 +2,7 @@
 layout: default
 ---
 <section class="hero" style="background-image: url({% include relative-src.html src=page.hero_img %})">
-		<div class="container sale-page" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+	<div class="container sale-page" {% if page.full_width %}style="max-width: 100%"{% endif %}>
 		<div class="left-part col-xs-12 col-sm-12 col-md-5">
 			<h1 class="editable">Сборка мебели по Москве и МО</h1>
 			<p class="subtext editable">
@@ -34,7 +34,7 @@ layout: default
 						<input type="hidden" name="_next" value="/success">
 						<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
 						<div class="ui horizontal divider">или</div>
-						<input class="input-form" type="phone" name="phone" maxlength="20" placeholder="+7(___)___-__-__" required>
+						<input class="input-form" id="input-phone" type="phone" name="phone" maxlength="20" placeholder="+7 (___) ___-____" required> 
 						<input type="submit" value="Перезвоните мне" class="btn button make-call">
 					</form>
 				</li> 

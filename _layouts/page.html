@@ -3,7 +3,7 @@ layout: default
 ---
 <section class="hero"  style="background-image: url({% include relative-src.html src=page.hero_img %})">
 	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
-		<div class="col-md-6">
+		<div class="col-md-5">
 		{% if page.heading %}
 			<h1>{{ page.heading }}</h1>
 		{% elsif page.title %}
@@ -13,6 +13,9 @@ layout: default
 			<p class="subtext">{{ page.subtitle }}</p>
 		{% endif %}
 		</div>
+		
+			{% include hero-content.html %}
+		
 	</div>
 </section>
 {{ content }}

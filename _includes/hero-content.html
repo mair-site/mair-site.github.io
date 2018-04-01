@@ -1,54 +1,42 @@
 {% case page.title %}
 	{% when 'Сборка мебели' %}
 
-	<div class="form-text">
-		<ul>
-			<li><span></span></li>
-			<li><span><b>Скидка</b> <strong> — 5%</strong> при заказе с сайта</span></li>
-			<li>
-				<div class="mini-element form-btn">
-				<a href="#mainform-popup" class="open-popup-link">Оформить заявку</a>
-				</div>
-			</li>
-		</ul>	
-	</div>
+		{% include main-form.html template='visible' %}
+
+		<!-- 
+			<b>Скидка</b>  — 5% при заказе с сайта
+		 -->
 
 	{% when 'Квартирный переезд' %}
 
-	<div class="form-text">
-		<ul>
-			<li></li>
-			<li><span><strong>По России</strong> </span>  </li>
-			<li><span><strong>По Москве и МО</strong></li>			
-			<li>	
-				<div class="mini-element price-btn">
-					<i class="fa fa-file"></i>
-					<a href="#tabs-1" role="presentation" tabindex="-1" class="ui-tabs-anchor pdf" id="ui-id-1">Смотреть таблицу цен</a>
-				</div>
-			</li>
-		</ul>	
-	</div>
+		{% include main-form.html template='visible' %}
+
+		<!-- 
+			По России
+			По Москве и МО
+	
+			<a>Смотреть таблицу цен</a>
+		 -->
 
 	{% when 'Муж на час' %}
 
-	<div>
-		<ul>
-			<li class="mini-element price-btn"><span>Почасовая оплата — <b> 450 руб/ч</b>*</span></li>
-			<li></li>
-			<li class="mini-element price-btn"><span>*Минимальный заказ - <b>4 часа</b></span></li>
-		</ul>	
-	</div>
+		{% include main-form.html template='visible' %}
+
+		<!-- 
+			Почасовая оплата — <b> 450 руб/ч</b>*
+			*Минимальный заказ - <b>4 часа</b> 
+		-->
 
 	{% when 'Цены' %}
 	
-	<div>
-		{% include icon-additional.html icon='price' %}
-	</div>
+		<div>
+			{% include icon-additional.html icon='price' %}
+		</div>
 
 	{% when 'Сообщение успешно отправлено' %}
 	
-	<div>
-		{% include icon-additional.html icon='success' %}
-	</div>
+		<div>
+			{% include icon-additional.html icon='success' %}
+		</div>
 
 {% endcase %}
