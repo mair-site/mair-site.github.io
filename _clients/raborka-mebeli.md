@@ -6,7 +6,7 @@ image_path: /images/clients/work-muj-na-chas-service.jpg
 hero_img: /images/hero-img/clients_hero2.jpg
 ---
 
-## Сборка и разборка мебели
+# Сборка и разборка мебели
 
 ![Муж на час](/images/clients/muj-na-chas-service.jpg)
 
