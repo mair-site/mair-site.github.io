@@ -1,5 +1,7 @@
 ---
 title: Как отрегулировать положение двери?
+categories:
+  - tips
 author_staff_member: Роман
 show_comments: true
 ---

@@ -1,5 +1,5 @@
 ---
-layout: alt-page
+layout: page
 title: Блог
 heading: Полезные статьи
 subtitle: На заметку
@@ -8,7 +8,6 @@ hero_img: /images/hero-img/bed.jpg
 
 <section class="">
 	<div class="text-container">
-		<h2 class="centered">{{ page.heading }}</h2>
 		<ul class="blog-posts">
 			{% include list-posts.html posts=paginator.posts %}
 		</ul>

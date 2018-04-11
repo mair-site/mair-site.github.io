@@ -1,7 +1,10 @@
 ---
 layout: default
 ---
-<section class="page-header patterned">
-
+<section class="hero" style="background-image: url({% include relative-src.html src=page.hero_img %})"></section>
+	<div class="container" {% if page.full_width %}style="max-width: 100%"{% endif %}>
+		<div class="col-md-6">
+		</div>
+	</div>
 </section>
 {{ content }}

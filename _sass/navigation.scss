@@ -150,8 +150,10 @@ nav {
 
 	@media #{$mid-point} {
 		text-align: right;
+		position: absolute;
+		top: 0;
 		right: -9999px;
-		padding: 7px 20px;
+		padding: 4px 20px;
 
 	}
 
