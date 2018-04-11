@@ -2,12 +2,13 @@
 title: Наши мастера
 heading: Cборщики, грузчики и просто помошники
 subtitle: Наши мастера обладают необходимыми навыками и опытом
-permalink: /mastera/
+permalink: /our-team/
+layout: alt-page
 ---
 
-<section class=" patterned">
+<section class="patterned">
 	<div class="container">
-	    <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong>Manage Staff members</a></p>
+	    <h2 class="editor-link" style="text-align: center;">Наша команда</h2>
 		<ul class="image-grid">
 			{% for member in site.staff_members %}
 				<li>{% include staff-member.html member=member %}</li>
