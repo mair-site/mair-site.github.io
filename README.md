@@ -1,6 +1,7 @@
-# Urban
+# Klimov-project
 
-Web Agency themed business template for Jekyll. Browse through a [live demo](https://teal-worm.cloudvent.net/).
+Website to a company of furniture Assembly services, developed in [KlimovProjectStudio](http://klimovproject.ru/)
+The design and structure based on business template for Jekyll. Browse through a [live demo](https://teal-worm.cloudvent.net/).
 Increase the web presence of your agency with this configurable theme.
 
 ![Urban template screenshot](images/_screenshot.png)
@@ -9,6 +10,18 @@ Urban was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jeky
 Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
 
 Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
+
+
+Виды услуг:
+
+- сборка и разборка мебели; 
+- сборка корпусной и мягкой мебели; 
+- сборка мебельных и кухонных гарнитуров; 
+- сборка прихожих, шкафов, шкафов-купе; 
+- сборка офисной мебели; 
+- реставрация мебели;
+- другие виды работ.
+
 
 ## Features
 
