@@ -11,8 +11,7 @@ Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
 
 Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
 
-
-Виды услуг:
+## Виды услуг
 
 - сборка и разборка мебели; 
 - сборка корпусной и мягкой мебели; 

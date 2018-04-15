@@ -45,7 +45,7 @@ defaults:
       path: ""
       type: "posts"
     values:
-      layout: "alt-page"
+      layout: "post"
       _options:
         content:
           width: 960
