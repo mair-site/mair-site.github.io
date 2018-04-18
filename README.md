@@ -1,26 +1,16 @@
-# Klimov-project
+# project MAIR
 
-Website to a company of furniture Assembly services, developed in [KlimovProjectStudio](http://klimovproject.ru/)
+Website to a company of furniture Assembly services, developed by [KlimovProjectStudio](http://klimovproject.ru/)
 The design and structure based on business template for Jekyll. Browse through a [live demo](https://teal-worm.cloudvent.net/).
-Increase the web presence of your agency with this configurable theme.
+Most concise, effective website. The main goal is to easily provide access to important information such as prices, quality of work, portfolio. Further becomes the landing page for the advertizing companies connected with promotion in social networks.
 
-![Urban template screenshot](images/_screenshot.png)
+![Mair site screenshot](images/shot.png)
 
-Urban was made by [CloudCannon](http://cloudcannon.com/), the Cloud CMS for Jekyll.
-Find more templates and themes at [Jekyll Tips](http://jekyll.tips/templates/).
+## Services
 
-Learn Jekyll with step-by-step tutorials and videos at [Jekyll Tips](http://jekyll.tips/).
-
-## Виды услуг
-
-- сборка и разборка мебели; 
-- сборка корпусной и мягкой мебели; 
-- сборка мебельных и кухонных гарнитуров; 
-- сборка прихожих, шкафов, шкафов-купе; 
-- сборка офисной мебели; 
-- реставрация мебели;
-- другие виды работ.
-
+* Assembly and disassembly of furniture
+* Apartment moving
+* "Husband for an Hour"
 
 ## Features
 
