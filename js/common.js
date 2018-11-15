@@ -14,101 +14,61 @@ $(document).ready(function() {
         $('body').toggleClass('nav-open');
     });
 
-});
-
-$('.open-popup-link').magnificPopup({
-    type:'inline',
-    midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
-});
-
-$(document).ready(function(){
-    // Activate Carousel
-    $('#myCarousel').carousel({interval: 4000});
-
-    // Enable Carousel Indicators
-    $('.item1').click(function(){
-        $('#myCarousel').carousel(0);
+    $('.open-popup-link').magnificPopup({
+        type:'inline',
+        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
     });
-    $('.item2').click(function(){
-        $('#myCarousel').carousel(1);
-    });
-    $('.item3').click(function(){
-        $('#myCarousel').carousel(2);
-    });
-
-    // Enable Carousel Controls
-    $('.left').click(function(){
-        $('#myCarousel').carousel('prev');
-    });
-    $('.right').click(function(){
-        $('#myCarousel').carousel('next');
-    });
-});
-
-$('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:0,
-    nav:false,
-    navText: "",
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        1000:{
-            items:2
+    
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:0,
+        nav:false,
+        navText: "",
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:2
+            }
         }
-    }
-})
+    })
 
-$( "#tabs" ).tabs();
+// Вкладки через jquery-ui.min.js для страницы /price/
 
+    $( "#tabs" ).tabs();
 
-var updownElem = document.getElementById('updown');
+});
 
-var pageYLabel = 0;
+// Вариант JavaScript
 
-updownElem.onclick = function() {
-  var pageY = window.pageYOffset || document.documentElement.scrollTop;
+var t;
+var top         = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
+var updownElem  = document.getElementById('updown');
 
-  switch (this.className) {
-    case 'up':
-      pageYLabel = pageY;
-      window.scrollTo(0, 0);
-      this.className = 'down';
-      break;
-
-    case 'down':
-      window.scrollTo(0, pageYLabel);
-      this.className = 'up';
-  }
-
+if (top > 1) {
+    updownElem.className = 'up';
 }
 
-window.onscroll = function() {
-  var pageY = window.pageYOffset || document.documentElement.scrollTop;
-  var innerHeight = 2*document.documentElement.clientHeight;
-
-  switch (updownElem.className) {
-    case '':
-      if (pageY > innerHeight) {
-        updownElem.className = 'up';
-      }
-      break;
-
-    case 'up':
-      if (pageY < innerHeight) {
-        updownElem.className = '';
-      }
-      break;
-
-    case 'down':
-      if (pageY > innerHeight) {
-        updownElem.className = 'up';
-      }
-      break;
-
-  }
+function up() {
+  if(top > 0) {
+    window.scrollBy(0,-100);
+    t = setTimeout('up()',20);
+  } else clearTimeout(t);
+  return false;
 }
+
+// Вариант jQuery
+// (function($) {
+//     $(function() {
+    
+//       $('#up').click(function() {
+//         $('html, body').animate({scrollTop: 0},500);
+//         return false;
+//       })
+    
+//     })
+// })(jQuery)

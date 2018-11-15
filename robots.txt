@@ -5,6 +5,8 @@ layout: null
 # Allow crawling of all content
 User-agent: *
 Disallow: /success/
-Disallow: /tips/
+Disallow: /tips/*
+Disallow: /contacts/
+
 Sitemap: {{ site.url }}/sitemap.xml
 Host: https://mair.moscow

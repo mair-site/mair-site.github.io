@@ -1,7 +1,7 @@
 links:
 - text: Услуги
   url: null
-  submenu: 
+  submenu:
     - text: Сборка мебели
       url: /sborka-mebeli/
     - text: Квартирный переезд
@@ -12,9 +12,14 @@ links:
   url: /price/
 - text: О нас
   url: null
-  submenu: 
+  submenu:
     - text: Работы
       url: /portfolio/
     - text: Наш блог
       url: /blog/
+    - text: Наша команда
+      url: /our-team/
+    - text: Партнёрство
+      url: /partnership/
+      
 

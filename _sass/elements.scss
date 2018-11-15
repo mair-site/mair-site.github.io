@@ -46,18 +46,6 @@ html, body {
 body {
 	font-family: $main-font!important;
 	letter-spacing: 0.5px;
-	&::selection {
-		background: #ebb151;
-	}
-	&::-moz-selection {
-		background: #ebb151;
-	}
-}
-html::selection {
-	background: #ebb151;
-}
-html::-moz-selection {
-	background: #ebb151;
 }
 
 a {
@@ -109,7 +97,7 @@ p, address, ul, ol, pre {
 p, address, ul, ol {
 	font-size: 1.38rem;
 	color: #666;
-	font-weight: 600;
+	font-weight: normal;
 	line-height: 1.6;
 }
 
