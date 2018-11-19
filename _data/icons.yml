@@ -1,18 +1,21 @@
 - title: services
   svgs:
-    - name: Сборка и установка мебели
-      link: /sborka-mebeli/
-      svg: assembly
-    - name: Консультации
-      link: /
-      svg: consult
     - name: Замер, оценка
       link: /
       svg: evaluation
-    - name: Разборка старой мебели, демонтаж
+    - name: Консультации
+      link: /
+      svg: consult
+    - name: Сборка и установка мебели
+      link: /sborka-mebeli/
+      svg: assembly
+    - name: Муж на час
       link: /muzh-na-chas/
       svg: disassembly
-    - name: Доставка, организация переезда
+    - name: Деликатный переезд
+      link: /kvartirnyiy-pereezd/
+      svg: delivery
+    - name: Переезд (Москва/МО, РФ)
       link: /kvartirnyiy-pereezd/
       svg: delivery
     - name: Строительство и ремонт

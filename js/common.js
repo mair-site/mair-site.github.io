@@ -16,7 +16,13 @@ $(document).ready(function() {
 
     $('.open-popup-link').magnificPopup({
         type:'inline',
-        midClick: true // Allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source in href.
+        midClick: true,
+        focus: '#input-phone-add'
+    });
+
+    // Фокус на вводе номера телефона
+    $('.check').click ( function() {
+        $('#input-phone-add').focus();
     });
     
     $('.owl-carousel').owlCarousel({
@@ -60,15 +66,8 @@ function up() {
   } else clearTimeout(t);
   return false;
 }
-
-// Вариант jQuery
-// (function($) {
-//     $(function() {
-    
-//       $('#up').click(function() {
-//         $('html, body').animate({scrollTop: 0},500);
-//         return false;
-//       })
-    
-//     })
-// })(jQuery)
+// Всплывающие подсказки
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+    $('#btn-tooltip').tooltip();
+  })

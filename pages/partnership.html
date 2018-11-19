@@ -5,6 +5,21 @@ layout: alt-page
 hero_img: /images/hero-img/collaboration.jpg
 permalink: /partnership/
 ---
+<section class="what-we-do">
+	<div class="container">
+		<h3> Наши партнёры </h3>
+		
+		<div class="owl-carousel owl-theme">
+			{% for image in site.data.partners %}			
+				<div class="item">
+					<img class="no-border" src="/images/partners/{{ image.name }}.jpg">
+				</div>
+			{% endfor %}
+			</div> 
+		</div>
+
+	</div>
+</section>
 <section class="casual">
 	<div class="container halves">
 		
@@ -43,12 +58,13 @@ permalink: /partnership/
 			Для обсуждения выгодных идей <br />
 			Позвоните нам или воспользуйтесь формой обратной связи. </p>
 			<div class="contact-info">
-				<p><a href="tel:+74993907668">
-						<i class="fas fa-phone"></i> +7 925 834 8588</a></p>
+				<p><a href="tel:+79852310460">
+						<i class="fas fa-phone"></i> +7 985 231 0460
+						</a></p>
 				<p><a href="mailto:info@mair.moscow">
 						<i class="fas fa-envelope"></i> info@mair.moscow</a></p>
 			</div>
 		</div>
 	</div>
-</section>
 
+</section>

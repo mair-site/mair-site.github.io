@@ -17,11 +17,13 @@ hero_img: /images/hero-img/main_head.jpg
 			{% for column in site.data.icons %}
 				{% if column.title == 'services' %}
 					{% for svgs in column.svgs %}
-					<li class="col-lg-4 col-md-6 col-sm-12 wwd_block">
+					<li class="col-lg-3 col-md-4 col-sm-12 wwd_block">
 					{% if svgs.svg == 'consult' or svgs.svg == 'evaluation' %}
 						<a href="#mainform-popup" class="open-popup-link">
+					{% else if svgs.svg == 'construction' %}
+						<a id="btn-tooltip" href="{{ svgs.link }}" title="Консультация по телефон +7 495 231 0460  ">
 					{% else %}
-						<a class="" href="{{ svgs.link }}">
+						<a href="{{ svgs.link }}">
 					{% endif %}
 							<div class="wwd_icon_block">
 								{% include icon-services.html icon=svgs.svg %}
@@ -35,15 +37,15 @@ hero_img: /images/hero-img/main_head.jpg
 						</a>
 					</li>
 							
-						{% if svgs.svg == 'evaluation' %}
-							<div class="clearfix visible-lg visible-md"></div>
-						{% endif %}
-						{% if svgs.svg == 'consult' %}
-							<div class="clearfix visible-sm"></div>
-						{% endif %}
-						{% if svgs.svg == 'disassembly' %}
-							<div class="clearfix visible-sm"></div>
-						{% endif %}
+						<!-- {% if svgs.svg == 'disassembly' %} -->
+							<!-- <div class="clearfix visible-lg visible-md"></div> -->
+						<!-- {% endif %}
+						{% if svgs.svg == 'disassembly' %} -->
+							<!-- <div class="clearfix visible-sm"></div> -->
+						<!-- {% endif %}
+						{% if svgs.svg == 'assembly' %} -->
+							<!-- <div class="clearfix visible-sm"></div> -->
+						<!-- {% endif %} -->
 
 					{% endfor %}
 				{% endif %}

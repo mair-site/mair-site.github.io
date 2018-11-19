@@ -19,7 +19,8 @@ links:
       url: /blog/
     - text: Наша команда
       url: /our-team/
-    - text: Партнёрство
-      url: /partnership/
-      
+    - text: Контакты
+      url: /contacts/
+- text: Сотрудничество
+  url: /partnership/
 

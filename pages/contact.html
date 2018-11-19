@@ -1,8 +1,9 @@
 ---
-title: Напишите нам!
-heading: Напишите нам!
-subtitle: Обратитесь к нам и мы ответим!
+title: Контакты
+heading: Контакты и реквизиты
+layout: alt-page
 permalink: /contacts/
+hero_img: /images/hero-img/bg-letters.png
 map:
   latitude: 55.785090
   longitude: 37.735976
@@ -16,25 +17,28 @@ excluded_in_search: true
 <!-- https://yandex.ru/maps/213/moscow/?mode=search&ll=37.738237%2C55.785676&z=16&where=37.735791%2C55.785205&ol=biz&oid=1342821533 -->
 <section class="casual">
 	<div class="container">
-		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
-			<input type="hidden" name="_to" value="support@example.com" />
-			<input type="text" name="_gotcha" style="display: none;" />
+		<h1> Наши реквизиты </h1>
+		<article id="article_container" class="text_content">
+			
+			<p class="section_title">Индивидуальный предприниматель</p>
+			<p>Александров Александр Александрович<br />
+				
+				ОГРН ИП 1234567891234567 от 01.01.2015<br />
+				ИНН 123456789123<br />
+				Адрес: 123456, г. Москва, пр-т Ленинский, д. 123, кв. 321<br />
+				Р/сч: 40802810412345678912<br />
+				Филиал № 12345 Банка ВТБ 24 (ЗАО)<br />
+				к/с: 301018100300000000811<br />
+				БИК: 044030811<br />
+				<br />
+				Доверенность 77АБ 123456 от 01.01.2014 выдана Петрову Петру Петровичу<br />
+				<br />
+				Фактический адрес: г. Москва, ул. В. Петренко, д. 16 (рынок «Мега») магазин,
+				г. Москва, ул. Н. Васильева, д.145 (производство, склад),
+				тел.(495) 123-12-23, моб., 916-123-1234
 
-			<div class="halves">
-				<div>
-					<label for="name">ФИО</label>
-					<input type="text" name="last-name" id="last-name" placeholder="Иван Иванович" />
-				</div>
-			</div>
-
-			<label for="email">Email адрес</label>
-			<input type="email" name="email" id="email" placeholder="email@example.com" required />
-
-			<label for="message">Сообщение</label>
-			<textarea name="message" id="message" placeholder="Ваше сообщение..."></textarea>
-
-			<input type="submit" value="Отправить нам заявку" />
-		</form>
+			</p>
+		</article>
 	</div>
 </section>
 
