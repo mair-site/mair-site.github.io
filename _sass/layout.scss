@@ -178,7 +178,7 @@ section {
 				width: 33%;
 				a {
 					display:block;
-					height:100px;
+					height:170px;
 					text-align:center;
 					background-position: 0 0;
 				}
@@ -233,6 +233,9 @@ section {
 	&.comments {
 		background: white url(../images/bg/bg_comments.jpg) no-repeat top center;
 		background-size: cover;
+	}
+	&.social {
+		text-align: center;
 	}
 	&.order-stages {
 		li {
