@@ -170,54 +170,54 @@ table {
 	margin: 0 auto;
 	list-style: none;
 	text-align: center;
-}
 
-.grid li {
+	li {
 
-    display: inline-block;
-    width: 330px;
-    margin: 0;
-    padding: 20px;
-    text-align: left;
-    position: relative;
+		display: inline-block;
+		width: 330px;
+		margin: 0;
+		padding: 20px;
+		text-align: left;
+		position: relative;
+	
+	}
 
-}
+	figure {
+		margin: 0;
+		position: relative;
 
-.grid figure {
-	margin: 0;
-	position: relative;
-}
+		svg {
+			display: block;
+			position: relative;
+		}
+	}
 
-.grid figure svg {
-	display: block;
-	position: relative;
-}
+	figcaption {
 
-.grid figcaption {
-	position: absolute;
-	top: 0;
-	left: 0;
-	padding: 20px;
-	background: #FFA712;
-	color: whitesmoke;
-	font-size: 1.3em;
-}
+		position: absolute;
+		top: 0;
+		left: 0;
+		padding: 20px;
+		background: #FFA712;
+		color: whitesmoke;
+		font-size: 1em;
 
-.grid figcaption .wwd_text_block {
-	margin: 0;
-	padding: 0;
-	color: #fff;
-}
+		.wwd_text_block {
+			margin: 0;
+			padding: 0;
+			color: #fff;
+		}
 
-
-.grid figcaption a {
-	font-size: .7em;
-	text-align: center;
-	padding: 5px 10px;
-	border-radius: 2px;
-	display: inline-block;
-	background: indianred;
-	color: #fff;
+		a {
+			font-size: .7em;
+			text-align: center;
+			padding: 5px 10px;
+			border-radius: 2px;
+			display: inline-block;
+			background: indianred;
+			color: #fff;
+		}
+	}
 }
 
 /* Individual Caption Styles */
