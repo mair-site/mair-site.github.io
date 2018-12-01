@@ -67,7 +67,6 @@ function up() {
   return false;
 }
 // Всплывающие подсказки
-$(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-    $('#btn-tooltip').tooltip();
-  })
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});

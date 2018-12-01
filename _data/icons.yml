@@ -16,7 +16,7 @@
       link: /kvartirnyiy-pereezd/
       svg: delivery
     - name: Грузоперевозки (Москва/МО, РФ)
-      link: /kvartirnyiy-pereezd/
+      link: /price#transportation
       svg: delivery
     - name: Строительство и ремонт
       link: /

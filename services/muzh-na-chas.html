@@ -4,8 +4,50 @@ heading: Мастер на все руки
 subtitle: Наш специалист придет к вам на помощь в считанные часы! 
 hero_img: /images/hero-img/masterchas.jpg
 permalink: /muzh-na-chas/
+images:
+  - image_path: /images/galery/%EC%EE%ED%F2%E0%E6-%EA%E0%F0%ED%E8%E7%E0.jpg
+    title: Монтаж карниза
+  - image_path: /images/galery/%EC%EE%ED%F2%E0%E6-%EB%FE%F1%F2%F0%FB.jpg
+    title: Монтаж люстры
+  - image_path: /images/galery/%EC%EE%ED%F2%E0%E6-%EF%EB%E8%ED%F2%F3%F1%EE%E2.jpg
+    title: Монтаж плинтусов
+  - image_path: /images/galery/%EC%EE%ED%F2%E0%E6-%EF%EE%EB%EE%EA.jpg
+    title: Монтаж полок
+  - image_path: /images/galery/%EF%EE%E4%EA%EB%FE%F7%E5%ED%E8%E5-%E1%FB%F2%EE%E2%EE%E9-%F2%E5%F5%ED%E8%EA%E8.jpg
+    title: Подключение бытовой техники
+  - image_path: /images/galery/%EF%EE%EC%EE%F9%FC-%E2-%EF%E5%F0%E5%E5%E7%E4%E5.jpg
+    title: Помощь в переезде
+  - image_path: /images/galery/%F3%F1%F2%E0%ED%EE%E2%EA%E0-%E4%F3%F8%E5%E2%FB%F5-%EA%E0%E1%E8%ED.jpg
+    title: Установка душевых кабин
+  - image_path: /images/galery/%F3%F1%F2%E0%ED%EE%E2%EA%E0-%F2%E5%EB%E5%E2%E8%E7%EE%F0%E0.jpg
+    title: Установка телевизора
+  - image_path: /images/galery/%F3%F1%F2%E0%ED%EE%E2%EA%E0-%F4%E8%EB%FC%F2%F0%EE%E2-%E4%EB%FF-%E2%EE%E4%FB.jpg
+    title: Установка фильтров для воды
 ---
-
+<section>
+    <div class="container">
+        <h2 class="editable centered row" id="services">Муж на час — выручит вас!</h2>
+        <ul class="grid cs-style-4">
+            {% for image in page.images %}
+            <li>
+                <figure>
+                    <div class="wwd_icon_block">
+                        <img height="500px" width="500px" src="..{{ image.image_path }}" alt="{{ image.title}}"/>
+                    </div>
+                    <figcaption>
+                        <span class="wwd_text_block">
+                            {{ image.title}}
+                        </span>
+                        <a href="#mainform-popup" class="open-popup-link">
+                            Вызвать
+                        </a>
+                    </figcaption>
+                </figure>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
 
 <section class="patterned">
     <div class="container halves">
@@ -26,10 +68,6 @@ permalink: /muzh-na-chas/
                         <td><span><strong>4</strong> часа</span>
                         </td>
                     </tr>
-                    <tr>
-                        <td colspan=2><span>•	Постоянным клиентам скидка <strong>10%</strong>! </span>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
             <p class="subtext editable">Все работы будут сделаны качественно<br />
@@ -44,29 +82,27 @@ permalink: /muzh-na-chas/
 </section>
 
 {% include promo-action.html 
-	caption="Нужна оперативная мужская помощь?"
-	subtext="Выезд мастера в течении часа!" 
-	call_action_text="Срочный вызов по телефону:" 
+	caption="Муж на час всегда доступен!"
+	subtext="Все отремонтируем, соберем и починим, приколотим и прикрутим!" 
+	call_action_text="" 
 	button_text="Вызвать мастера" 
 %}
 
 <section class="casual">        
 	<div class="container halves">
-		<h2 class="editable centered">Мастер на час</h2>	
+		<h3 class="editable centered">Мастер на час</h3>	
 
 		<div>
 			<ul class="image-grid">
-                <li><img src="/images/muj.png"> </li>
-
                 <li><img src="/images/chas.png"></li>
             </ul>
         </div>
         <div>
-            <p>Существуют такие виды работ, которые требуют применения физической силы. Например, надо сделать перестановку мебели, произвести замену двери или устранить ее провисание, установить тяжелые габаритные предметы в квартире. </p> 
+            <p>Во все времена муж был не только защитником и кормильцем, на него также возлагались обязанности по благоустроиству своего дома. Большинство мужчин не способны справляться с ролью домашнего мастера в силу неумения, занятости, или вовсе мужчина отсутствует. К тому же Москва - является городом с максимальным разделенным трудом. Здесь максимально актуально заниматься своей работой и делами, а ремонт по дому доверить мастеру.</p> 
         </div>
     </div>
     <div class="container">
-        <h2 class="editable">Удобство мужа на час </h2>	
+        <h3>Удобство мужа на час </h3>	
         <ul>
             <li>Экономия времени и нервов</li>
             <li>Опытный специалист с набором профессиональных инструментов, который подойдёт именно вам</li>
@@ -89,13 +125,40 @@ permalink: /muzh-na-chas/
         </ul></p>
 
         <p>Этот список можно продолжать до бесконечности: если дом частный - муж на час и воды наносит и дров нарубит. А бывает, что вызвали по одной проблеме, а попутно оказывается есть ещё что устранить. Для решения всех этих и других подобных проблем как раз и существует услуга «муж на час». Напряженный ритм работ в крупных городах, постоянная нехватка времени не позволяет мужчинам уделять достаточно времени для решения домашних проблем, поэтому эта услуга есть почти во всех больших центрах.</p>
+    </div>
+    <div class="container halves">
+        <div>
+            <ul class="image-grid">
+                <li><img src="/images/muj.png"> </li>
+            </ul>
+        </div>
 
+        <div>
         <p>Опытный специалист нашей фирмы приедет к вам с набором профессиональных инструментов в удобное время, примет решение о стоимости услуги, озвучит ее вам и приступит к работе после вашего согласия. Также окажет помощь в приобретении необходимых материалов для ремонта.</p>
 
         <p>Для вызова - повоните нам или воспользуйтесь контактной формой заказа! Берегите свои нервы, не затягивайте с проблемой! Обращайтесь к нам, и все ваши бытовые проблемы будут успешно решены.  Расценки у нас ниже, чем у домовых сантихников и работников ЖКХ.</p>
+        </div>
 
     </div>
 </section>
+
+<section class="patterned">
+        <div class="container halves">
+            <h2 class="editable centered">Выполненные работы</h2>	
+            <div>
+                <ul class="image-grid">
+                    {% for client in site.clients limit: 2 %}
+                        <li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div>
+                <p class="editable">Мы осуществляем сборку любой сложности. <br />
+                    Для выполнения работ допускаются только опытные и квалифицированные мастера. Они имеют опыт сборки мебели разных производителей, поэтому в короткий срок разберутся со схемами и соберут требуемую конструкцию.<br /></p>
+                <p class="editable"><a href="{{ site.baseurl }}/portfolio/">&larr; Ещё примеры работ</a></p>
+            </div>
+        </div>
+    </section>
 
 <section class="end-form">
     <div class="container">

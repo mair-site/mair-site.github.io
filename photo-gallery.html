@@ -1,0 +1,32 @@
+---
+layout: alt-page
+images:
+  - image_path: /images/galery/1.jpg
+    title: Apple Pie
+  - image_path: /images/galery/2.jpg
+    title: Birthday Cake
+  - image_path: /images/galery/3.jpg
+    title: Black Forest
+  - image_path: /images/galery/4.jpg
+    title: Brownie
+  - image_path: /images/galery/5.jpg
+    title: Cheese Cake
+  - image_path: /images/galery/6.jpg
+    title: Chocolate Cake
+  - image_path: /images/galery/7.jpg
+    title: Fruit Cake
+  - image_path: /images/galery/8.jpg
+    title: Lamington
+  - image_path: /images/galery/9.jpg
+    title: Lemon Cake
+---
+
+<ul class="photo-galery">
+	{% for image in page.images %}
+    <li>
+      <a href="{{ image.link }}">
+        <img height="700px" width="400px" src="{{ image.image_path }}" alt="{{ image.title}}"/>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

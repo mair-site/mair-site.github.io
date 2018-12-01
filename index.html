@@ -13,39 +13,39 @@ hero_img: /images/hero-img/main_head.jpg
 				начиная от грамотного консультирования специалистов <br />
 				и заканчивая услугами строительства и ремонта дома. </p>
 		</div>
-		<ul>
+		<ul class="grid cs-style-4">
 			{% for column in site.data.icons %}
 				{% if column.title == 'services' %}
 					{% for svgs in column.svgs %}
-					<li class="col-lg-3 col-md-4 col-sm-12 wwd_block">
-					{% if svgs.svg == 'consult' or svgs.svg == 'evaluation' %}
-						<a href="#mainform-popup" class="open-popup-link">
-					{% else if svgs.svg == 'construction' %}
-						<a id="btn-tooltip" href="{{ svgs.link }}" title="Консультация по телефон +7 495 231 0460  ">
-					{% else %}
-						<a href="{{ svgs.link }}">
-					{% endif %}
+					<li>
+						<figure>
 							<div class="wwd_icon_block">
 								{% include icon-services.html icon=svgs.svg %}
 							</div>
-							<div class="wwd_text_block">
-							{{ svgs.name }}
-							</div>
-							{% if svgs.svg == 'consult' or svgs.svg == 'evaluation' %}
-								<div class="add-info" data-title="Бесплатно!"></div>
-							{% endif %}
-						</a>
+							<figcaption>
+								{{ svgs.name }}
+								{% if svgs.svg == 'consult' %}
+									<a href="#mainform-popup" class="open-popup-link">
+										<span class="wwd_text_block">
+											Бесплатно по телефону!
+										</span>
+									</a>
+								{% elsif svgs.svg == 'evaluation' %}
+								<a href="{{ svgs.link }}">
+									<a href="#mainform-popup" class="open-popup-link">
+										Бесплатно при заказе!
+									</span>
+								</a>
+								{% else %}
+								<a href="{{ svgs.link }}">
+									<span class="wwd_text_block">
+										Подробнее
+									</span>
+								</a>
+								{% endif %}
+							</figcaption>
+						</figure>
 					</li>
-							
-						<!-- {% if svgs.svg == 'disassembly' %} -->
-							<!-- <div class="clearfix visible-lg visible-md"></div> -->
-						<!-- {% endif %}
-						{% if svgs.svg == 'disassembly' %} -->
-							<!-- <div class="clearfix visible-sm"></div> -->
-						<!-- {% endif %}
-						{% if svgs.svg == 'assembly' %} -->
-							<!-- <div class="clearfix visible-sm"></div> -->
-						<!-- {% endif %} -->
 
 					{% endfor %}
 				{% endif %}
@@ -179,6 +179,9 @@ hero_img: /images/hero-img/main_head.jpg
 	<div class="container">
 		<h2 class="editable centered">Мы в социальных сетях</h2>	
 		<ul class="social_links">
+				<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+						Tooltip on top
+					  </button>
 			{% for column in site.data.footer-soc %}
 				{% for link in column.links %}
 					<li>
