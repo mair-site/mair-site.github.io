@@ -153,16 +153,20 @@ table {
 .striped tr:nth-of-type(even) {
     background-color: ghostwhite;
 }
-.wwd_text_block {
-	margin: 8% auto 0;
-}
-.wwd_icon_block {
-	width: 100%;
-	margin: 0 auto;
-}
 .wwd_icon_block, .wwd_text_block {
     display: block;
 	text-align: center;
+}
+.wwd_text_block {
+	margin: 8% auto 0;
+	width: 100%;
+	margin: 0 auto;
+}
+.wwd_icon_block {
+    border: 2px solid coral;
+}
+.wwd_photo_block {
+	height: 205px;
 }
 
 .grid {
@@ -205,17 +209,18 @@ table {
 		.wwd_text_block {
 			margin: 0;
 			padding: 0;
-			color: #fff;
+			color: white;
+			font-weight: bold;
 		}
 
 		a {
-			font-size: .7em;
+			font-size: 15px;
 			text-align: center;
 			padding: 5px 10px;
 			border-radius: 2px;
 			display: inline-block;
-			background: indianred;
-			color: #fff;
+			background: #fff;
+			color: #454b54;
 		}
 	}
 }
@@ -241,7 +246,7 @@ table {
 }
 
 .cs-style-4 figure > div {
-	overflow: hidden;
+    overflow: hidden;
 }
 
 .cs-style-4 figure svg {
