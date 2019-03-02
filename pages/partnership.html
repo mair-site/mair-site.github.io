@@ -5,21 +5,6 @@ layout: alt-page
 hero_img: /images/hero-img/collaboration.jpg
 permalink: /partnership/
 ---
-<section class="what-we-do">
-	<div class="container">
-		<h3> Наши партнёры </h3>
-		
-		<div class="owl-carousel owl-theme">
-			{% for image in site.data.partners %}			
-				<div class="item">
-					<img class="no-border" src="/images/partners/{{ image.name }}.jpg">
-				</div>
-			{% endfor %}
-			</div> 
-		</div>
-
-	</div>
-</section>
 <section class="casual">
 	<div class="container halves">
 		
@@ -66,5 +51,22 @@ permalink: /partnership/
 			</div>
 		</div>
 	</div>
+
+</section>
+
+
+<section class="what-we-do">
+	<div class="container">
+		<h3> Наши партнёры </h3>
+	</div>
+		
+		<div class="owl-carousel slide-two">
+			{% for image in site.data.partners %}			
+				<div class="item">
+					<img class="no-border" src="/images/partners/{{ image.name }}.jpg">
+				</div>
+			{% endfor %}
+			</div> 
+		</div>
 
 </section>

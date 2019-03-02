@@ -4,41 +4,74 @@ layout: main-page
 hero_img: /images/hero-img/main_head.jpg
 ---
 
-<section class="what-we-do">
+
+
+	
+	<section class="what-we-do">
 	<div class="container">
-		<h2 class="editable centered row" id="services">Мы умеем</h2>
+		<h2 class="centered">Услуги</h2>
 		
-		<div>
-			<p class="editable">Мы предлагаем целый комплекс услуг и работ, <br />
-				начиная от грамотного консультирования специалистов <br />
-				и заканчивая услугами строительства и ремонта дома. </p>
-		</div>
-		<ul class="grid cs-style-4">
+		<ul class="grid cs-style-2 owl-carousel slide-three"> <!-- можно вернутся на cs-style-4 -->
 			{% for column in site.data.icons %}
 				{% if column.title == 'services' %}
 					{% for svgs in column.svgs %}
-					<li>
+					<li class="item">
 						<figure>
+							
 							<div class="wwd_icon_block">
 								{% include icon-services.html icon=svgs.svg %}
+								
+								<div class="wwd_icon_name">
+									<p>	{{ svgs.name }}	</p>
+								</div>
 							</div>
-							<figcaption>
-								{{ svgs.name }}
-								{% if svgs.svg == 'consult' %}
-									<a href="#mainform-popup" class="open-popup-link">
-										Бесплатно по телефону!
-									</a>
-								{% elsif svgs.svg == 'evaluation' %}
+						
+							<figcaption>	
+								
+								{% if svgs.svg == 'evaluation' %}
+								<p>Бесплатно при заказе!</p>
 								<a href="{{ svgs.link }}">
-									Бесплатно при заказе!
+									Узнать больше <i class="fas fa-arrow-right"></i>
+								</a>
+								{% elsif svgs.svg == 'consult' %}
+								<p>Бесплатно по телефону!</p>
+								<a href="#fast-call-form-popup" class="open-popup-link">
+									<i class="fas fa-phone"></i> Обратный звонок
+								</a>
+								{% elsif svgs.svg == 'evaluation' %}
+								<p>Бесплатно при заказе!</p>
+								<a href="{{ svgs.link }}">
+									Узнать больше <i class="fas fa-arrow-right"></i>
+								</a>
+								{% elsif svgs.svg == 'assembly' %}
+								<p><i class="fas fa-ruble-sign"></i> от 450 р/час</p>
+								<a href="{{ svgs.link }}">
+									 Подробнее <i class="fas fa-arrow-right"></i>
+								</a>
+								{% elsif svgs.svg == 'disassembly' %}
+								<p><i class="fas fa-ruble-sign"></i> от 450 р/час</p>
+								<a href="{{ svgs.link }}">
+									 Подробнее <i class="fas fa-arrow-right"></i>
+								</a>
+								{% elsif svgs.svg == 'delivery' %}
+								<p><i class="fas fa-ruble-sign"></i> от 4 500 руб</p>
+								<a href="{{ svgs.link }}">
+									 Подробнее <i class="fas fa-arrow-right"></i>
+								</a>
+								{% elsif svgs.svg == 'construction' %}
+								<p> Проектные работы</p>
+								<a href="{{ svgs.link }}">
+									 Подробнее <i class="fas fa-arrow-right"></i>
 								</a>
 								{% else %}
 								<a href="{{ svgs.link }}">
-									Подробнее
+									 Подробнее <i class="fas fa-arrow-right"></i>
 								</a>
 								{% endif %}
 							</figcaption>
+
 						</figure>
+
 					</li>
 
 					{% endfor %}
@@ -48,8 +81,8 @@ hero_img: /images/hero-img/main_head.jpg
 	</div>
 </section>
 
-<!--  КАЛЬКУЛЯТОР
-	<section class="promo-action">
+<!--  КАЛЬКУЛЯТОР 
+<section class="promo-action">
 	<div class="container">
 		<div class="left-part col-lg-8 col-md-6 col-sm-12">
 			<h2 class="editable">Хотите рассчитать стоимость заранее?</h2>
@@ -88,77 +121,62 @@ hero_img: /images/hero-img/main_head.jpg
 	<div class="container">
 		<h2 class="editable centered">Отзывы о нас</h2>
 		<div class="tabs">
-			<input id="tab1" type="radio" name="tabs" checked>
-			<label for="tab1" title="Вкладка 1">Клиенты</label>
-			
-			<input id="tab2" type="radio" name="tabs">
-			<label for="tab2" title="Вкладка 2">Партнёры</label>
-				
+			<!-- <label for="tab1" title="Вкладка 1">Клиенты</label> -->
 			<div id="content-tab1">
-				<ul class="owl-carousel owl-theme">					
+				<ul class="owl-carousel slide-one">					
 					<li class="item">
 						<div class="comment_block">
-						“Мы недавно приобрели новую кухню и искали надежную компанию по сборке мебели. Знакомые посоветовали именно эту. Ребята молодцы, оперативно среагировали и быстро установили кухню, как положено. Все сделали максимально аккуратно, ничего не повредили и лишних деталей не осталось. Сразу видно профессионалы своего дела. Услуги их, кстати, обошлись совсем не дорого. Спасибо большое, очень признательны.”
 							<div class="sign">
 								<img id="sign-avatar" src="/images/clients/img-01.jpg">
 								Афонасьева Ольга <br> 
 								Менеджер
 							</div> 
+							“Мы недавно приобрели новую кухню и искали надежную компанию по сборке мебели. Знакомые посоветовали именно эту. Ребята молодцы, оперативно среагировали и быстро установили кухню, как положено. Спасибо большое, очень признательны.”
 						</div> 
 					</li>	
 					<li class="item">
 						<div class="comment_block">
-						“Ребята молодцы, быстро работают: во второй половине дня позвонил им и без проблем заказал уже на следующее утро сборку двух шкафов-купе. Мастера сами были одеты аккуратно, и техника у них была профессиональная, малошумная. И того за два двухдверных шкафа заплатил всего 3600, так что ещё и недорого берут, спасибо! Буду рекомендовать соседям, они как раз затеяли ремонт.”
 							<div class="sign">
 								<img id="sign-avatar" src="/images/clients/img-04.jpg">
 								Леонид Никоноров<br>
 								Промоутер
 							</div>
+							“Ребята молодцы, быстро работают: во второй половине дня позвонил им и без проблем заказал уже на следующее утро сборку двух шкафов-купе. Итого за два двухдверных шкафа заплатил всего 3600, так что ещё и недорого берут, спасибо! Будем рекомендовать!”
 						</div> 
 					</li>
 					<li class="item">
 						<div class="comment_block">
-						“Обратился в МАИР по рекомендации знакомых. Компания не подвела, работы выполнены квалифицированно, точно в срок. Собрали шкаф-купе и мебель в прихожую. Спасибо.”
 							<div class="sign">
 								<img id="sign-avatar" src="/images/clients/img-02.jpg">
 								Петров Андрей<br>
 								Водитель
 							</div> 
+							“Обратился в МАИР по рекомендации знакомых. Компания не подвела, работы выполнены квалифицированно, точно в срок. Собрали шкаф-купе и мебель в прихожую. Спасибо.”
 						</div> 
 					</li>					
-					<li class="item">
+					<li class="item">	
 						<div class="comment_block">
-						“Выражаю огромную благодарность мастерам данной фирмы за быструю и качественную работу по сборке мебели, я обратилась в данную фирму и была приятно удивлена качеством и оперативностью проделанной работы,отличная работа по реальной цене, что не маловажно в наше время, обязательно воспользуюсь ещё не раз услугами фирмы, а также порекомендую коллегам по работе и знакомым! Желаю вам ребята процветания, много много клиентов!!!”
 							<div class="sign">
-								<img id="sign-avatar" src="/images/clients/img-03.jpg">
-								Полина Никонорова<br> 
+								<img id="sign-avatar" src="/images/clients/img3-vasik.jpg">
+								Полина Васюкова<br> 
 								Домохозяйка
 							</div>
+							“Выражаю огромную благодарность мастерам МАИР за быструю и качественную работу по сборке мебели, я обратилась в данную фирму и была приятно удивлена качеством и оперативностью проделанной работы! Спасибо вам и много много клиентов!!!”
 						</div> 
 					</li>	
 					<li class="item">
 						<div class="comment_block">
-						“Отлично спланировали, отлично выполнили. Все быстро, аккуратно. Я была готова к хорошему уровню мувинговых услуг, но в реальности было еще лучше. Спасибо бригаде Василия.”
 							<div class="sign">
 								<img id="sign-avatar" src="/images/clients/img-05.jpg">
 								Ксения Макарова<br>
 								Администратор ресторана
 							</div>
+							“Отлично спланировали, отлично выполнили. Все быстро, аккуратно. Я была готова к хорошему уровню мувинговых услуг, но в реальности было еще лучше. Спасибо бригаде Василия.”
 						</div> 
 					</li>
 				</ul>
 			</div>  
-			<div id="content-tab2">
-				<div class="owl-carousel owl-theme">
-					{% for image in site.data.partners %}			
-						<div class="item">
-							<img class="no-border" src="/images/partners/{{ image.name }}.jpg">
-						</div>
-					{% endfor %}
-					</div> 
-				</div>
-			</div>   
-		</div>
+		</div>	
 	</div>
 </section>
 
@@ -169,9 +187,37 @@ hero_img: /images/hero-img/main_head.jpg
 	button_text="Вызвать мастера" 
 %}
 
-<section class="social casual">
+<section class="partners">
+	<div class="container"><h2 class="centered">Наши партнёры</h2></div>
+		
+		<div class="tabs">
+			<!-- <label for="tab2" title="Партнёры">Партнёры</label> -->
+			<div id="content-tab2">
+				<div class="owl-carousel slide-two">
+					{% for image in site.data.partners %}			
+						<div class="item">
+							<img class="no-border" src="/images/partners/{{ image.name }}.jpg">
+						</div>
+					{% endfor %}
+				</div> 
+			</div>
+		</div>
+</section>
+
+<section class="patterned">
 	<div class="container">
-		<h2 class="editable centered">Мы в социальных сетях</h2>	
+		<h2 class="editor-link" style="text-align: center;">Наша команда</h2>
+		<ul class="image-grid">
+			{% for member in site.staff_members %}
+				<li>{% include staff-member.html member=member %}</li>
+			{% endfor %}
+		</ul>
+	</div>
+</section>
+
+<section class="social">
+	<div class="container">
+		<h2 class="editable centered"> Присоединяйтесь к нам в социальных сетях</h2>
 		<ul class="social_links">
 			{% for column in site.data.footer-soc %}
 				{% for link in column.links %}
@@ -187,10 +233,9 @@ hero_img: /images/hero-img/main_head.jpg
 				{% endfor %}
 			{% endfor %}
 		</ul>
-		<iframe src="//widget.instagramm.ru/?imageW=5&imageH=2&thumbnail_size=148&type=0&typetext=mair_dom&head_show=0&profile_show=0&shadow_show=0&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:800px;height:341px;"></iframe>
+		<iframe class="hidden-xs hidden-sm" src="//widget.instagramm.ru/?imageW=5&imageH=2&thumbnail_size=148&type=0&typetext=mair_dom&head_show=0&profile_show=0&shadow_show=0&bg=255,255,255,1&opacity=true&head_bg=46729b&subscribe_bg=ad4141&border_color=c3c3c3&head_title=" allowtransparency="true" frameborder="0" scrolling="no" style="border:none;overflow:hidden;width:800px;height:341px;"></iframe>
 	</div>
 </section>
-
 
 <section class="end-form">
 	<div class="container">
@@ -204,7 +249,7 @@ hero_img: /images/hero-img/main_head.jpg
 			<input type="hidden" name="_subject" value="Вопрос с главной страницы сайта mair.moscow">
 			
 			<input class="input-form" type="phone" name="phone" placeholder="Ваш телефон">
-			<textarea class="form__textarea" name="message" placeholder="Ваш вопрос"></textarea>
+			<textarea class="form__textarea" name="message" placeholder="Задайте вопрос"></textarea>
 			<input type="submit" value="Задать">
 		</form>
 

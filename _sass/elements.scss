@@ -55,6 +55,7 @@ a {
 
 a:hover {
 	text-decoration: underline;
+	color: $hover-brand-color;
 }
 
 img {
@@ -71,6 +72,8 @@ h1 {
 	letter-spacing: 2px;
 	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	font-weight: bold;
+	font-size: 3.3rem!important;
+	color: white;
 }
 
 h2 {
@@ -153,22 +156,42 @@ table {
 .striped tr:nth-of-type(even) {
     background-color: ghostwhite;
 }
+
+.wwd_block {
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: all .2s ease;;
+    transition: all .2s ease;;
+	width: 100%;
+	overflow: hidden;
+
+	&:hover {
+		background-color: white;
+		transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+		-webkit-transform: translateY(-2px);
+		transform: translateY(-2px);
+		-webkit-box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+		box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+
+        .add-info {
+			top: 10px;
+			transition: all .5s ease;
+			right: -7px;
+		}
+	}
+}
 .wwd_icon_block, .wwd_text_block {
     display: block;
 	text-align: center;
 }
-.wwd_text_block {
-	margin: 8% auto 0;
-	width: 100%;
-	margin: 0 auto;
-}
-.wwd_icon_block {
-    border: 2px solid coral;
-}
 .wwd_photo_block {
 	height: 205px;
+	border: 2px solid coral;
 }
-
 .grid {
 	padding: 0;
 	margin: 0 auto;
@@ -180,19 +203,28 @@ table {
 		display: inline-block;
 		width: 330px;
 		margin: 0;
-		padding: 20px;
 		text-align: left;
 		position: relative;
 	
 	}
 
 	figure {
+
 		margin: 0;
 		position: relative;
+		border: 0px solid;
+		height: 270px;
+		cursor: pointer;
 
 		svg {
+
 			display: block;
 			position: relative;
+			margin: 0 auto;
+			top: 35px;
+			width: 100%;
+			height: 55%;
+		
 		}
 	}
 
@@ -204,26 +236,40 @@ table {
 		padding: 20px;
 		background: #FFA712;
 		color: whitesmoke;
-		font-size: 1em;
+		font-size: 17px;
 
 		.wwd_text_block {
-			margin: 0;
-			padding: 0;
-			color: white;
+			margin: 5% auto 0;
+			padding: 0 10px;
 			font-weight: bold;
+			color: floralwhite;
 		}
 
+		p {
+			position: absolute;
+			top: 50%;
+			transform: translate(0, -50%) ;
+			color: white;
+			width: 50%;
+		} 
+
 		a {
-			font-size: 15px;
+			font-size: 17px;
 			text-align: center;
 			padding: 5px 10px;
 			border-radius: 2px;
 			display: inline-block;
-			background: #fff;
-			color: #454b54;
+			background: #666;
+			color: white;
+
+			&:hover {
+				color: $hover-brand-color;
+				background-color: $html-background-color;
+			}
 		}
 	}
 }
+
 
 /* Individual Caption Styles */
 
@@ -245,17 +291,28 @@ table {
 	background-color: floralwhite;
 }
 
-.cs-style-4 figure > div {
-    overflow: hidden;
+.cs-style-4 figure span,
+.cs-style-4 figure a  {
+    position: absolute;
+	text-align: center;
+    top: 50%;
+    transform: translate(0, -50%);
+    color: white;
+	width: 55%;
+	padding: 15px;
 }
 
-.cs-style-4 figure svg {
-	-webkit-transition: -webkit-transform 0.4s;
-	-moz-transition: -moz-transform 0.4s;
-	transition: transform 0.4s;    
-	width: 100%;
-    max-height: 250px;
-    margin: 57px auto;
+.cs-style-4 figure a {
+    right: 15px;
+    font-weight: bold;
+    font-size: 19px;
+    text-align: center;
+    border-radius: 2px;
+    background-color: #666666;
+    color: white;
+    height: 30px;
+    width: 35%;
+	padding: 0px;
 }
 
 .no-touch .cs-style-4 figure:hover svg,
@@ -267,9 +324,13 @@ table {
 }
 
 .cs-style-4 figcaption {
-	height: 100%;
-	width: 50%;
+	height: 33%;
+	width: 100%;
 	opacity: 0;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color: $brand-color;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	backface-visibility: hidden;
@@ -292,12 +353,170 @@ table {
 	transform: rotateY(0deg);
 	-webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
 	-moz-transition: -moz-transform 0.4s, opacity 0.1s;
-	transition: transform 0.4s, opacity 0.1s;
+	transition: transform 0.4s, opacity 0.1s; 
 }
 
-.cs-style-4 figcaption a {
+.slide-three {
+
+	.item {
+		padding: 90px 0px 0 !important;
+	}
+}
+.what-we-do {
+	.slide-three {
+		margin-top: -75px;
+	}
+}
+/* Caption Style 2 */
+.cs-style-2 {
+
+	figure {
+
+		.wwd_icon_block {
+			z-index: 10;
+			position: absolute;
+			background-color: white;
+			-webkit-transition: -webkit-transform 0.4s;
+			-moz-transition: -moz-transform 0.4s;
+			transition: transform 0.4s;    
+			width: 100%;
+			height: 100%;
+
+			.wwd_icon_name  {
+
+				position: relative;
+				height: 75px;
+				bottom: -30px;
+			
+				p {
+					position: absolute;
+					top: 50%;
+					transform: translate(0, -50%);
+					font-weight: bold;
+					font-size: 23px;
+					width: 100%;
+					padding: 0px 30px;
+				}
+
+			}
+		}
+
+		&:hover {
+			.wwd_icon_block {
+				-webkit-transform: translateY(-87px);
+				-moz-transform: translateY(-87px);
+				-ms-transform: translateY(-87px);
+				transform: translateY(-87px);
+			}
+		}
+	}
+
+	figcaption {
+		height: 90px;
+		width: 100%;
+		top: auto;
+		bottom: 0;
+		-webkit-backface-visibility: hidden;
+		-moz-backface-visibility: hidden;
+		backface-visibility: hidden;
+
+		a {
+			float: right;
+			margin-top: 11px;
+			font-weight: bold;
+		}
+	}
+}
+.owl-prev {
 	position: absolute;
-	bottom: 20px;
-	right: 20px;
+	left: -70px;
+}
+.owl-next {
+	position: absolute;
+	right: -70px;
+}
+.owl-prev, .owl-next {
+    top: 45%;
+    height: 37px;
+	width: 33px;
+	
+	border: solid white;
+	border-width: 0 7px 7px 0;
+	display: inline-block;
+	padding: 15px;
+}
+.owl-prev {
+	transform: rotate(135deg);
+	-webkit-transform: rotate(135deg);
+
+	&:hover {
+		border-width: 0 7px 7px 0;
+		border-color: #FFA712;
+	}
+}
+.owl-next {
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	&:hover {
+		border-width: 0 7px 7px 0;
+		border-color: #FFA712;
+	}
+}
+.cd-top {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	bottom: 40px;
+	left: 50px;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+	/* image replacement properties */
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+	background: rgb(255, 194, 89) url(../images/icons/arrow-66.svg) no-repeat center 50%;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
+	transition: opacity .3s 0s, visibility 0s .3s, background-color .3s 0s;
 }
 
+.cd-top.cd-top--show,
+.cd-top.cd-top--fade-out,
+.cd-top:hover {
+	-webkit-transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+	transition: opacity .3s 0s, visibility 0s 0s, background-color .3s 0s;
+}
+
+.cd-top.cd-top--show {
+	/* the button becomes visible */
+	visibility: visible;
+	opacity: 1;
+}
+
+.cd-top.cd-top--fade-out {
+	/* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+	opacity: 1;
+}
+
+.cd-top:hover {
+	background-color: #FFA712;
+	opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+	.cd-top {
+		right: 20px;
+		bottom: 20px;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.cd-top {
+		height: 50px;
+		width: 50px;
+		right: 30px;
+		bottom: 30px;
+	}
+}

@@ -5,8 +5,10 @@ $casual: "{{ site.baseurl }}/images/bg/bg-casual.jpg";
 $screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
 
 $brand-color: #FFA715;
+$brand-color-shadow: #B97608;
 $html-background-color: #222;
-$hover-brand-color: #ffb437;
+$hover-brand-color: #fff515;
+$alt-hover-active: #fff515;
 $middle-gradient-color: mix($brand-color, $hover-brand-color, 95%);
 
 $main-font: 'DINPro Light', sans-serif;
@@ -31,3 +33,4 @@ $desktop: "(min-width: 1170px)";
 @import "navigation";
 @import "footer";
 @import "tabs";
+@import "fast-call-action";

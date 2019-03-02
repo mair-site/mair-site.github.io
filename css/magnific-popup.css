@@ -108,6 +108,7 @@
   display: none; }
 
 button.mfp-close,
+button#main-close,
 button.mfp-arrow {
   overflow: visible;
   cursor: pointer;
@@ -125,7 +126,7 @@ button::-moz-focus-inner {
   padding: 0;
   border: 0; }
 
-.mfp-close {
+.mfp-close, #main-close {
   width: 44px;
   height: 44px;
   line-height: 44px;
@@ -142,13 +143,16 @@ button::-moz-focus-inner {
   font-size: 28px;
   font-family: Arial, Baskerville, monospace; }
   .mfp-close:hover,
-  .mfp-close:focus {
+  .mfp-close:focus,
+  #main-close:hover,
+  #main-close:focus {
     opacity: 1;
     filter: alpha(opacity=100); }
-  .mfp-close:active {
+  .mfp-close:active,
+  #main-close:active {
     top: 1px; }
 
-.mfp-close-btn-in .mfp-close {
+.mfp-close-btn-in .mfp-close, #main-close {
   color: #333; }
 
 .mfp-image-holder .mfp-close,
@@ -389,3 +393,5 @@ img.mfp-img {
   top: 0;
   right: 0;
   padding-top: 0; }
+
+

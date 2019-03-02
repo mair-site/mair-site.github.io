@@ -3,20 +3,74 @@ input[type=checkbox] {
     width: auto;
     height: 26px;
 }
-.main-form {
+.main-form, .secondary-form {
     width: 325px;
     padding: 10px;
     margin: 0 auto;
 	z-index: 1;
 	background-color: white;
 	box-shadow: 0 0.4rem 2.8rem rgba(40, 40, 40, 0.4);
-	border-radius: 15px;
+	border-radius: 5px;
 	overflow: visible;
 	text-align: center;	
 
+	
+	.button { 
+		width: 100%;
+		background: $brand-color none repeat scroll 0 0;
+		box-shadow: 0 5px 0 0 $brand-color-shadow;
+		border: 0px solid;
+		padding: 18px 0px;
+		display: inline-block;
+		color: white;
+		font-size: 18px;
+		font-weight: 600;
+		text-transform: uppercase;
+		text-decoration: none;
+		outline: medium none;
+
+		&:hover {
+			background: rgb(255, 176, 48) none repeat scroll 0 0;
+			box-shadow: 0 5px 0 0 rgb(204, 126, 0);
+			color: #fff;
+		}
+
+		// &:active {
+		// 	background: rgb(194, 87, 0);
+		// 	box-shadow: 0 3px 0 0 #D78600;
+		// 	color: #fff;
+		// 	transform: translateY(3px);
+		// 	outline: medium none;
+		// }
+	}
+
+	.emergency-call {
+		background: #ff484b none repeat scroll 0 0;
+		box-shadow: 0 6px 0 0 #d01e37;
+		width: 100%;
+		
+		transition: all .15s ease-in-out;
+		-webkit-transition: all .15s ease-in-out;
+		-moz-transition: all .15s ease-in-out;
+		-ms-transition: all .15s ease-in-out;
+		-o-transition: all .15s ease-in-out;
+		&:hover {
+			background: #f37678 none repeat scroll 0 0;
+			color: #fff;
+		}
+	}
+
+
 	&.sale-action {
-		animation: fade-slide-down 2s .5s cubic-bezier(0, 0.5, 0.02, 0.96) forwards;
+		animation: fade-slide-down 1s 0.5s ease forwards;
 		opacity: 0;
+
+		&.fixed {
+			position: fixed;
+			z-index: 1000;
+			right: 50px;
+			bottom: 50px;
+		}
 	}
 
 	ul {
@@ -25,7 +79,7 @@ input[type=checkbox] {
 	}
 	.tel {
 		font-size: 2.3rem;
-		color: #EA1E63;
+		color: $brand-color;
 	}
 	.form-title {
 		color: #262626;
@@ -98,6 +152,10 @@ input[type=checkbox] {
 	padding: 4px 0px;
 	display: inline;
 	
+	a:hover {
+		color: $alt-hover-active;
+	}
+	
 	span {
 		text-decoration: underline;
 
@@ -131,16 +189,7 @@ input[type=checkbox] {
 		width: 90%;
 		margin: 0 0 10px 10px;
 		font-size: 15px;
-	}
-}
-
-.stuff {
-	label {
-		margin: 20px 0;
-		font-size: 17px;
-	}
-	input[type=submit] {
-		margin: 20px 0 0;
+		letter-spacing: normal;
 	}
 }
 
@@ -229,8 +278,14 @@ textarea:focus {
     position: relative;
     display: block;
     font-size: 23px;
-	background: white url(../images/telephone.svg) 5% center no-repeat;
 	padding-left: 15%;
+}
+
+.input-form[type=phone] {
+	background: white url(../images/telephone.svg) 5% center no-repeat;
+}
+.input-form[type=name] {
+	background: white url(../images/man.svg) 5% center no-repeat;
 }
 .btn {
     display: inline-block;
@@ -248,6 +303,7 @@ textarea:focus {
     background-image: none;
     border: 0px solid transparent;
 	border-radius: 7px;
+	letter-spacing: 1.5px;
 
 	&.calc-btn {
 
@@ -256,6 +312,7 @@ textarea:focus {
 	
 		&:hover {
 			background: rgb(80, 80, 80) none repeat scroll 0 0;
+			box-shadow: 0 6px 0 0 #353535;
 			color: #fff;
 			text-decoration: underline;
 		}
@@ -286,3 +343,5 @@ input[type=tel] {
 		padding: 20px 0;
 	}
 }
+
+// main-form animated

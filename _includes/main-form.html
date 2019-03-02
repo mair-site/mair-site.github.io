@@ -1,15 +1,9 @@
-
-{% if include.template == 'invisible' %}
-<div id="mainform-popup" class="main-form white-popup mfp-hide"> 
-{% endif %}
+<div id="fast-call-form-popup" class="secondary-form white-popup mfp-hide mfp-with-anim"> 
 	<ul>
-		{% if include.template == 'invisible' %}
 		<li>
 			<div class="form-title">Обратный звонок<br>
 			</div>
 		</li>
-		{% endif %} 
-	{% if include.template == 'invisible' %}
 		<li>
 			<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
 	
@@ -22,12 +16,49 @@
 
 				<input id="licenses_popup" name="licenses_popup" checked="checked" required="" value="Y" aria-required="true" type="checkbox">
 				<label for="licenses_popup">
-						Я согласен на <a href="/personal_data" target="_blank">обработку персональных данных</a>						
+						Я согласен(на) на <a href="/personal_data" target="_blank">обработку персональных данных</a>						
 				</label>	
 							
 				<input type="submit" value="Перезвоните мне" class="btn button make-call">
 			</form>
 		</li> 
-	{% endif %}
 	</ul>
 </div>
+
+<div id="mail-form-popup" class="secondary-form white-popup mfp-hide mfp-with-anim"> 
+	<ul>
+		<!-- <li>
+			<div class="form-title">Заявка на <b>бесплатную</b> консультацию!<br>
+			</div>
+		</li> -->
+		<li>
+			<div class="form-title">
+				{% include icon-howto.html svgs="1step" %}
+			</div>
+		</li>
+		<li>
+			<form class="q-form" method="POST" action="https://formspree.io/info@mair.moscow" >
+	
+				<input type="hidden" name="_language" value="ru" />
+				<input type="hidden" name="_format" value="plain" />
+				<input type="hidden" name="_next" value="/success">
+				<input type="hidden" name="_subject" value="Заявка на консультацию с сайта mair.moscow">
+				
+				<input type="text" name="name" id="name" placeholder="Как к вам обращаться">
+				<br>
+				<input type="email" name="email" id="email" placeholder="Email для ответа" required>
+				<br>
+
+				<textarea name="message" id="message" placeholder="Опишите интересующий вопрос"></textarea>
+
+				<input id="licenses_popup" name="licenses_popup" checked="checked" required="" value="Y" aria-required="true" type="checkbox">
+				<label for="licenses_popup">
+						Я согласен(на) на <a href="/personal_data" target="_blank">обработку персональных данных</a>						
+				</label>	
+							
+				<input type="submit" value="Отправить" class="btn button make-call">
+			</form>
+		</li> 
+	</ul>
+</div>
+

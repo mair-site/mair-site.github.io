@@ -905,9 +905,9 @@ $.magnificPopup = {
 
 		closeMarkup: '<button title="%title%" type="button" class="mfp-close">&#215;</button>',
 
-		tClose: 'Close (Esc)',
+		tClose: 'Закрыть',
 
-		tLoading: 'Loading...'
+		tLoading: 'Загрузка...'
 
 	}
 };

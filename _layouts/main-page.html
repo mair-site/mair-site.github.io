@@ -3,27 +3,23 @@ layout: default
 ---
 <section class="hero" style="background-image: url({% include relative-src.html src=page.hero_img %})">
 	<div class="container sale-page" {% if page.full_width %}style="max-width: 100%"{% endif %}>
-		<div class="left-part col-xs-12 col-sm-12 col-md-5">
+		<div class="col-sm-6 left-part">
 			<h1 class="editable">Сборка мебели по Москве и МО</h1>
 			<p class="subtext editable">
-				Грузоперевозки, офисные и квартирные переезды,
-				<br> услуга муж на час
-				<br><a href="/price/">Цены &rarr;</a>
+				<br> Услуга муж на час
+				<br><a href="/price/">От 450 руб/час &rarr;</a>
 			</p>
 		</div>
-		<div class="main-form sale-action col-sm-offset-3 col-sm-6 col-md-offset-3 col-md-3 ">
+		
+		<div id="main-form-popup" class="main-form sale-action col-sm-offset-3 col-sm-6 col-md-offset-2 col-md-3 ">
 			<ul>
 				<li>
 					<div class="form-title">Вызов мастера <br>
 					</div>
 					<a href="tel:+749523104608" class="tel">
-						<!-- <i class="fas fa-phone"></i> -->
 						<span><span class="font-fix"> +</span>7 495 231 0460 </span>
 					</a> 
 				</li>
-				<!-- <li>
-					<a class="btn button emergency-call zingayaLink zingayabc69783aabe74d70ad455b8428cfc769" id="zingayaLinkbc69783aabe74d70ad455b8428cfc769" href="https://zingaya.com/widget/bc69783aabe74d70ad455b8428cfc769" onclick="window.open(this.href+'?referrer='+escape(window.location.href)+'', '_blank', 'width=236,height=220,resizable=no,toolbar=no,menubar=no,location=no,status=no'); return false;">Звонок с сайта</a>
-				</li> -->
 			</ul>
 			<ul>
 				<li>
@@ -34,26 +30,27 @@ layout: default
 						<input type="hidden" name="_next" value="/success">
 						<input type="hidden" name="_subject" value="Обратный звонок сайта mair.moscow">
 						<div class="ui horizontal divider">или</div>
-						<input class="input-form" id="input-phone" type="phone" name="phone" maxlength="20" placeholder="+7 (___) ___-____" required> 
 						
 				
-						<div class="">
-							<div>	
-							</div>
-						</div>
-						<button type="submit" class="btn button make-call et">
-							Перезвоните мне
-							<span class='et-top et-style-night'>
-								<input id="licenses_popup" name="licenses_popup" checked="checked" required="" value="Y" aria-required="true" type="checkbox">
+						<div>
+							<input class="input-form et" id="input-phone" type="phone" name="phone" maxlength="20" placeholder="+7 (___) ___-____" required> 
+							
+							<span>
+								<input id="licenses_popup" name="licenses_popup" checked="checked" value="Y" aria-required="true" type="checkbox" required> 
 								<label for="licenses_popup">
-									Я согласен на </br><a href="/personal_data" target="_blank">обработку персональных данных</a>
+									Я согласен на <a href="/personal_data" target="_blank">обработку персональных данных</a>
 								</label>
 							</span>
+						</div>
+		
+						<button type="submit" class="btn button make-call">
+							Перезвоните мне
 						</button>
 					</form>
 				</li> 
 			</ul>
 		</div> 
+
 	</div>
 </section>
 {{ content }}

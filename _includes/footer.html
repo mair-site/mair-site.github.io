@@ -1,9 +1,9 @@
 <div class="container">
 
 	<div class="footer-columns">
-		<ul class="footer-links">
+		<!--<ul class="footer-links">
 			
-		{% for column in site.data.footer-nav %}
+		 {% for column in site.data.footer-nav %}
 			<li>
 				<h2>{{ column.title }}</h2>
 			</li>
@@ -14,9 +14,9 @@
 					</a>
 				</li>
 			{% endfor %}
-		{% endfor %}
+		{% endfor %} 
 
-		</ul>
+		</ul>-->
 		<ul class="footer-links">
 
 			<li>
@@ -43,10 +43,10 @@
 				<h2>График работы</h2>
 			</li>
 			<li>
-				Пн-Пт. С 9-00 до 21-00
+				Пн-Пт. С <b>9-00</b> до <b>21-00</b>
 			</li>
 			<li>
-				Сб-Вс. С 10-00 до 20-00 
+				Сб-Вс. С <b>10-00</b> до <b>20-00 </b>
 			</li>
 			<li>
 				Заявки принимаем круглосуточно.
@@ -56,7 +56,7 @@
 			<li>
 				<h2>Способы оплаты</h2>
 			</li>
-			<ul class="card_variants hidden-xs">
+			<ul class="card_variants">
 				<li>
 					<i class="fas fa-money-bill-alt"></i> Наличными
 				</li>
@@ -84,10 +84,20 @@
 		<!-- Yandex.Metrika informer --> <a href="https://metrika.yandex.ru/stat/?id=47361769&amp;from=informer" target="_blank" rel="nofollow"><img src="https://informer.yandex.ru/informer/47361769/3_0_FFA020FF_FF8000FF_1_pageviews" style="width:88px; height:31px; border:0;" alt="Яндекс.Метрика" title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)" /></a> <!-- /Yandex.Metrika informer --> <!-- Yandex.Metrika counter --> <script type="text/javascript" > (function (d, w, c) { (w[c] = w[c] || []).push(function() { try { w.yaCounter47361769 = new Ya.Metrika2({ id:47361769, clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true }); } catch(e) { } }); var n = d.getElementsByTagName("script")[0], s = d.createElement("script"), f = function () { n.parentNode.insertBefore(s, n); }; s.type = "text/javascript"; s.async = true; s.src = "https://mc.yandex.ru/metrika/tag.js"; if (w.opera == "[object Opera]") { d.addEventListener("DOMContentLoaded", f, false); } else { f(); } })(document, window, "yandex_metrika_callbacks2"); </script> <noscript><div><img src="https://mc.yandex.ru/watch/47361769" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 	</p>
 	
-	<div class="toTop_nav">
-		<a href="#" id="updown" onclick="return up()">
-			<svg class="icon-svg icon-svg_scroll-up" width="50" height="50" viewBox="0 0 50 50" aria-hidden="true" version="1.1" role="img" style="fill:#ebb151"><path d="M16 0C7.164 0 0 7.164 0 16s7.164 16 16 16 16-7.164 16-16S24.836 0 16 0zm8.412 19.523c-.517.512-1.355.512-1.872 0L16 13.516l-6.54 6.01c-.518.51-1.356.51-1.873 0-.516-.513-.517-1.343 0-1.855l7.476-7.326c.517-.512 1.356-.512 1.873 0l7.476 7.327c.516.513.516 1.342 0 1.854z"></path></svg>
-		</a>
-	</div>
+	<a href="#0" class="cd-top js-cd-top">
+		<i class="fas fa-arrow-alt-circle-up"></i>
+	</a>
+	<a class="fast-call fast-button open-popup-link" href="#fast-call-form-popup">
+		<i class="fas fa-phone"></i>
+		<div class="fast_text">
+				<span>Связаться</span>
+		</div>
+	</a>
+	<a class="fast-mail fast-button open-popup-link" href="#mail-form-popup">
+		<i class="far fa-envelope"></i>
+		<div class="fast_text">
+			<span>Заявка</span>
+		</div>
+	</a>
 
 </div>

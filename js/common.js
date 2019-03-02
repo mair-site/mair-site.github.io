@@ -1,72 +1,202 @@
+
+// JQuery
+
 $(document).ready(function() {
     var $header = $('header');
-    var $logo = $('.company-name');
+    var $mainform = $('.main-form');
 
     $(window).scroll( function() {
-        if ($(this).scrollTop() > 100 ) {
-            $header.addClass('minimised');
-        } else {
-            $header.removeClass('minimised');
-        }
-    });
+ 
+        if ( $(this).scrollTop() > 100 ) {
+			$header.addClass('minimised');
+			$('.fast-button').show();	
+		} else {
+			$header.removeClass('minimised');
+			$('.fast-button').hide();	
+		};
 
+	});
+	
+	// всплывающие окна быстрой связи и звонка
+
+	// $('.fast-mail').click(function(){
+	// 	$mainform.show();
+	// 	$('.fast-button').hide();	
+	// });
+
+	// $('#main-close').click(function(){
+	// 	$mainform.hide();
+	// 	$('.fast-button').show();	
+	// });
+	
+	// навигация в мобильном виде
     $('#open-nav').click( function() {
         $('body').toggleClass('nav-open');
     });
-
+	// стандартное модальное окно magnificPopup
     $('.open-popup-link').magnificPopup({
         type:'inline',
         midClick: true,
         focus: '#input-phone-add'
-    });
+	});
 
-    // Фокус на вводе номера телефона
+	//$('.fast-mail').click(function(){
+	//	$('.fast-form').show();	
+	//	$('.fast-call').hide();	
+	//});
+
+    // Фокус на вводе номера телефона 
     $('.check').click ( function() {
         $('#input-phone-add').focus();
     });
-    
-    $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:0,
-        nav:false,
-        navText: "",
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:2
-            },
-            1000:{
-                items:2
-            }
-        }
-    })
+	
+	// Слайдрер ОТЗЫВЫ
+    $(".slide-one").owlCarousel({
+		loop:true, 
+		margin:0, 
+		nav:false, 
+		autoplay:true, 
+		smartSpeed:1000, 
+		autoplayTimeout:5000, 
+		responsive:{ 
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1000:{
+				items:2
+			}
+		}
+	});
+
+	// Слайдрер ПАРТНЁРЫ
+	$(".slide-two").owlCarousel({
+		loop:true, 
+		margin:0, 
+		nav:false, 
+		autoplay:true, 
+		smartSpeed:1000, 
+		autoplayTimeout:4000, 
+		responsive:{
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1000:{
+				items:4
+			}
+		}
+	});
+	
+    // Слайдрер ЧТО МЫ УМЕЕМ
+	$(".slide-three").owlCarousel({
+		loop:true, 
+		margin:25,
+		nav:true, 
+		navText: [,],
+		autoplay:true,
+		smartSpeed:700, 
+		autoplayTimeout:11000, 
+		responsive:{ 
+			0:{
+				items:1
+			},
+			600:{
+				items:2
+			},
+			1000:{
+				items:3
+			}
+		}
+	});
 
 // Вкладки через jquery-ui.min.js для страницы /price/
 
-    $( "#tabs" ).tabs();
+	$( "#tabs" ).tabs();
 
-});
 
-// Вариант JavaScript
-
-var t;
-var top         = Math.max(document.body.scrollTop,document.documentElement.scrollTop);
-var updownElem  = document.getElementById('updown');
-
-if (top > 1) {
-    updownElem.className = 'up';
-}
-
-function up() {
-  if(top > 0) {
-    window.scrollBy(0,-100);
-    t = setTimeout('up()',20);
-  } else clearTimeout(t);
-  return false;
-}
 // Всплывающие подсказки
-$(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip();   
-});
+
+// Scroll Top
+
+    // Back to Top - by CodyHouse.co
+	var backTop = document.getElementsByClassName('js-cd-top')[0],
+		// browser window scroll (in pixels) after which the "back to top" link is shown
+		offset = 300,
+		//browser window scroll (in pixels) after which the "back to top" link opacity is reduced
+		offsetOpacity = 1200,
+		scrollDuration = 700,
+		scrolling = false;
+	if( backTop ) {
+		//update back to top visibility on scrolling
+		window.addEventListener("scroll", function(event) {
+			if( !scrolling ) {
+				scrolling = true;
+				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
+			}
+		});
+		//smooth scroll to top
+		backTop.addEventListener('click', function(event) {
+			event.preventDefault();
+			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : scrollTop(scrollDuration);
+		});
+	}
+
+	function checkBackToTop() {
+		var windowTop = window.scrollY || document.documentElement.scrollTop;
+		( windowTop > offset ) ? addClass(backTop, 'cd-top--show') : removeClass(backTop, 'cd-top--show', 'cd-top--fade-out');
+		( windowTop > offsetOpacity ) && addClass(backTop, 'cd-top--fade-out');
+		scrolling = false;
+	}
+	
+	function scrollTop(duration) {
+	    var start = window.scrollY || document.documentElement.scrollTop,
+	        currentTime = null;
+	        
+	    var animateScroll = function(timestamp){
+	    	if (!currentTime) currentTime = timestamp;        
+	        var progress = timestamp - currentTime;
+	        var val = Math.max(Math.easeInOutQuad(progress, start, -start, duration), 0);
+	        window.scrollTo(0, val);
+	        if(progress < duration) {
+	            window.requestAnimationFrame(animateScroll);
+	        }
+	    };
+
+	    window.requestAnimationFrame(animateScroll);
+	}
+
+	Math.easeInOutQuad = function (t, b, c, d) {
+ 		t /= d/2;
+		if (t < 1) return c/2*t*t + b;
+		t--;
+		return -c/2 * (t*(t-2) - 1) + b;
+	};
+
+	//class manipulations - needed if classList is not supported
+	function hasClass(el, className) {
+	  	if (el.classList) return el.classList.contains(className);
+	  	else return !!el.className.match(new RegExp('(\\s|^)' + className + '(\\s|$)'));
+	}
+	function addClass(el, className) {
+		var classList = className.split(' ');
+	 	if (el.classList) el.classList.add(classList[0]);
+	 	else if (!hasClass(el, classList[0])) el.className += " " + classList[0];
+	 	if (classList.length > 1) addClass(el, classList.slice(1).join(' '));
+	}
+	function removeClass(el, className) {
+		var classList = className.split(' ');
+	  	if (el.classList) el.classList.remove(classList[0]);	
+	  	else if(hasClass(el, classList[0])) {
+	  		var reg = new RegExp('(\\s|^)' + classList[0] + '(\\s|$)');
+	  		el.className=el.className.replace(reg, ' ');
+	  	}
+	  	if (classList.length > 1) removeClass(el, classList.slice(1).join(' '));
+	}
+
+})();

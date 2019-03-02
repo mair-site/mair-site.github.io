@@ -2,12 +2,12 @@
   links:
     - name: Главная
       link: /
-    - name: Портфолио
-      link: /portfolio/
     - name: Цены
       link: /price/
-    - name: Наш блог
-      link: /blog/
+    - name: Портфолио
+      link: /portfolio/
     - name: Cотрудничество
       link: /partnership/
+    - name: Наш блог
+      link: /blog/
 
