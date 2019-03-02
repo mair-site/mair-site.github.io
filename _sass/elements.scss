@@ -427,6 +427,39 @@ table {
 		}
 	}
 }
+
+.mini-element {
+	color: #555555;
+	width: fit-content;
+	width: -moz-fit-content;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 37px;
+	padding: 5px 22px;
+	cursor: pointer;
+
+	&.price-btn {
+		background: #f2f2f2;    
+		border: 1px solid #f2f2f2;
+		
+		&:hover {
+			background-color: white;
+		}
+	}
+	&.form-btn {
+		background: #f6b83f;
+
+		a {	
+			color: white;	
+		}
+
+		&:hover {
+			background-color: $brand-color;
+		}
+	}
+}
+
 .owl-prev {
 	position: absolute;
 	left: -70px;

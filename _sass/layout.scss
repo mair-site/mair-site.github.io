@@ -87,6 +87,7 @@ section {
 		text-align: left;
 		padding-top: 170px;
 		position: relative;
+		height: 100vh;
 		
 		&:before {
 			content: "";
@@ -144,6 +145,7 @@ section {
 		// background-position: left bottom;
 	}
 	&.gallery {
+
 		.image-grid {
 			padding: 0;
 			list-style: none;
@@ -159,6 +161,15 @@ section {
 				img {
 					min-width: 100%;
 				}				
+
+					
+				@media #{$tablet} {
+					flex: 1 1 50%;
+				}
+
+				@media #{$desktop} {
+					flex: 1 1 25%;
+				}
 			}
 		}
 	}
@@ -805,37 +816,6 @@ background:white;
     margin-right: 7%;
     height: 100px;
     width: auto;
-}
-.mini-element {
-	color: #555555;
-	width: fit-content;
-	width: -moz-fit-content;
-    text-align: center;
-    font-size: 16px;
-    font-weight: bold;
-    line-height: 37px;
-	padding: 5px 22px;
-	cursor: pointer;
-
-	&.price-btn {
-		background: #f2f2f2;    
-		border: 1px solid #f2f2f2;
-		
-		&:hover {
-			background-color: white;
-		}
-	}
-	&.form-btn {
-		background: #f6b83f;
-
-		a {	
-			color: white;	
-		}
-
-		&:hover {
-			background-color: $brand-color;
-		}
-	}
 }
 .metrika {
 	float: right;
