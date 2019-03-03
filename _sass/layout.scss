@@ -246,6 +246,18 @@ section {
 		position: relative;
 		overflow: hidden;
 
+		.container::before {
+			content: "";
+			background-image: url(/images/chas.png);
+			background-position: top left;
+			width: 500px;
+			height: 503px;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: -390px;
+			top: -25px;
+		}
+
 		&:before {
 			content: "";
 			width: 100%;
@@ -873,12 +885,25 @@ background:white;
 }
 
 blockquote {
-    background-color: aliceblue;
-	display: block;
-	padding-top: 1em;
-	padding-bottom: 1em;
-	padding-left: 40px;
-	padding-right: 40px;
+    background-color: floralwhite;
+    display: block;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-shadow: 0 5px 0 #ffa715;
+    margin: 0;
+}
+blockquote:before { 
+    content: 'i';
+    font-weight: normal;
+    opacity: 0.1;
+    font-size: 136px;
+    position: absolute;
+    color: #fff;
+    top: -50px;
+    left: -25px;
+    transform: rotate(45deg);
 }
 .contact-info {
 	margin-top: 20px;

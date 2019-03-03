@@ -1,7 +1,7 @@
 - title: services
   svgs:
     - name: Замер, оценка
-      link: /
+      link: /sborka-mebeli/#zamer
       svg: evaluation
     - name: Консультации
       link: /
