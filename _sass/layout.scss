@@ -213,7 +213,7 @@ section {
 		text-align: left;
 
 		ul {
-			margin: 0;
+			margin: 0 0 20px 0;
 			padding: 0 0 0 25px;
 		}
 		li {
@@ -235,10 +235,37 @@ section {
 				min-width: 100%;
 			}
 		}
+		a:hover {
+			color: $brand-color;
+			text-decoration: underline;
+		}
+	}
+	&.casual-white {
+		background-color: white;
+		a:hover {
+			color: $brand-color;
+			text-decoration: underline;
+		}
+		.image-grid {
+			padding: 0;
+			list-style: none;
+			display: flex;
+			flex-flow: wrap;
+			text-align: center;
+			margin: 0 -20px;
+		
+			img {
+				min-width: 100%;
+			}
+		}
 	}
 	&.success {
 		padding: 0 0 150px;
 		background-color: white;
+		a:hover {
+			color: $brand-color;
+			text-decoration: underline;
+		}
 	}
 	&.promo-action {
 
@@ -293,19 +320,6 @@ section {
 		background: white url(../images/bg/bg_comments.jpg) no-repeat top center;
 		background-size: cover;
 	}		
-	&.partners {
-		background-color: white;
-
-		img {
-			-webkit-filter: grayscale(1);
-			filter: grayscale(1);
-
-			&:hover {
-				-webkit-filter: grayscale(0);
-				filter: grayscale(0);
-			}
-		}
-	}
 	&.social {
 		background-color: #FFA715;
 		color: white;
@@ -375,7 +389,18 @@ section {
 		background: #222;
 	}
 }
+.partners {
 
+	img {
+		-webkit-filter: grayscale(1);
+		filter: grayscale(1);
+
+		&:hover {
+			-webkit-filter: grayscale(0);
+			filter: grayscale(0);
+		}
+	}
+}
 .make-call {
 	padding: 15px 20px;
 	border: 0px solid;
@@ -529,6 +554,34 @@ section {
     width: 37px;
     display: inline-block;
     margin-bottom: -7px;
+}
+.zamer-icon {
+    background: url(../images/icons/zamer-64.png) no-repeat center center transparent;
+    height: 57px;
+    width: 70px;
+    display: inline-block;
+    margin-bottom: -19px;
+}
+.raspak-icon {
+    background: url(../images/icons/unpack-64.png) no-repeat center center transparent;
+    height: 57px;
+    width: 70px;
+    display: inline-block;
+    margin-bottom: -19px;
+}
+.chair-icon {
+    background: url(../images/icons/chair-51.png) no-repeat center center transparent;
+    height: 57px;
+    width: 70px;
+    display: inline-block;
+    margin-bottom: -19px;
+}
+.biceps-icon {
+    background: url(../images/icons/biceps-57.png) no-repeat center center transparent;
+    height: 57px;
+    width: 70px;
+    display: inline-block;
+    margin-bottom: -19px;
 }
 
 .add-info {
@@ -892,7 +945,6 @@ blockquote {
     padding-left: 40px;
     padding-right: 40px;
     box-shadow: 0 5px 0 #ffa715;
-    margin: 0;
 }
 blockquote:before { 
     content: 'i';

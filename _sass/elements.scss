@@ -92,7 +92,7 @@ h4 {
 	margin: 0 0 10px 0;
 }
 
-p, address, ul, ol, pre {
+p, address, ul, ol, pre, blockquote {
 	margin: 0 0 20px 0;
 	padding: 0;
 }
@@ -502,8 +502,6 @@ table {
 	position: fixed;
 	bottom: 40px;
 	left: 50px;
-	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
-			box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
 	/* image replacement properties */
 	overflow: hidden;
 	text-indent: 100%;
