@@ -548,41 +548,6 @@ section {
 .header-center-block {
 	text-align: center;
 }
-.file-icon {
-    background: url(../images/icons/icon_1.png) no-repeat center center transparent;
-    height: 35px;
-    width: 37px;
-    display: inline-block;
-    margin-bottom: -7px;
-}
-.zamer-icon {
-    background: url(../images/icons/zamer-64.png) no-repeat center center transparent;
-    height: 57px;
-    width: 70px;
-    display: inline-block;
-    margin-bottom: -19px;
-}
-.raspak-icon {
-    background: url(../images/icons/unpack-64.png) no-repeat center center transparent;
-    height: 57px;
-    width: 70px;
-    display: inline-block;
-    margin-bottom: -19px;
-}
-.chair-icon {
-    background: url(../images/icons/chair-51.png) no-repeat center center transparent;
-    height: 57px;
-    width: 70px;
-    display: inline-block;
-    margin-bottom: -19px;
-}
-.biceps-icon {
-    background: url(../images/icons/biceps-57.png) no-repeat center center transparent;
-    height: 57px;
-    width: 70px;
-    display: inline-block;
-    margin-bottom: -19px;
-}
 
 .add-info {
     content: '';
@@ -774,14 +739,6 @@ background:white;
 		text-align: left;
 		border: 1px solid $brand-color;
 		line-height: 0;
-
-		@media #{$tablet} {
-			flex: 1 1 50%;
-		}
-
-		@media #{$desktop} {
-			flex: 1 1 20%;
-		}
 
 		img {
 			min-width: 120%;

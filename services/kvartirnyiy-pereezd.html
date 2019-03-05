@@ -66,7 +66,7 @@ permalink: /kvartirnyiy-pereezd/
         <div>
             <ul class="image-grid">
                 <li><img src="/images/services/pereezd/pereezd2-mair.png"> </li>            <blockquote>
-                Часто перед/после переезда требуется сборка и разборка мебели, а она тоже требует навыков, поэтому предлагаем <a href="/sborka-mebeli/">наши мастеров &rarr;</a>.</blockquote>
+                Часто перед/после переезда требуется собрать и разобрать мебели, а она тоже требует навыков, поэтому предлагаем <a href="/sborka-mebeli/">услуги сборки нашими мастеров &rarr;</a></blockquote>
             </ul>
         </div>
         <div>
@@ -78,6 +78,40 @@ permalink: /kvartirnyiy-pereezd/
         </div>
     </div>
 </section>
+<section class="order-stages infographic">
+        <div class="container">
+            <div class="st_bl_wrap">
+                <div class="st_bl_in">
+                    <h2 class="editable centered">Как сделать заказ?</h2>				
+                    <ul class="st_bl_items">
+                        {% for column in site.data.icons %}
+                            {% if column.title == 'howto-delivery' %}
+                                {% for svgs in column.svgs %}
+                                <li class="st_bl_item col-lg-3 col-md-6 col-sm-12 col-xs-12">
+                                    <div class="st_bl_pic">
+                                        {% include icon-howto.html icon=svgs.svg %}
+                                        <br />
+                                        {{ svgs.name }}
+                                    </div>
+                                    {% unless svgs.svg == '4step' %}
+                                        <img class="arrow hidden-sm hidden-xs" src="/images/arrow-r.png">
+                                    {% endunless %}
+                                </li>
+                                {% endfor %}
+                            {% endif %}
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+    {% include promo-action.html 
+        caption="Нет времени на чтение?"
+        subtext=""
+        call_action_text="Закажите бесплатную консультацию!"
+        button_text="Обратный звонок" %}
+
 <section class="casual">
     <div class="container halves">
         <h3 class="centered"> Упаковка вещей</h3>
@@ -112,10 +146,10 @@ permalink: /kvartirnyiy-pereezd/
                 <li><img src="/images/services/pereezd/apartament-moving.jpg"> </li>
             </ul>
             <div class="image-grid">
-                <li>Коробки расположить компактно (нужно подготовить комнату).</li>
-                <li>Драгоценности, документы - перевезти ручной кладью.</li>
-                <li>Сделать опись имущества. Инвентаризация предметов – важный этап прибывшего груза.</li>
             </div>
+            <li>Коробки расположить компактно (нужно подготовить комнату).</li>
+            <li>Драгоценности, документы - перевезти ручной кладью.</li>
+            <li>Сделать опись имущества. Инвентаризация предметов – важный этап прибывшего груза.</li>
         </ul>
 
         <p>Грамотное выполнение услуг профессионалами, правильные подготовительные работы сделают квартирный переезд спокойным, радостным.</p>
@@ -125,39 +159,7 @@ permalink: /kvartirnyiy-pereezd/
     </div>
 </section>
 
-{% include promo-action.html 
-    caption="Нет времени на чтение?"
-    subtext=""
-    call_action_text="Закажите бесплатную консультацию!"
-    button_text="Обратный звонок" %}
 
-<section class="order-stages infographic">
-	<div class="container">
-		<div class="st_bl_wrap">
-			<div class="st_bl_in">
-				<h2 class="editable centered">Как сделать заказ?</h2>				
-				<ul class="st_bl_items">
-					{% for column in site.data.icons %}
-						{% if column.title == 'howto-delivery' %}
-							{% for svgs in column.svgs %}
-							<li class="st_bl_item col-lg-3 col-md-6 col-sm-12 col-xs-12">
-								<div class="st_bl_pic">
-									{% include icon-howto.html icon=svgs.svg %}
-									<br />
-									{{ svgs.name }}
-								</div>
-								{% unless svgs.svg == '4step' %}
-									<img class="arrow hidden-sm hidden-xs" src="/images/arrow-r.png">
-								{% endunless %}
-							</li>
-							{% endfor %}
-						{% endif %}
-					{% endfor %}
-				</ul>
-			</div>
-		</div>
-	</div>
-</section>
 
 <section class="end-form">
     <div class="container">

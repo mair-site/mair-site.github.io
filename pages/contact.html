@@ -15,6 +15,23 @@ excluded_in_search: true
 
 ---
 <!-- https://yandex.ru/maps/213/moscow/?mode=search&ll=37.738237%2C55.785676&z=16&where=37.735791%2C55.785205&ol=biz&oid=1342821533 -->
+
+
+<section class="">
+	<div class="container halves aligned-top">
+		<div>
+			<i class="fas fa-map-marked"></i>
+			<h3>Адрес</h3>
+			<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address }}</a></address>
+		</div>
+		<div>
+			<i class="fas fa-at"></i>
+			<h3>Email</h3>
+			<p><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
+		</div>
+	</div>
+</section>
+
 <section class="casual">
 	<div class="container">
 		<h2 class="centered"> Наши реквизиты </h2>
@@ -45,20 +62,6 @@ excluded_in_search: true
 	<div id="gmap_canvas"></div>
 </section>
 
-<section class="">
-	<div class="container halves aligned-top">
-		<div>
-			<i class="fas fa-map-marked"></i>
-			<h3>Адрес</h3>
-			<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address }}</a></address>
-		</div>
-		<div>
-			<i class="fas fa-at"></i>
-			<h3>Email</h3>
-			<p><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
-		</div>
-	</div>
-</section>
 
 <script type="text/javascript">
 	window.mapData = {{ page.map | jsonify }};
