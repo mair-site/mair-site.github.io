@@ -29,6 +29,10 @@
 	.owl-next {
 		right: -17px;
 	}
+	section.promo-action::before, footer.promo-action::before {
+		background-image: none;
+		transform: rotate(0deg);
+	}
 }
 @media screen and (max-width: 766px) {
 	.what-we-do .owl-carousel .owl-item {
@@ -46,6 +50,10 @@
 	}
 	.fast-mail {
 		bottom: 68px;
+	}
+	section.promo-action::before, footer.promo-action::before {
+		background-image: none;
+		transform: rotate(0deg);
 	}
 }
 @media screen and (max-width: 370px) {

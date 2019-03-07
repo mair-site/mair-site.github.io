@@ -379,6 +379,20 @@ section {
 				box-shadow: 0px 4px 0px 0 $brand-color-shadow;
 			}
 		}
+
+		blockquote {
+			p {
+				font-size: 21px;
+				color: black;
+			}
+			img {
+				max-width: 50%;
+			}
+		}
+		li {
+			list-style-type: square;
+			list-style-position: inside;
+		}
 	}
 	&.prices {
 		background-color: #d3d3d3;
@@ -460,6 +474,8 @@ section {
 	float: left;
 	animation: fade-slide-right 2s .5s cubic-bezier(0, 0.5, 0.02, 0.96) forwards;
 	opacity: 0;
+}
+.right-part {
 }
 
 .price-table {
@@ -901,18 +917,26 @@ blockquote {
     padding-bottom: 1em;
     padding-left: 40px;
     padding-right: 40px;
-    box-shadow: 0 5px 0 #ffa715;
-}
-blockquote:before { 
-    content: 'i';
-    font-weight: normal;
-    opacity: 0.1;
-    font-size: 136px;
-    position: absolute;
-    color: #fff;
-    top: -50px;
-    left: -25px;
-    transform: rotate(45deg);
+	box-shadow: 0 5px 0 #ffa715;
+	float: left;
+	
+	img {
+		box-shadow: none!important;
+		margin: 0 35px 0 0 !important;
+		float: left;
+	}
+
+	// &:before { 
+	// 	content: '⌂';
+	// 	font-weight: normal;
+	// 	opacity: 0.1;
+	// 	font-size: 136px;
+	// 	position: absolute;
+	// 	color: #fff;
+	// 	top: -50px;
+	// 	left: -25px;
+	// 	transform: rotate(45deg);
+	// }
 }
 .contact-info {
 	margin-top: 20px;
