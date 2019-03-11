@@ -84,6 +84,7 @@ section {
 		box-shadow: inset 0px -6px 3px -3px rgba(50, 50, 50, 0.15);
 		color: #ffffff;
 		background-size: cover;
+		background-position: center center;
 		text-align: left;
 		padding-top: 170px;
 		position: relative;
@@ -381,6 +382,7 @@ section {
 		}
 
 		blockquote {
+			width: 100%;
 			p {
 				font-size: 21px;
 				color: black;
