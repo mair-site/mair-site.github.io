@@ -2,7 +2,7 @@
 name: Разборка и демонтаж мебели
 title: Разборка мебели
 subtitle: Выезд мастера в пределах Москвы и МО
-image_path: /images/clients/work-muj-na-chas-service.jpg
+image_path: /images/clients/0-razborka/razborka-thumb.jpg
 hero_img: /images/clients/0-razborka/instrument.jpg
 ---
 
