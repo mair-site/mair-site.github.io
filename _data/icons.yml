@@ -19,7 +19,7 @@
       link: /price#transportation
       svg: delivery
     - name: Строительство и ремонт
-      link: /vrazrabotke/
+      link: /stroitelstvo-remont/
       svg: construction
 - title: howto-delivery
   svgs:
