@@ -89,6 +89,10 @@ section {
 		padding-top: 170px;
 		position: relative;
 		height: 100vh;
+
+		h1 {
+			word-wrap: break-word;
+		}
 		
 		&:before {
 			content: "";

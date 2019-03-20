@@ -48,12 +48,18 @@
 		right: 0px;
 		bottom: 0px;
 	}
+	.cd-top {
+		left: 0px;
+	}
 	.fast-mail {
 		bottom: 68px;
 	}
 	section.promo-action::before, footer.promo-action::before {
 		background-image: none;
 		transform: rotate(0deg);
+	}
+	section.client blockquote img, footer.client blockquote img {
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 370px) {

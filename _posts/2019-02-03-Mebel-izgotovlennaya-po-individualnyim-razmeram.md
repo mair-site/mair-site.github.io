@@ -30,8 +30,6 @@ __Когда нужно делать мебель на заказ?__
  
  ![МАИР индивидуальная кухня]({{ site.url }}/images/clients/individ/05.jpg)
  
- ![МАИР индивидуальная кухня]({{ site.url }}/images/clients/individ/06.jpg)
- 
  ![МАИР индивидуальная кухня]({{ site.url }}/images/clients/individ/07.jpg)
  
  ![МАИР индивидуальная кухня]({{ site.url }}/images/clients/individ/08.jpg)
