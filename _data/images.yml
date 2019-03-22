@@ -3,8 +3,6 @@ imagedata: stroitelstvo
 images:
 - image_path: /images/services/stroitelstvo/etap1-smeta-stoimost-stroitelstva.jpg
   title: Составление сметы
-- image_path: /images/services/stroitelstvo/etap15-snyatie-plodorodnogo-grunta.jpg
-  title: Снятие грунта
 - image_path: /images/services/stroitelstvo/etap2-fundamenti-stroitelstva.jpg
   title: Фундаменты
 - image_path: /images/services/stroitelstvo/etap3--vozvedenie-sten.jpg
@@ -19,5 +17,7 @@ images:
   title: Электрика, сантехника, вентиляция, отопление
 - image_path: /images/services/stroitelstvo/etap8-otdelochnye-raboty.jpg
   title: Отделочные работы
-- image_path: /images/services/stroitelstvo/etap9-cleaning.jpg
+- image_path: /images/services/stroitelstvo/etap9-land.jpg
+  title: Ландшафные работы
+- image_path: /images/services/stroitelstvo/etap10-cleaning.jpg
   title: Профессиональный клининг
