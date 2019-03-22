@@ -408,6 +408,17 @@ section {
 		padding: 52px;
 		background: #222;
 	}
+	&.stroitelstvo {
+		background: url(/images/bg/bg_wwd.jpg) bottom right no-repeat transparent;
+			background-size: auto;
+	}
+	&.stroitelstvo1 {
+		background: url(/images/services/stroitelstvo/4dom_postroika.jpg) bottom right no-repeat transparent;
+		background-size: contain;
+	}
+	&.stroitelstvo2 {
+		background: url(/images/bg/bg_wwd.jpg) bottom right no-repeat transparent;
+	}
 }
 .partners {
 

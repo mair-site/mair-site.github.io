@@ -1,0 +1,23 @@
+
+imagedata: stroitelstvo
+images:
+- image_path: /images/services/stroitelstvo/etap1-smeta-stoimost-stroitelstva.jpg
+  title: Составление сметы
+- image_path: /images/services/stroitelstvo/etap15-snyatie-plodorodnogo-grunta.jpg
+  title: Снятие грунта
+- image_path: /images/services/stroitelstvo/etap2-fundamenti-stroitelstva.jpg
+  title: Фундаменты
+- image_path: /images/services/stroitelstvo/etap3--vozvedenie-sten.jpg
+  title: Возведение стен
+- image_path: /images/services/stroitelstvo/etap4-krovelnie-raboti.jpg
+  title: Кровельные работы
+- image_path: /images/services/stroitelstvo/etap5-ustanovka-okon-i-dverej.jpg
+  title: Установка окон и дверей
+- image_path: /images/services/stroitelstvo/etap6-uteplenie-i-otdelka-fasada.jpg
+  title: Утепление и отделка фасада
+- image_path: /images/services/stroitelstvo/etap7-montazh-ehlektriki-santekhniki-ventilyacii-otopleniya.jpg
+  title: Электрика, сантехника, вентиляция, отопление
+- image_path: /images/services/stroitelstvo/etap8-otdelochnye-raboty.jpg
+  title: Отделочные работы
+- image_path: /images/services/stroitelstvo/etap9-cleaning.jpg
+  title: Профессиональный клининг
