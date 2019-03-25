@@ -3,6 +3,10 @@ input[type=checkbox] {
     width: auto;
     height: 26px;
 }
+
+.main-form {
+	display: none;
+}
 .main-form, .secondary-form {
     width: 325px;
     padding: 10px;

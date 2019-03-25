@@ -1,8 +1,5 @@
 - title: services
   svgs:
-    - name: Замер, оценка
-      link: /sborka-mebeli/#zamer
-      svg: evaluation
     - name: Консультации
       link: /
       svg: consult
@@ -15,12 +12,15 @@
     - name: Деликатный переезд
       link: /kvartirnyiy-pereezd/
       svg: delivery
-    - name: Грузоперевозки (Москва/МО, РФ)
-      link: /price#transportation
-      svg: delivery
     - name: Строительство и ремонт
       link: /stroitelstvo-remont/
       svg: construction
+    - name: Замер, оценка
+      link: /sborka-mebeli/#zamer
+      svg: evaluation
+    - name: Грузоперевозки (Москва/МО, РФ)
+      link: /price#transportation
+      svg: delivery
 - title: howto-delivery
   svgs:
     - name: Заявка или звонок
