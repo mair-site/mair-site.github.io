@@ -1,10 +1,6 @@
 ---
 name: Преимущества мебели, изготовленной по индивидуальным размерам
 title: Мебель, изготовленная по индивидуальным размерам
-categories:
-  - tips
-  - individual design
-  - kitchen
 author_staff_member: Роман
 show_comments: true
 ---

@@ -1,8 +1,5 @@
 ---
 title: Белый цвет мебели
-categories:
-  - tips
-  - design
 author_staff_member: Роман
 show_comments: true
 ---
