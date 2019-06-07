@@ -29,8 +29,8 @@ hero_img: /images/clients/Derevyannyj-shkaf-pod-televizor.jpg
 - удачно дополнять дизайн команты.
 
 ### Примеры собранных нашими сборщиками шкафов под телевизор
-![Сборка красивой модульной мебели для гостиной](/images/clients/2-shcaf/Sborka-krasivoy-modulnoy-mebeli-dlya-gostinoy.jpg)
-![Сборка квадратной мини-стенки под телевизор](/images/clients/2-shcaf/Sborka-kvadratnoy-mini-stenki-pod-televizor.jpg)
+![Сборка красивой модульной мебели для гостиной](/images/clients/2-shcaf/Sborka-krasivoy-modulnoy-mebeli-dlya-gostinoy.png)
+![Сборка квадратной мини-стенки под телевизор](/images/clients/2-shcaf/Sborka-kvadratnoy-mini-stenki-pod-televizor.png)
 >![Пример симметричного шкафа под телевизор](/images/clients/2-shcaf/shkaf-tv.jpg) 
 > Ещё один пример симметричного шкафа под телевизор
 
