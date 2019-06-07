@@ -40,11 +40,6 @@ $(document).ready(function() {
         focus: '#input-phone-add'
 	});
 
-	//$('.fast-mail').click(function(){
-	//	$('.fast-form').show();	
-	//	$('.fast-call').hide();	
-	//});
-
     // Фокус на вводе номера телефона 
     $('.check').click ( function() {
         $('#input-phone-add').focus();
